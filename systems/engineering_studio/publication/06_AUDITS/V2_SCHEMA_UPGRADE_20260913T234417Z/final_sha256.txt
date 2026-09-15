@@ -1,0 +1,2 @@
+57b19ecce65060264f9597134eab14313cc4e86c3d8978293568c5d09b26aa1d  ${NEXUS_ROOT}/systems/engineering_studio/publication/bin/publication_self_test.sh
+8d9bd21836aa31a6fbbe7b22938b246c9d2f0c75b0ec222ef852296951b3701b  ${NEXUS_ROOT}/systems/engineering_studio/publication/01_REGISTRY/repositories.json

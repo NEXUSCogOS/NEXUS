@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "binding_id": "NEXUS-EVA-EV-CANDIDATE-20260915T113036Z",
+  "binding_status": "CANDIDATE_VERIFIED_NOT_INTEGRATED",
+  "experimental_validation_candidate": {
+    "path": "${NEXUS_ROOT}/systems/engineering_studio/experimental_validation",
+    "git_toplevel": "${NEXUS_ROOT}",
+    "git_head": "46c0ebfd8133169b45ad10f45bac43741240831f"
+  },
+  "evidence": {
+    "deep_verification_report": "${NEXUS_ROOT}/research/external_verification/reports/ev_candidate_deep_verification_20260915T112956Z.txt",
+    "deep_verification_report_sha256": "7ed5676695d39669762fa5153ed5189ae57fd966ce0cdf657e89a41f2b0d408b",
+    "assessment": "STRONG_STRUCTURAL_CONVERGENCE"
+  },
+  "authority": {
+    "canonical_authority_granted": false,
+    "integration_authority_granted": false,
+    "experiment_execution": "PROHIBITED",
+    "experiment_state_transition": "PROHIBITED",
+    "experimental_registry_mutation": "PROHIBITED",
+    "automatic_gate_satisfaction": "PROHIBITED",
+    "external_verdict_generation": "PROHIBITED",
+    "external_verdict_mutation": "PROHIBITED"
+  }
+}

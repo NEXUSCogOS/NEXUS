@@ -1,0 +1,21 @@
+NEXUS CLEAN GITHUB RECONSTRUCTION
+=================================
+
+CREATED_UTC=20260915T144003Z
+
+SOURCE_ROOT=${NEXUS_ROOT}
+
+HISTORICAL_GIT_HEAD=46c0ebfd8133169b45ad10f45bac43741240831f
+HISTORICAL_PRESERVATION_TAG=nexus-pre-github-reconstruction-20260915T141958Z
+
+RECONSTRUCTION_MODEL=CURATED_SOURCE_SNAPSHOT
+
+The historical NEXUS Git repository was not rewritten.
+
+The clean staging tree was constructed from explicitly approved source roots
+with runtime, database, cache, archive and environment exclusions.
+
+This staging tree does not itself establish new canonical authority.
+
+GITHUB_REPOSITORY=NOT_YET_CREATED
+GITHUB_PUSH=NONE

@@ -1,0 +1,80 @@
+{
+  "experiment_id": "NEXUS-EXP-003",
+  "subsystem_layer": "Librarian information retrieval",
+  "claim_under_test": "The academic retrieval layer achieves reliable relevance performance beyond the existing small lexical benchmark and generalises to held-out questions.",
+  "falsifiable_hypothesis": "On an independently labelled, preregistered held-out benchmark, Recall@5 remains >=0.90 and Precision@5 >=0.60 without train/test or corpus/label leakage.",
+  "predicted_result": "Recall@5 >=0.90, Precision@5 >=0.60, MRR >=0.80, with stable results across clean repeats.",
+  "null_alternative_outcome": "Any primary metric falls below its threshold, confidence bounds are too wide, or performance depends on leaked labels/queries.",
+  "independent_variables": [
+    "research domain",
+    "question difficulty",
+    "query formulation",
+    "retrieval configuration"
+  ],
+  "dependent_variables": [
+    "Recall@5",
+    "Precision@5",
+    "MRR",
+    "zero-result rate",
+    "latency"
+  ],
+  "controls": [
+    "frozen current lexical baseline",
+    "random-ranking negative control",
+    "exact-title positive control"
+  ],
+  "dataset_source_requirements": [
+    "at least 100 held-out questions across represented domains",
+    "dual independent relevance labels",
+    "adjudicated disagreements",
+    "immutable corpus snapshot"
+  ],
+  "provenance_requirements": [
+    "question and label authorship",
+    "label timestamps",
+    "adjudication log",
+    "corpus/version hashes",
+    "retriever configuration and code commit"
+  ],
+  "pre_registered_protocol": [
+    "freeze benchmark before tuning",
+    "seal held-out labels from implementers",
+    "run baseline and candidate on identical snapshot",
+    "compute per-domain and aggregate metrics",
+    "apply bootstrap confidence intervals",
+    "publish all failed queries"
+  ],
+  "acceptance_rejection_thresholds": {
+    "accept": "95% CI lower bound Recall@5>=0.90 and point Precision@5>=0.60 and MRR>=0.80",
+    "reject": "Recall@5<0.90 or confirmed leakage",
+    "otherwise": "QUALIFIED or INCONCLUSIVE by preregistered decision table"
+  },
+  "statistical_reproducibility_criteria": "Paired bootstrap with >=10,000 resamples; report 95% CIs and domain strata; three clean deterministic repetitions; seed and tie-breaking fixed.",
+  "contamination_leakage_checks": [
+    "question text hash search across source and test fixtures",
+    "label access audit",
+    "duplicate/near-duplicate question detection",
+    "corpus cutoff date",
+    "no tuning on held-out errors"
+  ],
+  "execution_prerequisites_stability_gates": [
+    "benchmark labels complete",
+    "corpus snapshot immutable",
+    "retrieval configuration frozen",
+    "independent adjudicator assigned"
+  ],
+  "evidence_artifacts": [
+    "benchmark manifest",
+    "annotation and adjudication logs",
+    "ranked retrieval outputs",
+    "metric report with CIs",
+    "leakage audit"
+  ],
+  "replication_plan": "A second reviewer reruns the sealed benchmark; a later replication uses a newly sampled question set and corpus snapshot.",
+  "external_literature_cross_check_status": "PENDING",
+  "contradictory_findings": [
+    "The existing five-question benchmark reports 100% Recall@5 but only 40-80% Precision@5 and is too small to establish generalisation."
+  ],
+  "result_status": "BLOCKED",
+  "final_verdict": "PENDING"
+}

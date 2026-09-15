@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NEXUS-EVA Verification Event",
+  "type": "object",
+  "required": [
+    "event_id",
+    "timestamp_utc",
+    "event_type",
+    "actor"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string"
+    },
+    "timestamp_utc": {
+      "type": "string"
+    },
+    "event_type": {
+      "enum": [
+        "CLAIM_REGISTERED",
+        "PACKAGE_CREATED",
+        "PACKAGE_FROZEN",
+        "PACKAGE_DISPATCHED",
+        "EVIDENCE_RECEIVED",
+        "INTEGRITY_VERIFIED",
+        "INDEPENDENCE_VERIFIED",
+        "ADJUDICATED",
+        "SEALED"
+      ]
+    },
+    "actor": {
+      "type": "string"
+    },
+    "package_id": {
+      "type": ["string", "null"]
+    },
+    "verification_id": {
+      "type": ["string", "null"]
+    }
+  }
+}

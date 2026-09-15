@@ -1,0 +1,29 @@
+{
+  "schema_name": "ProductionMissionContract",
+  "source_module": "systems/youtube_production/schema.py",
+  "mission": "NEXUS_FEDERATION_F8",
+  "fields": {
+    "production_mission_id": "deterministic uuid5 derived from the parent synthesis_id -- a replay of the same synthesis reproduces the same mission id (idempotency)",
+    "parent_trigger_id": "the originating cross-domain trigger_id (e.g. a DAT.AI/News-sourced trigger)",
+    "parent_synthesis_id": "the NEXUS executive synthesis_id this mission was built from",
+    "channel_id": "the selected pre-existing channel identity's key, or null if NO_APPROPRIATE_CHANNEL",
+    "editorial_objective": "what this video should explain, derived from the real executive_conclusion",
+    "target_audience": "derived from the selected channel identity, or UNKNOWN if none matched",
+    "evidence_refs": "list[str] -- carried through from the synthesis",
+    "provenance_refs": "list[str] -- carried through from the synthesis",
+    "allowed_claims": "list[str] -- the executive_conclusion text, the factual ceiling",
+    "uncertain_claims": "list[str] -- carried through from the synthesis's own uncertainties",
+    "prohibited_claims": "list[str] -- always includes 'any claim stronger than the executive_conclusion_class' and 'any specific numeric forecast not present in the evidence pack', plus any contradictory findings",
+    "tone": "e.g. measured_explainer",
+    "format": "e.g. short_form_explainer",
+    "target_duration_seconds": "int",
+    "resource_budget": "a full budget.schema.ResourceBudget dict -- every dimension explicit, no unbounded field permitted",
+    "rights_constraints": "list[str]",
+    "authority": "always GENERATE_INTERNAL for this mission",
+    "success_criteria": "list[str]",
+    "terminal_state": "RECEIVED | EVIDENCE_PACK_BUILT | SCRIPT_DRAFTED | FACT_CHECKED | MEDIA_PRODUCED | READY_FOR_PUBLICATION_AUTHORIZATION | NO_PRODUCTION_ACTION_REQUIRED | NO_APPROPRIATE_CHANNEL | BLOCKED | REJECTED",
+    "created_at": "ISO 8601 timestamp"
+  },
+  "construction_function": "mission.py::build_production_mission()",
+  "note": "Returns None (no contract at all) when assess_editorial_suitability() determines the synthesis is not editorially suitable -- NO_PRODUCTION_ACTION_REQUIRED is recorded by the caller instead of a contract."
+}

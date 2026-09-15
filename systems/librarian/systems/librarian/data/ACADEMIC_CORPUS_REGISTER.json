@@ -1,0 +1,230 @@
+{
+  "corpus_id": "academic_corpus_f4_2026_08_28",
+  "generated_date": "2026-08-28",
+  "total_sources": 22,
+  "source_count_by_type": {
+    "ACADEMIC_PREPRINT": 22
+  },
+  "sources": [
+    {
+      "source_id": "arxiv:2010.11146",
+      "title": "A Decentralised Self-Healing Approach for Network Topology Maintenance",
+      "source_type": "ACADEMIC_PREPRINT",
+      "publication_date": "2020-10-21T17:02:38Z",
+      "doi": "UNKNOWN",
+      "canonical_url": "https://arxiv.org/abs/2010.11146",
+      "retraction_status": "ACTIVE",
+      "verification_status": "PARTIAL"
+    },
+    {
+      "source_id": "arxiv:2012.10390",
+      "title": "Deep Learning and the Global Workspace Theory",
+      "source_type": "ACADEMIC_PREPRINT",
+      "publication_date": "2020-12-04T11:36:01Z",
+      "doi": "UNKNOWN",
+      "canonical_url": "https://arxiv.org/abs/2012.10390",
+      "retraction_status": "ACTIVE",
+      "verification_status": "PARTIAL"
+    },
+    {
+      "source_id": "arxiv:2203.17255",
+      "title": "A Cognitive Architecture for Machine Consciousness and Artificial Superintelligence: Thought Is Structured by the Iterative Updating of Working Memory",
+      "source_type": "ACADEMIC_PREPRINT",
+      "publication_date": "2022-03-29T22:28:30Z",
+      "doi": "UNKNOWN",
+      "canonical_url": "https://arxiv.org/abs/2203.17255",
+      "retraction_status": "ACTIVE",
+      "verification_status": "PARTIAL"
+    },
+    {
+      "source_id": "arxiv:2604.00835",
+      "title": "Agentic Tool Use in Large Language Models",
+      "source_type": "ACADEMIC_PREPRINT",
+      "publication_date": "2026-04-01T12:46:51Z",
+      "doi": "UNKNOWN",
+      "canonical_url": "https://arxiv.org/abs/2604.00835",
+      "retraction_status": "ACTIVE",
+      "verification_status": "PARTIAL"
+    },
+    {
+      "source_id": "arxiv:2107.10894",
+      "title": "Power Plant Classification from Remote Imaging with Deep Learning",
+      "source_type": "ACADEMIC_PREPRINT",
+      "publication_date": "2021-07-22T19:36:07Z",
+      "doi": "UNKNOWN",
+      "canonical_url": "https://arxiv.org/abs/2107.10894",
+      "retraction_status": "ACTIVE",
+      "verification_status": "PARTIAL"
+    },
+    {
+      "source_id": "arxiv:2104.08663",
+      "title": "BEIR: A Heterogenous Benchmark for Zero-shot Evaluation of Information Retrieval Models",
+      "source_type": "ACADEMIC_PREPRINT",
+      "publication_date": "2021-04-17T23:29:55Z",
+      "doi": "UNKNOWN",
+      "canonical_url": "https://arxiv.org/abs/2104.08663",
+      "retraction_status": "ACTIVE",
+      "verification_status": "PARTIAL"
+    },
+    {
+      "source_id": "arxiv:2103.09072",
+      "title": "Cognitive architecture aided by working-memory for self-supervised multi-modal humans recognition",
+      "source_type": "ACADEMIC_PREPRINT",
+      "publication_date": "2021-03-16T13:50:24Z",
+      "doi": "UNKNOWN",
+      "canonical_url": "https://arxiv.org/abs/2103.09072",
+      "retraction_status": "ACTIVE",
+      "verification_status": "PARTIAL"
+    },
+    {
+      "source_id": "arxiv:2606.28045",
+      "title": "Rapid Prototyping of Event-Driven Contextual Memory in the ACT-Up Cognitive Architecture",
+      "source_type": "ACADEMIC_PREPRINT",
+      "publication_date": "2026-06-26T12:48:30Z",
+      "doi": "UNKNOWN",
+      "canonical_url": "https://arxiv.org/abs/2606.28045",
+      "retraction_status": "ACTIVE",
+      "verification_status": "PARTIAL"
+    },
+    {
+      "source_id": "arxiv:2004.01504",
+      "title": "Machine Learning Algorithms for Financial Asset Price Forecasting",
+      "source_type": "ACADEMIC_PREPRINT",
+      "publication_date": "2020-03-31T18:14:18Z",
+      "doi": "UNKNOWN",
+      "canonical_url": "https://arxiv.org/abs/2004.01504",
+      "retraction_status": "ACTIVE",
+      "verification_status": "PARTIAL"
+    },
+    {
+      "source_id": "arxiv:1908.03438",
+      "title": "A Fast and Precise Method for Large-Scale Land-Use Mapping Based on Deep Learning",
+      "source_type": "ACADEMIC_PREPRINT",
+      "publication_date": "2019-08-09T12:41:06Z",
+      "doi": "UNKNOWN",
+      "canonical_url": "https://arxiv.org/abs/1908.03438",
+      "retraction_status": "ACTIVE",
+      "verification_status": "PARTIAL"
+    },
+    {
+      "source_id": "arxiv:2403.06779",
+      "title": "From Factor Models to Deep Learning: Machine Learning in Reshaping Empirical Asset Pricing",
+      "source_type": "ACADEMIC_PREPRINT",
+      "publication_date": "2024-03-11T14:48:57Z",
+      "doi": "UNKNOWN",
+      "canonical_url": "https://arxiv.org/abs/2403.06779",
+      "retraction_status": "ACTIVE",
+      "verification_status": "PARTIAL"
+    },
+    {
+      "source_id": "arxiv:2602.12430",
+      "title": "Agent Skills for Large Language Models: Architecture, Acquisition, Security, and the Path Forward",
+      "source_type": "ACADEMIC_PREPRINT",
+      "publication_date": "2026-02-12T21:33:25Z",
+      "doi": "UNKNOWN",
+      "canonical_url": "https://arxiv.org/abs/2602.12430",
+      "retraction_status": "ACTIVE",
+      "verification_status": "PARTIAL"
+    },
+    {
+      "source_id": "arxiv:1907.01463",
+      "title": "Reproducibility in Machine Learning for Health",
+      "source_type": "ACADEMIC_PREPRINT",
+      "publication_date": "2019-07-02T15:46:46Z",
+      "doi": "UNKNOWN",
+      "canonical_url": "https://arxiv.org/abs/1907.01463",
+      "retraction_status": "ACTIVE",
+      "verification_status": "PARTIAL"
+    },
+    {
+      "source_id": "arxiv:2201.12885",
+      "title": "Computational Metacognition",
+      "source_type": "ACADEMIC_PREPRINT",
+      "publication_date": "2022-01-30T17:34:53Z",
+      "doi": "UNKNOWN",
+      "canonical_url": "https://arxiv.org/abs/2201.12885",
+      "retraction_status": "ACTIVE",
+      "verification_status": "PARTIAL"
+    },
+    {
+      "source_id": "arxiv:2504.20113",
+      "title": "Transforming Evidence Synthesis: A Systematic Review of the Evolution of Automated Meta-Analysis in the Age of AI",
+      "source_type": "ACADEMIC_PREPRINT",
+      "publication_date": "2025-04-28T00:40:17Z",
+      "doi": "UNKNOWN",
+      "canonical_url": "https://arxiv.org/abs/2504.20113",
+      "retraction_status": "ACTIVE",
+      "verification_status": "PARTIAL"
+    },
+    {
+      "source_id": "arxiv:2407.06738",
+      "title": "Failure Transparency in Stateful Dataflow Systems (Technical Report)",
+      "source_type": "ACADEMIC_PREPRINT",
+      "publication_date": "2024-07-09T10:32:26Z",
+      "doi": "UNKNOWN",
+      "canonical_url": "https://arxiv.org/abs/2407.06738",
+      "retraction_status": "ACTIVE",
+      "verification_status": "PARTIAL"
+    },
+    {
+      "source_id": "arxiv:2412.12945",
+      "title": "Meta-analysis models relaxing the random effects normality assumption: methodological systematic review and simulation study",
+      "source_type": "ACADEMIC_PREPRINT",
+      "publication_date": "2024-12-17T14:26:01Z",
+      "doi": "UNKNOWN",
+      "canonical_url": "https://arxiv.org/abs/2412.12945",
+      "retraction_status": "ACTIVE",
+      "verification_status": "PARTIAL"
+    },
+    {
+      "source_id": "arxiv:cs/9905014",
+      "title": "Hierarchical Reinforcement Learning with the MAXQ Value Function Decomposition",
+      "source_type": "ACADEMIC_PREPRINT",
+      "publication_date": "1999-05-21T14:26:07Z",
+      "doi": "UNKNOWN",
+      "canonical_url": "https://arxiv.org/abs/cs/9905014",
+      "retraction_status": "ACTIVE",
+      "verification_status": "PARTIAL"
+    },
+    {
+      "source_id": "arxiv:2406.09823",
+      "title": "From Manifestations to Cognitive Architectures: a Scalable Framework",
+      "source_type": "ACADEMIC_PREPRINT",
+      "publication_date": "2024-06-14T08:26:26Z",
+      "doi": "10.1007/978-3-031-65572-2_10",
+      "canonical_url": "https://arxiv.org/abs/2406.09823",
+      "retraction_status": "ACTIVE",
+      "verification_status": "PARTIAL"
+    },
+    {
+      "source_id": "arxiv:2607.05775",
+      "title": "Beyond the Leaderboard: A Synthesis of Tool-Use, Planning, and Reasoning Failures in Large Language Model Agents",
+      "source_type": "ACADEMIC_PREPRINT",
+      "publication_date": "2026-07-07T03:05:13Z",
+      "doi": "UNKNOWN",
+      "canonical_url": "https://arxiv.org/abs/2607.05775",
+      "retraction_status": "ACTIVE",
+      "verification_status": "PARTIAL"
+    },
+    {
+      "source_id": "arxiv:1805.03549",
+      "title": "Efficient Utility-Driven Self-Healing Employing Adaptation Rules for Large Dynamic Architectures",
+      "source_type": "ACADEMIC_PREPRINT",
+      "publication_date": "2018-05-09T14:19:06Z",
+      "doi": "10.1109/ICAC.2017.35",
+      "canonical_url": "https://arxiv.org/abs/1805.03549",
+      "retraction_status": "ACTIVE",
+      "verification_status": "PARTIAL"
+    },
+    {
+      "source_id": "arxiv:2007.05261",
+      "title": "Self-healing Dilemmas in Distributed Systems: Fault Correction vs. Fault Tolerance",
+      "source_type": "ACADEMIC_PREPRINT",
+      "publication_date": "2020-07-10T09:10:00Z",
+      "doi": "10.1007/s10458-020-09486-3",
+      "canonical_url": "https://arxiv.org/abs/2007.05261",
+      "retraction_status": "ACTIVE",
+      "verification_status": "PARTIAL"
+    }
+  ]
+}

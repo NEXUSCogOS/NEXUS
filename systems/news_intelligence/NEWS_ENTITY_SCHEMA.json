@@ -1,0 +1,34 @@
+{
+  "ExtractedEntity": {
+    "fields": [
+      "surface_form",
+      "entity_type",
+      "canonical_entity",
+      "resolution_state",
+      "resolution_basis",
+      "resolution_confidence"
+    ]
+  },
+  "EntityType": [
+    "PERSON",
+    "COMPANY",
+    "TICKER",
+    "GOVERNMENT_BODY",
+    "LOCATION",
+    "PROJECT",
+    "INDUSTRY",
+    "COMMODITY",
+    "COUNTRY",
+    "ORGANIZATION",
+    "UNKNOWN"
+  ],
+  "EntityResolutionState": [
+    "RESOLVED",
+    "AMBIGUOUS",
+    "UNRESOLVED"
+  ],
+  "reference_data_sources": {
+    "COMPANY/TICKER": "Sentinel companies table (123 real Vietnamese listed companies)",
+    "LOCATION": "fixed list of 63 Vietnamese provincial administrative units"
+  }
+}

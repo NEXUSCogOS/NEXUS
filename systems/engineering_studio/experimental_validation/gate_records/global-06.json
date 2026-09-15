@@ -1,0 +1,14 @@
+{
+  "gate_id": "global-06",
+  "gate": "monitoring detects a deliberately injected non-destructive failure",
+  "status": "PASS",
+  "reviewer": "GPT-5.6-Sol-assisted-adjudication-002",
+  "verified_at": "2026-09-14T00:59:25.584835+00:00",
+  "contradictions_resolved": true,
+  "evidence_refs": [
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_MACHINE_CLOSURE_002_20260914T005925Z/monitoring/global-06.json",
+      "sha256": "bab7fc8ed92cf03c996d97d7d0a78ce8e5cba2a5a874a98d2eb0722ee4027ae3"
+    }
+  ]
+}

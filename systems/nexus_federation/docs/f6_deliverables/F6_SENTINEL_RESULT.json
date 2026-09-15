@@ -1,0 +1,59 @@
+{
+  "pid": 94894,
+  "already_claimed": false,
+  "mission_id": "9b1cfb8e-7a25-5dba-8179-115bf05f58db-mission-s",
+  "delegation_id": "face8245-baf3-55f7-8492-e5b79c5b2727",
+  "claim_id": "7f7e4a24-e96e-4bb1-bbfc-2c11e5c923b4",
+  "report_id": "64404a43-cde1-446c-88f7-b413abb99a00",
+  "entity_mappings": [
+    {
+      "ticker": "KBC",
+      "classification": "INDIRECT",
+      "basis": "Sentinel's own `companies` table discloses sector='B\u1ea5t \u0111\u1ed9ng s\u1ea3n' (real estate) for KBC (Kinh Bac City Development Holding Corporation) -- a genuine sector-level data field, not a name-based guess. No Sentinel-disclosed text confirms a specific Dong Nai/Long Thanh facility, so this is sector-plausible exposure, not confirmed direct exposure."
+    },
+    {
+      "ticker": "SZC",
+      "classification": "INDIRECT",
+      "basis": "Sentinel's own `companies` table discloses sector='B\u1ea5t \u0111\u1ed9ng s\u1ea3n' (real estate) for SZC (Sonadezi Chau Duc Shareholding Company) -- a genuine sector-level data field, not a name-based guess. No Sentinel-disclosed text confirms a specific Dong Nai/Long Thanh facility, so this is sector-plausible exposure, not confirmed direct exposure."
+    },
+    {
+      "ticker": "GVR",
+      "classification": "HYPOTHETICAL",
+      "basis": "Sentinel's own `companies` table discloses sector='SX Nh\u1ef1a - H\u00f3a ch\u1ea5t' for GVR (Viet Nam Rubber Group - Joint Stock Company) -- not a real-estate/industrial-park sector classification. Public knowledge outside Sentinel's data suggests this company has industrial land holdings, but Sentinel's own governed data neither confirms nor addresses this, so any link is a hypothesis, not a sector-supported inference."
+    },
+    {
+      "ticker": "IDC",
+      "classification": "HYPOTHETICAL",
+      "basis": "Sentinel's own `companies` table discloses sector='Ti\u1ec7n \u00edch' for IDC (IDICO Corporation - JSC) -- not a real-estate/industrial-park sector classification. Public knowledge outside Sentinel's data suggests this company has industrial land holdings, but Sentinel's own governed data neither confirms nor addresses this, so any link is a hypothesis, not a sector-supported inference."
+    },
+    {
+      "ticker": "LHG",
+      "classification": "UNKNOWN",
+      "basis": "LHG has no row in Sentinel's own `companies` table -- no sector/name data governed by Sentinel exists for it, despite being a real, publicly known industrial-park-adjacent operator. Cannot classify beyond UNKNOWN from Sentinel's own data."
+    }
+  ],
+  "exec_pairs_decisions": [
+    [
+      "SHADOW",
+      0
+    ]
+  ],
+  "exec_pairs_shadow": [
+    [
+      "SHADOW",
+      0
+    ]
+  ],
+  "shadow_execution_count": 14,
+  "federation_store_path": "/tmp/f6_final_run2.db",
+  "resource_usage": {
+    "cpu_seconds": 0.006565,
+    "peak_rss_bytes": 37535744,
+    "elapsed_seconds": 0.007153,
+    "local_storage_delta_bytes": null,
+    "external_storage_activity": null,
+    "api_calls": null,
+    "api_cost_usd": null,
+    "model_tokens": null
+  }
+}

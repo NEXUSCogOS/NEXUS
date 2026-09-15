@@ -1,0 +1,43 @@
+# DAT.AI backend — Python 3.11 only.
+#
+# torch 2.1.2 / torchvision 0.16.2 have no wheels for Python 3.13 and were
+# proven incompatible. Do not upgrade torch/torchvision without re-running
+# tests/unit/test_model_and_geometry.py and re-auditing the classifier.
+
+# --- web ---
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+pydantic==2.7.4
+
+# --- database ---
+psycopg2-binary==2.9.9
+sqlalchemy==2.0.30
+geoalchemy2==0.15.0
+
+# --- geospatial ---
+# rasterio bundles GDAL with JP2OpenJPEG, required to decode Sentinel-2 .jp2
+# assets. pyproj handles UTM -> EPSG:4326. shapely does polygon repair.
+#
+# rasterio is pinned to 1.4.4: 1.3.x publishes no linux/arm64 wheel, so the
+# Docker build fell back to an sdist whose build requirements pin an
+# unavailable numpy release candidate. Verified to resolve --only-binary on
+# both macOS arm64 and linux arm64.
+rasterio==1.4.4
+pyproj==3.6.1
+shapely==2.0.6
+affine==2.4.0
+
+# --- numerics / ML ---
+numpy==1.26.4
+torch==2.1.2
+torchvision==0.16.2
+pillow==10.1.0
+
+# --- acquisition ---
+requests==2.32.3
+boto3==1.34.0
+botocore==1.34.0
+
+# --- scheduling / CLI ---
+apscheduler==3.10.4
+click==8.1.7

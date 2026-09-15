@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "status": "SPECIFIED_NOT_ACTIVATED",
+  "authority": "NONE",
+  "experiment_execution": "PROHIBITED",
+  "experiment_state_transition": "PROHIBITED",
+  "experimental_registry_mutation": "PROHIBITED",
+  "automatic_gate_satisfaction": "PROHIBITED",
+  "candidate_path": "${NEXUS_ROOT}/systems/engineering_studio/experimental_validation",
+  "candidate_verified": true,
+  "candidate_verified_utc": "20260915T113036Z",
+  "interface_direction": "EVA_EVIDENCE_REFERENCE_TO_EV_CONSUMER",
+  "activation_required": true
+}

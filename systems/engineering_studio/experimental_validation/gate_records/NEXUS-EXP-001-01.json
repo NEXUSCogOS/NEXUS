@@ -1,0 +1,18 @@
+{
+  "gate_id": "NEXUS-EXP-001-01",
+  "gate": "federation E2E path commissioned",
+  "status": "PASS",
+  "reviewer": "GPT-5.6-Sol-assisted-evidence-adjudication-003",
+  "verified_at": "2026-09-14T02:45:11.183182+00:00",
+  "contradictions_resolved": true,
+  "evidence_refs": [
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_F6_IMPORT_REPAIR_20260914T024345Z/evidence/F6_RETEST.json",
+      "sha256": "13697f22c9b12a791df0fe68e33f5687d1dbe99d658d8ea3f19cc738203ceae9"
+    },
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_F6_IMPORT_REPAIR_20260914T024345Z/logs/F6_RETEST.log",
+      "sha256": "a6ea1abfae7ffea3735697f93b0ce65996348a56c4ceb6b0bb4b4034e8046270"
+    }
+  ]
+}

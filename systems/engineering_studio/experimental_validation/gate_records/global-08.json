@@ -1,0 +1,14 @@
+{
+  "gate_id": "global-08",
+  "gate": "secrets and live financial operations are excluded from experiment scope",
+  "status": "PASS",
+  "reviewer": "GPT-5.6-Sol-assisted-adjudication-002",
+  "verified_at": "2026-09-14T00:59:25.584835+00:00",
+  "contradictions_resolved": true,
+  "evidence_refs": [
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_MACHINE_CLOSURE_002_20260914T005925Z/evidence/global-08.json",
+      "sha256": "6cc575179ef19d75673046965411532f6a462f4d94f21aa536ca595879cdfd59"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "system": "Engineering Studio",
+  "purpose": "Autonomous engineering evolution subsystem for NEXUS Cog OS",
+
+  "current_capabilities": [
+    "repository_analysis",
+    "planning",
+    "governed_execution",
+    "testing",
+    "evidence_logging",
+    "scientific_measurement",
+    "learning"
+  ],
+
+  "development_targets": [
+    "frontier_method_comparison",
+    "autonomous_research",
+    "self_optimisation",
+    "architecture_evolution",
+    "benchmark_driven_improvement"
+  ],
+
+  "experiments": []
+}

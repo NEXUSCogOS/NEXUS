@@ -1,0 +1,16 @@
+{
+  "trigger_id": "9b1cfb8e-7a25-5dba-8179-115bf05f58db",
+  "librarian_relevance": {
+    "relevant": true,
+    "reason": "candidate_implications include policy/research-relevant tag(s) ['policy', 'economic'], and the trigger cites a real, traceable authoritative source (source_url:https://drive.google.com/file/d/1SusRNW4tQEtswqSoVkqbML-0wLTikWen/view?usp=sharing) -- not a bare assertion. Librarian's commissioned bounded-research capability can independently verify policy/economic/research context for this geography."
+  },
+  "sentinel_relevance": {
+    "relevant": true,
+    "reason": "candidate_implications include financial/sector-relevant tag(s) ['economic', 'sector'], and geography ('Long Thanh district, Dong Nai province, Vietnam') is within Sentinel's covered market (Vietnamese equities). Sentinel's read-only analysis executor can check its real universe for any company/sector with declared exposure to this geography."
+  },
+  "attention": {
+    "total_score": 6,
+    "requires_attention": true,
+    "basis": "evidence_quality=1(gov_source=False) + materiality=2(0.65) + geographic_scope=1 + cross_domain_relevance=2(2 institutions) + novelty=1 + time_sensitivity=0(freshness=STALE_BUT_USABLE_AS_HISTORICAL_CONTEXT) + institutional_coverage=1 + uncertainty_penalty=-2 = 6 (threshold=4)"
+  }
+}

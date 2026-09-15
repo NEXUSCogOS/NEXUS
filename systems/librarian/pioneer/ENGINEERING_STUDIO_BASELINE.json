@@ -1,0 +1,24 @@
+{
+  "baseline_id": "PIONEER-ENGINEERING-TAKEOVER-2026-08-31",
+  "status": "PASS_WITH_BLOCKED_RESEARCH",
+  "purpose": "Comparison anchor; a changed hash is a review trigger, not automatically a defect.",
+  "database_identity": {
+    "academic_corpus": {"sha256": "112ff545f5427fc4ffb76abd11d534621e44637fe63b503a83703604a205ae49", "sources": 22, "fts_rows": 22, "citation_edges": 0},
+    "retrieval_corpus": {"sha256": "cad4bf0c51f7ef7f4ea3addad5fd7684b517668a6759173eda5a0cc779988f8c", "sources": 93, "documents": 297, "ingestion_events": 202}
+  },
+  "control_identity": {
+    "resource_optimization_sha256": "fb7acc851df44f9829c4ff24956104958cd4c97f4ae343a86dffeaa1b6f16be9",
+    "pioneer_audit_sha256": "048f52f18ceb0c582c0a87a5137ee6309de61adb6bb9a3c9fe0c75543ac013a2",
+    "journal_sha256": "facf49702e19ee8434227cf64fe4c07f1f9c53cc5d278802ea3d8dcf60d089c7",
+    "journal_index_sha256": "0f236ab4872da466d48c275ac255f8b400d8354dd6e19aff62710d5384e7afab",
+    "storage_policy_sha256": "888ec7841845ea15b2f2d8dbf397fc33dd56b6c118c1c831a5f83f2ba67a415d"
+  },
+  "tests": {"passed": 127, "failed": 0, "duration_seconds": 14.95},
+  "change_classification": ["IMPROVEMENT", "REGRESSION", "EXPECTED_GROWTH", "UNVERIFIED"],
+  "scientific_boundaries": {
+    "experiments": "6_BLOCKED",
+    "publications": "NOT_STARTED_EVIDENCE_GATES_BLOCKED",
+    "external_truth": "PARTIALLY_CORROBORATED_NOT_CORPUS_WIDE",
+    "performance": "RETRIEVAL_EQUIVALENT; NO_CURRENT_SPEEDUP_CLAIM"
+  }
+}

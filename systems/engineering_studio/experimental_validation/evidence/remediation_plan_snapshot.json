@@ -1,0 +1,282 @@
+[
+  {
+    "gate_id": "global-01",
+    "scope": "GLOBAL",
+    "gate": "canonical code, configuration, dataset and database authority recorded",
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "action": "Inspect non-circular candidate evidence; verify exact gate satisfaction and hashes.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "global-02",
+    "scope": "GLOBAL",
+    "gate": "required services healthy for the preregistered observation window",
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "action": "Inspect non-circular candidate evidence; verify exact gate satisfaction and hashes.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "global-03",
+    "scope": "GLOBAL",
+    "gate": "clean-environment build or environment lock reproduced",
+    "closure_class": "TECHNICAL_TEST_REQUIRED_OR_EXISTING_TEST_REVIEW",
+    "action": "Prefer existing recent technical evidence; otherwise perform a new isolated non-destructive verification test.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "global-04",
+    "scope": "GLOBAL",
+    "gate": "research data physically or logically isolated from production writers",
+    "closure_class": "TECHNICAL_TEST_REQUIRED_OR_EXISTING_TEST_REVIEW",
+    "action": "Prefer existing recent technical evidence; otherwise perform a new isolated non-destructive verification test.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "global-05",
+    "scope": "GLOBAL",
+    "gate": "backup integrity verified and at least one restore rehearsal passed",
+    "closure_class": "TECHNICAL_TEST_REQUIRED_OR_EXISTING_TEST_REVIEW",
+    "action": "Prefer existing recent technical evidence; otherwise perform a new isolated non-destructive verification test.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "global-06",
+    "scope": "GLOBAL",
+    "gate": "monitoring detects a deliberately injected non-destructive failure",
+    "closure_class": "TECHNICAL_TEST_REQUIRED_OR_EXISTING_TEST_REVIEW",
+    "action": "Prefer existing recent technical evidence; otherwise perform a new isolated non-destructive verification test.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "global-07",
+    "scope": "GLOBAL",
+    "gate": "dataset snapshots are immutable, hashed, licensed and provenance-complete",
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "action": "Inspect non-circular candidate evidence; verify exact gate satisfaction and hashes.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "global-08",
+    "scope": "GLOBAL",
+    "gate": "secrets and live financial operations are excluded from experiment scope",
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "action": "Inspect non-circular candidate evidence; verify exact gate satisfaction and hashes.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "global-09",
+    "scope": "GLOBAL",
+    "gate": "protocol, analysis code, thresholds and stopping rules are frozen",
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "action": "Inspect non-circular candidate evidence; verify exact gate satisfaction and hashes.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "global-10",
+    "scope": "GLOBAL",
+    "gate": "independent reviewer signs the readiness record",
+    "closure_class": "HUMAN_ATTESTATION_REQUIRED",
+    "action": "Obtain genuine independent human review/adjudication/replication evidence.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "NEXUS-EXP-001-01",
+    "scope": "NEXUS-EXP-001",
+    "gate": "federation E2E path commissioned",
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "action": "Inspect non-circular candidate evidence; verify exact gate satisfaction and hashes.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "NEXUS-EXP-001-02",
+    "scope": "NEXUS-EXP-001",
+    "gate": "research domain READY",
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "action": "Inspect non-circular candidate evidence; verify exact gate satisfaction and hashes.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "NEXUS-EXP-001-03",
+    "scope": "NEXUS-EXP-001",
+    "gate": "no fallback placeholder mode",
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "action": "Inspect non-circular candidate evidence; verify exact gate satisfaction and hashes.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "NEXUS-EXP-001-04",
+    "scope": "NEXUS-EXP-001",
+    "gate": "corpus and event log restore tested",
+    "closure_class": "TECHNICAL_TEST_REQUIRED_OR_EXISTING_TEST_REVIEW",
+    "action": "Prefer existing recent technical evidence; otherwise perform a new isolated non-destructive verification test.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "NEXUS-EXP-002-01",
+    "scope": "NEXUS-EXP-002",
+    "gate": "provenance schema frozen",
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "action": "Inspect non-circular candidate evidence; verify exact gate satisfaction and hashes.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "NEXUS-EXP-002-02",
+    "scope": "NEXUS-EXP-002",
+    "gate": "quarantine path writable and auditable",
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "action": "Inspect non-circular candidate evidence; verify exact gate satisfaction and hashes.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "NEXUS-EXP-002-03",
+    "scope": "NEXUS-EXP-002",
+    "gate": "restore rehearsal passed",
+    "closure_class": "TECHNICAL_TEST_REQUIRED_OR_EXISTING_TEST_REVIEW",
+    "action": "Prefer existing recent technical evidence; otherwise perform a new isolated non-destructive verification test.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "NEXUS-EXP-002-04",
+    "scope": "NEXUS-EXP-002",
+    "gate": "test store demonstrably isolated",
+    "closure_class": "TECHNICAL_TEST_REQUIRED_OR_EXISTING_TEST_REVIEW",
+    "action": "Prefer existing recent technical evidence; otherwise perform a new isolated non-destructive verification test.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "NEXUS-EXP-003-01",
+    "scope": "NEXUS-EXP-003",
+    "gate": "benchmark labels complete",
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "action": "Inspect non-circular candidate evidence; verify exact gate satisfaction and hashes.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "NEXUS-EXP-003-02",
+    "scope": "NEXUS-EXP-003",
+    "gate": "corpus snapshot immutable",
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "action": "Inspect non-circular candidate evidence; verify exact gate satisfaction and hashes.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "NEXUS-EXP-003-03",
+    "scope": "NEXUS-EXP-003",
+    "gate": "retrieval configuration frozen",
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "action": "Inspect non-circular candidate evidence; verify exact gate satisfaction and hashes.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "NEXUS-EXP-003-04",
+    "scope": "NEXUS-EXP-003",
+    "gate": "independent adjudicator assigned",
+    "closure_class": "HUMAN_ATTESTATION_REQUIRED",
+    "action": "Obtain genuine independent human review/adjudication/replication evidence.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "NEXUS-EXP-004-01",
+    "scope": "NEXUS-EXP-004",
+    "gate": "Research Assistant interface explicitly commissioned",
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "action": "Inspect non-circular candidate evidence; verify exact gate satisfaction and hashes.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "NEXUS-EXP-004-02",
+    "scope": "NEXUS-EXP-004",
+    "gate": "classification ontology frozen",
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "action": "Inspect non-circular candidate evidence; verify exact gate satisfaction and hashes.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "NEXUS-EXP-004-03",
+    "scope": "NEXUS-EXP-004",
+    "gate": "citation passage storage operational",
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "action": "Inspect non-circular candidate evidence; verify exact gate satisfaction and hashes.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "NEXUS-EXP-004-04",
+    "scope": "NEXUS-EXP-004",
+    "gate": "expert adjudicators assigned",
+    "closure_class": "HUMAN_ATTESTATION_REQUIRED",
+    "action": "Obtain genuine independent human review/adjudication/replication evidence.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "NEXUS-EXP-005-01",
+    "scope": "NEXUS-EXP-005",
+    "gate": "tested restore",
+    "closure_class": "TECHNICAL_TEST_REQUIRED_OR_EXISTING_TEST_REVIEW",
+    "action": "Prefer existing recent technical evidence; otherwise perform a new isolated non-destructive verification test.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "NEXUS-EXP-005-02",
+    "scope": "NEXUS-EXP-005",
+    "gate": "research/production physical or logical separation",
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "action": "Inspect non-circular candidate evidence; verify exact gate satisfaction and hashes.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "NEXUS-EXP-005-03",
+    "scope": "NEXUS-EXP-005",
+    "gate": "writer identities known",
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "action": "Inspect non-circular candidate evidence; verify exact gate satisfaction and hashes.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "NEXUS-EXP-005-04",
+    "scope": "NEXUS-EXP-005",
+    "gate": "disk headroom safe",
+    "closure_class": "TECHNICAL_TEST_REQUIRED_OR_EXISTING_TEST_REVIEW",
+    "action": "Prefer existing recent technical evidence; otherwise perform a new isolated non-destructive verification test.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "NEXUS-EXP-005-05",
+    "scope": "NEXUS-EXP-005",
+    "gate": "schema and unit conflicts resolved",
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "action": "Inspect non-circular candidate evidence; verify exact gate satisfaction and hashes.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "NEXUS-EXP-006-01",
+    "scope": "NEXUS-EXP-006",
+    "gate": "original experiment completed validly",
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "action": "Inspect non-circular candidate evidence; verify exact gate satisfaction and hashes.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "NEXUS-EXP-006-02",
+    "scope": "NEXUS-EXP-006",
+    "gate": "evidence bundle sealed",
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "action": "Inspect non-circular candidate evidence; verify exact gate satisfaction and hashes.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "NEXUS-EXP-006-03",
+    "scope": "NEXUS-EXP-006",
+    "gate": "replicator independent",
+    "closure_class": "HUMAN_ATTESTATION_REQUIRED",
+    "action": "Obtain genuine independent human review/adjudication/replication evidence.",
+    "automatic_pass_allowed": false
+  },
+  {
+    "gate_id": "NEXUS-EXP-006-04",
+    "scope": "NEXUS-EXP-006",
+    "gate": "clean environment available",
+    "closure_class": "TECHNICAL_TEST_REQUIRED_OR_EXISTING_TEST_REVIEW",
+    "action": "Prefer existing recent technical evidence; otherwise perform a new isolated non-destructive verification test.",
+    "automatic_pass_allowed": false
+  }
+]

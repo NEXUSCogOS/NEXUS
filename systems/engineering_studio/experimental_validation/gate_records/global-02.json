@@ -1,0 +1,22 @@
+{
+  "gate_id": "global-02",
+  "gate": "required services healthy for the preregistered observation window",
+  "status": "PASS",
+  "reviewer": "GPT-5.6-Sol-assisted-adjudication-003",
+  "verified_at": "2026-09-14T01:16:10.107550+00:00",
+  "contradictions_resolved": true,
+  "evidence_refs": [
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_GLOBAL02_OBSERVATION_20260914T010139Z/PREREGISTERED_OBSERVATION.json",
+      "sha256": "011ad4ebf04ce9c588e25bf282fe8bb013e1db4d8bc0850fc64a163c0e59505a"
+    },
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_GLOBAL02_OBSERVATION_20260914T010139Z/OBSERVATIONS.json",
+      "sha256": "ec32e29f5221c842452967a454e7a35c0272d4cca7b99fbf953bdeb4ff623f52"
+    },
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_GLOBAL02_OBSERVATION_20260914T010139Z/GLOBAL02_RESULT.json",
+      "sha256": "ced7b7c00cdb02d05c441bcc4822661c697de39d7de11315319352c1a3d75d96"
+    }
+  ]
+}

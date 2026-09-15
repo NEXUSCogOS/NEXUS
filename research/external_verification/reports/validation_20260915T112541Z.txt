@@ -1,0 +1,89 @@
+PASS: directory 00_master/governance
+PASS: directory 00_protocol_review
+PASS: directory 01_scientific_replication
+PASS: directory 02_agent_evaluation
+PASS: directory 03_software_assurance
+PASS: directory 04_cleanroom_reproduction
+PASS: directory 05_professional_assurance
+PASS: directory registry
+PASS: directory schemas
+PASS: directory tools
+PASS: directory reports
+PASS: directory logs
+PASS: artifact INSTALL_STATE
+PASS: artifact 00_master/governance/PROGRESSIVE_ASSURANCE.md
+PASS: artifact 00_master/governance/HARD_INVARIANTS.md
+PASS: artifact 00_master/governance/LIFECYCLE.md
+PASS: artifact 00_master/governance/SEPARATION_OF_DUTIES.md
+PASS: artifact 00_protocol_review/templates/PROTOCOL_REVIEW.md
+PASS: artifact 01_scientific_replication/templates/REPLICATION.md
+PASS: artifact 02_agent_evaluation/templates/AGENT_EVALUATION.md
+PASS: artifact 03_software_assurance/templates/SOFTWARE_ASSURANCE.md
+PASS: artifact 04_cleanroom_reproduction/templates/CLEANROOM.md
+PASS: artifact 05_professional_assurance/templates/PROFESSIONAL_ASSURANCE.md
+PASS: artifact 00_master/independence/EXTERNAL_REVIEWER_ATTESTATION.md
+PASS: artifact 00_master/claims/CLAIM_TEMPLATE.md
+PASS: artifact registry/claims/CLAIM_REGISTER.json
+PASS: artifact registry/verifiers/VERIFIER_REGISTER.json
+PASS: artifact registry/organisations/ORGANISATION_REGISTER.json
+PASS: artifact registry/packages/PACKAGE_REGISTER.json
+PASS: artifact registry/evidence/EVIDENCE_REGISTER.json
+PASS: artifact registry/conflicts/CONFLICT_REGISTER.json
+PASS: artifact registry/attestations/ATTESTATION_REGISTER.json
+PASS: artifact registry/events/EVENT_LEDGER.json
+PASS: artifact schemas/claim.schema.json
+PASS: artifact schemas/verifier.schema.json
+PASS: artifact schemas/package.schema.json
+PASS: artifact schemas/external_result.schema.json
+PASS: artifact schemas/conflict.schema.json
+PASS: artifact schemas/lifecycle.json
+PASS: artifact schemas/event.schema.json
+PASS: artifact registry/EXPERIMENTAL_VALIDATION_INTERFACE_STATUS.json
+PASS: artifact reports/experimental_validation_discovery.txt
+PASS: JSON parse registry/EXPERIMENTAL_VALIDATION_INTERFACE_STATUS.json
+PASS: JSON parse registry/attestations/ATTESTATION_REGISTER.json
+PASS: JSON parse registry/claims/CLAIM_REGISTER.json
+PASS: JSON parse registry/conflicts/CONFLICT_REGISTER.json
+PASS: JSON parse registry/events/EVENT_LEDGER.json
+PASS: JSON parse registry/evidence/EVIDENCE_REGISTER.json
+PASS: JSON parse registry/organisations/ORGANISATION_REGISTER.json
+PASS: JSON parse registry/packages/PACKAGE_REGISTER.json
+PASS: JSON parse registry/verifiers/VERIFIER_REGISTER.json
+PASS: JSON parse schemas/claim.schema.json
+PASS: JSON parse schemas/conflict.schema.json
+PASS: JSON parse schemas/event.schema.json
+PASS: JSON parse schemas/external_result.schema.json
+PASS: JSON parse schemas/lifecycle.json
+PASS: JSON parse schemas/package.schema.json
+PASS: JSON parse schemas/verifier.schema.json
+PASS: authority barrier STATUS=CANONICAL_CANDIDATE
+PASS: authority barrier EXPERIMENT_EXECUTION=PROHIBITED
+PASS: authority barrier EXPERIMENT_STATE_TRANSITION=PROHIBITED
+PASS: authority barrier EXPERIMENT_REGISTRY_MUTATION=PROHIBITED
+PASS: authority barrier SELF_VERIFICATION=PROHIBITED
+PASS: authority barrier EXTERNAL_VERDICT_GENERATION=PROHIBITED
+PASS: authority barrier EXTERNAL_VERDICT_MUTATION=PROHIBITED
+PASS: EV integration remains pending
+PASS: EV integration authority NONE
+PASS: EV experiment execution prohibited
+PASS: EV state transition prohibited
+PASS: EV registry mutation prohibited
+PASS: automatic gate satisfaction prohibited
+PASS: ordinary internal experimentation requires zero external layers
+PASS: L1 scientific replication policy
+PASS: L4 clean-room policy
+PASS: L3 control assurance policy
+PASS: verification lifecycle ordering
+PASS: SEALED terminal state
+PASS: external verdict domain preserves negative/inconclusive outcomes
+
+======================================================================
+NEXUS-EVA VALIDATION
+======================================================================
+PASSES   = 78
+FAILURES = 0
+RESULT = PASS
+
+NOTE: This validates the EVA installation.
+NOTE: It does NOT externally validate NEXUS.
+NOTE: It does NOT grant canonical authority.

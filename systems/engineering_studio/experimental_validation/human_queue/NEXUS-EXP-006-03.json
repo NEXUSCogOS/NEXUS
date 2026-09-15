@@ -1,0 +1,13 @@
+{
+  "gate_id": "NEXUS-EXP-006-03",
+  "scope": "NEXUS-EXP-006",
+  "canonical_gate_text": "replicator independent",
+  "required_role": "INDEPENDENT_REPLICATOR",
+  "status": "PENDING_HUMAN_ATTESTATION",
+  "attestor": null,
+  "verified_at": null,
+  "evidence_refs": [],
+  "decision": null,
+  "machine_satisfiable": false,
+  "formal_pass_created": false
+}

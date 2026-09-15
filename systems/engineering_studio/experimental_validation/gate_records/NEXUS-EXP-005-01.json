@@ -1,0 +1,14 @@
+{
+  "gate_id": "NEXUS-EXP-005-01",
+  "gate": "tested restore",
+  "status": "PASS",
+  "reviewer": "GPT-5.6-Sol-assisted-adjudication-programme-001",
+  "verified_at": "2026-09-14T02:08:54.461421+00:00",
+  "contradictions_resolved": true,
+  "evidence_refs": [
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_REMAINING_PROGRAMME_20260914T020854Z/NEXUS-EXP-005/evidence/NEXUS-EXP-005-01.json",
+      "sha256": "09914e470801b3d0f692aa625465cb092317cfea7af059d56b00c91736547380"
+    }
+  ]
+}

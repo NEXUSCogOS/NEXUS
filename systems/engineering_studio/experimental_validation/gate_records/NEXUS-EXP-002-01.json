@@ -1,0 +1,18 @@
+{
+  "gate_id": "NEXUS-EXP-002-01",
+  "gate": "provenance schema frozen",
+  "status": "PASS",
+  "reviewer": "GPT-5.6-Sol-assisted-adjudication-001",
+  "verified_at": "2026-09-14T00:56:10.118269+00:00",
+  "contradictions_resolved": true,
+  "evidence_refs": [
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_REMEDIATION_001_20260914T005238Z/provenance/ACADEMIC_PROVENANCE_SCHEMA.frozen.json",
+      "sha256": "e4cef9e231c7d148e5becffd3233de98a410804cc3f625625c2f55446f052071"
+    },
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_REMEDIATION_001_20260914T005238Z/provenance/FREEZE_RECORD.txt",
+      "sha256": "bf1c712c28977a33689e08f25c23b6a1211c2655f432b090479326074af884dc"
+    }
+  ]
+}

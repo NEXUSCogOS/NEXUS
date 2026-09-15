@@ -1,0 +1,7 @@
+795b1d5249f5cf705a6e55031e31c4c401cb870b43e4e01c24d787e5c810343d  ./__pycache__/controller.cpython-313.pyc
+28c9cf644b1beb4dc75d0f2c51cca78c18a27be313d16bdb0e23448ba42922c6  ./config/programme.json
+86b5397ac47221673079ed9f415ad519d13bed4e234eea937b8f5971f1c07d1b  ./controller.py
+7dafe33eecee9c4430a464d6240667992df2596f2476a6e6ca352558a067935a  ./human_returns/README.md
+1847c3488c7dba39d63b60d2d5a51d1d5a4d032885cca7749ecc3b250824c893  ./status.sh
+88ad4457fbbbfb06822bfd2a84b31f4c7d7601bc8433332ffa93be9afc6081a3  ./tests/__pycache__/self_test.cpython-313.pyc
+85094f5c2fea0f3ef1da00ffba9854ecbca0b9139e10054afc0e5191a069b131  ./tests/self_test.py

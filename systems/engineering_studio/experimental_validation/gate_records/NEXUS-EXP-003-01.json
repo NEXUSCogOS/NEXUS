@@ -1,0 +1,18 @@
+{
+  "gate_id": "NEXUS-EXP-003-01",
+  "gate": "benchmark labels complete",
+  "status": "PASS",
+  "reviewer": "GPT-5.6-Sol-assisted-evidence-adjudication-003",
+  "verified_at": "2026-09-14T02:45:11.185214+00:00",
+  "contradictions_resolved": true,
+  "evidence_refs": [
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_MACHINE_CLOSURE_V2_20260914T024254Z/evidence/EXP003_01_BENCHMARK.json",
+      "sha256": "4643580c232e7f239c5fe3c56329594cb781262990efe35245fd3c523432eb9b"
+    },
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_MACHINE_CLOSURE_V2_20260914T024254Z/logs/EXP003_01_BENCHMARK.log",
+      "sha256": "7256316818e0211d1c4dc30d19c5b69dd944b4f7c923e409b47993643d15fb98"
+    }
+  ]
+}

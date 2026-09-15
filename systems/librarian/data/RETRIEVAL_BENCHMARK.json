@@ -1,0 +1,113 @@
+{
+  "k": 5,
+  "questions": [
+    {
+      "question_id": "Q1_cognitive_architecture",
+      "retrieved_ids": [
+        "2203.17255",
+        "2606.28045",
+        "2103.09072",
+        "2406.09823",
+        "2201.12885"
+      ],
+      "expected_relevant": [
+        "2103.09072",
+        "2203.17255",
+        "2606.28045",
+        "2406.09823"
+      ],
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.8,
+      "reciprocal_rank": 1.0,
+      "distractors_incorrectly_retrieved": [],
+      "source_quality_weighted_score": 0.083
+    },
+    {
+      "question_id": "Q2_autonomous_engineering",
+      "retrieved_ids": [
+        "2602.12430",
+        "2607.05775",
+        "2407.06738",
+        "2604.00835",
+        "2412.12945"
+      ],
+      "expected_relevant": [
+        "2604.00835",
+        "2607.05775",
+        "2602.12430"
+      ],
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.6,
+      "reciprocal_rank": 1.0,
+      "distractors_incorrectly_retrieved": [],
+      "source_quality_weighted_score": 0.083
+    },
+    {
+      "question_id": "Q3_evidence_provenance",
+      "retrieved_ids": [
+        "2504.20113",
+        "2412.12945",
+        "2201.12885",
+        "1907.01463",
+        "2607.05775"
+      ],
+      "expected_relevant": [
+        "1907.01463",
+        "2504.20113",
+        "2412.12945"
+      ],
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.6,
+      "reciprocal_rank": 1.0,
+      "distractors_incorrectly_retrieved": [],
+      "source_quality_weighted_score": 0.083
+    },
+    {
+      "question_id": "Q4_distributed_systems",
+      "retrieved_ids": [
+        "2007.05261",
+        "2010.11146",
+        "2407.06738",
+        "1805.03549",
+        "2104.08663"
+      ],
+      "expected_relevant": [
+        "2010.11146",
+        "2007.05261",
+        "1805.03549",
+        "2407.06738"
+      ],
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.8,
+      "reciprocal_rank": 1.0,
+      "distractors_incorrectly_retrieved": [
+        "2104.08663"
+      ],
+      "source_quality_weighted_score": 0.083
+    },
+    {
+      "question_id": "Q5_geospatial_science",
+      "retrieved_ids": [
+        "1908.03438",
+        "2107.10894",
+        "2004.01504",
+        "2602.12430",
+        "2604.00835"
+      ],
+      "expected_relevant": [
+        "1908.03438",
+        "2107.10894"
+      ],
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.4,
+      "reciprocal_rank": 1.0,
+      "distractors_incorrectly_retrieved": [
+        "2004.01504"
+      ],
+      "source_quality_weighted_score": 0.083
+    }
+  ],
+  "mean_recall_at_5": 1.0,
+  "mean_precision_at_5": 0.64,
+  "mrr": 1.0
+}

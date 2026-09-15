@@ -1,0 +1,78 @@
+{
+  "experiment_id": "NEXUS-EXP-001",
+  "subsystem_layer": "NEXUS federation -> Librarian end-to-end research pipeline",
+  "claim_under_test": "A bounded NEXUS research mission reaches Librarian, retrieves real corpus evidence, synthesises it, and returns a schema-valid InstitutionalReport with traceable citations and limitations.",
+  "falsifiable_hypothesis": "For a frozen set of supported and unsupported research missions, every accepted mission produces exactly one valid report whose claims resolve only to registered sources, while unsupported missions produce an explicit evidence-gap outcome and no fabricated support.",
+  "predicted_result": "100% contract-valid reports; 100% cited-source resolution; zero fabricated citations; unsupported controls labelled as gaps or insufficient evidence.",
+  "null_alternative_outcome": "At least one mission fails federation transport, emits an invalid report, cites an unregistered source, fabricates support, or silently converts an unsupported question into a supported claim.",
+  "independent_variables": [
+    "mission support condition: supported vs unsupported",
+    "federation invocation path"
+  ],
+  "dependent_variables": [
+    "report contract validity",
+    "source resolution rate",
+    "fabrication count",
+    "correct unsupported-outcome rate",
+    "end-to-end completion rate"
+  ],
+  "controls": [
+    "unsupported negative-control missions",
+    "known-answer positive-control missions",
+    "malformed-source provenance control"
+  ],
+  "dataset_source_requirements": [
+    "versioned mission fixture set",
+    "immutable snapshot of the registered academic corpus",
+    "separate held-out unsupported questions"
+  ],
+  "provenance_requirements": [
+    "source manifest identifier",
+    "content SHA-256",
+    "acquisition timestamp",
+    "licence",
+    "transformation/event chain",
+    "code commit and environment lock"
+  ],
+  "pre_registered_protocol": [
+    "freeze mission fixtures and corpus snapshot",
+    "start only after all global gates and experiment gates pass",
+    "invoke the public federation contract once per fixture",
+    "validate report schema and resolve every evidence/provenance reference",
+    "score outcomes with the frozen analysis script",
+    "retain stdout, stderr, reports and hashes"
+  ],
+  "acceptance_rejection_thresholds": {
+    "accept": "all reports valid; source resolution=100%; fabrication=0; unsupported outcome accuracy=100%",
+    "reject": "any fabricated/unresolvable citation or silent unsupported-to-supported conversion",
+    "otherwise": "INCONCLUSIVE and investigate transport-only failures"
+  },
+  "statistical_reproducibility_criteria": "Run at least 30 missions across at least 10 supported and 10 unsupported questions; repeat the full set on three clean runs; Wilson 95% lower bound for critical correctness proportions must be >=0.95.",
+  "contamination_leakage_checks": [
+    "held-out questions absent from prompts, fixtures and retrieval labels",
+    "corpus snapshot created before result scoring",
+    "no production database writes",
+    "negative controls searched for accidental keyword overlap"
+  ],
+  "execution_prerequisites_stability_gates": [
+    "federation E2E path commissioned",
+    "research domain READY",
+    "no fallback placeholder mode",
+    "corpus and event log restore tested"
+  ],
+  "evidence_artifacts": [
+    "mission fixtures",
+    "corpus manifest",
+    "InstitutionalReport outputs",
+    "schema-validation report",
+    "source-resolution report",
+    "run log and environment manifest"
+  ],
+  "replication_plan": "Independent operator repeats from the frozen bundle in a clean environment and compares content hashes plus scored endpoints.",
+  "external_literature_cross_check_status": "PENDING",
+  "contradictory_findings": [
+    "2026-08-28 evidence states the full federation E2E test was deferred despite component-level success."
+  ],
+  "result_status": "BLOCKED",
+  "final_verdict": "PENDING"
+}

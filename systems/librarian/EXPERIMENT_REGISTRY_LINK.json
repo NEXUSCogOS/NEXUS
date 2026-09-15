@@ -1,0 +1,7 @@
+{
+  "view": "librarian",
+  "registry_id": "NEXUS-EVR-001",
+  "canonical_path": "${NEXUS_ROOT}/systems/librarian/experiments/registry.json",
+  "experiment_ids": ["NEXUS-EXP-001", "NEXUS-EXP-002", "NEXUS-EXP-003", "NEXUS-EXP-004", "NEXUS-EXP-005", "NEXUS-EXP-006"],
+  "duplication_policy": "REFERENCE_ONLY_DO_NOT_COPY_RECORDS"
+}

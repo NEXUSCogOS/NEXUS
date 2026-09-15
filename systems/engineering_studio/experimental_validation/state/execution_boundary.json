@@ -1,0 +1,116 @@
+[
+  {
+    "experiment_id": "NEXUS-EXP-001",
+    "transition": {
+      "experiment_id": "NEXUS-EXP-001",
+      "decision": "BLOCKED",
+      "registry_mutation_allowed": false,
+      "reason": "REQUIRED_GATES_UNRESOLVED"
+    },
+    "freeze": {
+      "experiment_id": "NEXUS-EXP-001",
+      "freeze_authorized": false,
+      "reason": "CANONICAL_READY_REQUIRED"
+    },
+    "execution": {
+      "experiment_id": "NEXUS-EXP-001",
+      "execution_authorized": false,
+      "reason": "CANONICAL_READY_REQUIRED"
+    }
+  },
+  {
+    "experiment_id": "NEXUS-EXP-002",
+    "transition": {
+      "experiment_id": "NEXUS-EXP-002",
+      "decision": "BLOCKED",
+      "registry_mutation_allowed": false,
+      "reason": "REQUIRED_GATES_UNRESOLVED"
+    },
+    "freeze": {
+      "experiment_id": "NEXUS-EXP-002",
+      "freeze_authorized": false,
+      "reason": "CANONICAL_READY_REQUIRED"
+    },
+    "execution": {
+      "experiment_id": "NEXUS-EXP-002",
+      "execution_authorized": false,
+      "reason": "CANONICAL_READY_REQUIRED"
+    }
+  },
+  {
+    "experiment_id": "NEXUS-EXP-003",
+    "transition": {
+      "experiment_id": "NEXUS-EXP-003",
+      "decision": "BLOCKED",
+      "registry_mutation_allowed": false,
+      "reason": "REQUIRED_GATES_UNRESOLVED"
+    },
+    "freeze": {
+      "experiment_id": "NEXUS-EXP-003",
+      "freeze_authorized": false,
+      "reason": "CANONICAL_READY_REQUIRED"
+    },
+    "execution": {
+      "experiment_id": "NEXUS-EXP-003",
+      "execution_authorized": false,
+      "reason": "CANONICAL_READY_REQUIRED"
+    }
+  },
+  {
+    "experiment_id": "NEXUS-EXP-004",
+    "transition": {
+      "experiment_id": "NEXUS-EXP-004",
+      "decision": "BLOCKED",
+      "registry_mutation_allowed": false,
+      "reason": "REQUIRED_GATES_UNRESOLVED"
+    },
+    "freeze": {
+      "experiment_id": "NEXUS-EXP-004",
+      "freeze_authorized": false,
+      "reason": "CANONICAL_READY_REQUIRED"
+    },
+    "execution": {
+      "experiment_id": "NEXUS-EXP-004",
+      "execution_authorized": false,
+      "reason": "CANONICAL_READY_REQUIRED"
+    }
+  },
+  {
+    "experiment_id": "NEXUS-EXP-005",
+    "transition": {
+      "experiment_id": "NEXUS-EXP-005",
+      "decision": "BLOCKED",
+      "registry_mutation_allowed": false,
+      "reason": "REQUIRED_GATES_UNRESOLVED"
+    },
+    "freeze": {
+      "experiment_id": "NEXUS-EXP-005",
+      "freeze_authorized": false,
+      "reason": "CANONICAL_READY_REQUIRED"
+    },
+    "execution": {
+      "experiment_id": "NEXUS-EXP-005",
+      "execution_authorized": false,
+      "reason": "CANONICAL_READY_REQUIRED"
+    }
+  },
+  {
+    "experiment_id": "NEXUS-EXP-006",
+    "transition": {
+      "experiment_id": "NEXUS-EXP-006",
+      "decision": "BLOCKED",
+      "registry_mutation_allowed": false,
+      "reason": "REQUIRED_GATES_UNRESOLVED"
+    },
+    "freeze": {
+      "experiment_id": "NEXUS-EXP-006",
+      "freeze_authorized": false,
+      "reason": "CANONICAL_READY_REQUIRED"
+    },
+    "execution": {
+      "experiment_id": "NEXUS-EXP-006",
+      "execution_authorized": false,
+      "reason": "CANONICAL_READY_REQUIRED"
+    }
+  }
+]

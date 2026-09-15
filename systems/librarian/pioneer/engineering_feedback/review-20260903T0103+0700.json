@@ -1,0 +1,14 @@
+{
+  "checkpoint": "engineering-studio-20260903T0103+0700",
+  "status": "ESCALATED_OPERATIONAL_RELIABILITY_REVIEW",
+  "reviewed_feedback": 2,
+  "decisions": [
+    {"feedback_id": "PIONEER-FEEDBACK-7e64a6dd-78f0-4ea4-b9d1-f54889ad1bc4", "classification": "SUPERSEDED", "reason": "Implemented governance mechanisms remain validated.", "runtime_action": "NONE"},
+    {"feedback_id": "PIONEER-FEEDBACK-bb36102e-bdf2-4221-8871-fd9f0f6774eb", "classification": "ACCEPTED_FOR_CONSIDERATION", "priority": "ELEVATED", "reason": "Raw-verifier latency recurred at 687.661 seconds after one normal cycle; one scheduled checkpoint was also missed.", "evidence_linkage": "PASS", "duplicate": false, "risk": "LOW_FOR_READ_ONLY_DIAGNOSTICS_HIGHER_CADENCE_RISK_IF_UNRESOLVED", "recommendation": "Measure per-file latency and storage residency read-only; establish duration control limits; investigate scheduler delivery separately from corpus integrity.", "runtime_action": "NONE", "human_review": "PENDING"}
+  ],
+  "accepted_for_consideration": 1,
+  "rejected": 0,
+  "superseded": 1,
+  "unresolved": 1,
+  "policy": "CONSIDER_ONLY_DO_NOT_AUTO_EXECUTE"
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+
+  "github_owner": "nexuscogos-commits",
+  "public_brand": "NexusCogOS",
+
+  "repositories": [
+    {
+      "name": "nexuscogos-commits",
+      "type": "PROFILE",
+      "priority": 0,
+      "purpose": "Public NexusCogOS research profile and navigation surface.",
+      "publication_state": "LOCAL_ONLY"
+    },
+    {
+      "name": "agentic-engineering-benchmark",
+      "type": "RESEARCH",
+      "priority": 1,
+      "purpose": "Reproducible evaluation harness for agentic software-engineering systems.",
+      "publication_state": "LOCAL_ONLY"
+    },
+    {
+      "name": "engineering-studio",
+      "type": "RESEARCH",
+      "priority": 2,
+      "purpose": "Sanitised research implementation of governed autonomous engineering.",
+      "publication_state": "LOCAL_ONLY"
+    },
+    {
+      "name": "ai-evidence-provenance",
+      "type": "RESEARCH",
+      "priority": 3,
+      "purpose": "Traceable claim, evidence and provenance framework.",
+      "publication_state": "LOCAL_ONLY"
+    },
+    {
+      "name": "cumulative-agent-memory",
+      "type": "RESEARCH",
+      "priority": 4,
+      "purpose": "Experimental evaluation of cumulative agent-memory architectures.",
+      "publication_state": "LOCAL_ONLY"
+    }
+  ]
+}

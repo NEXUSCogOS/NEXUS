@@ -1,0 +1,32 @@
+{
+  "system_id": "NEXUS-PIONEER-001",
+  "canonical": true,
+  "mission": "Produce novel, falsifiable and reproducible knowledge through contradiction-seeking evidence synthesis and preregistered experiments.",
+  "execution_default": "DENY",
+  "principles": [
+    "FALSIFIABILITY_BEFORE_EXECUTION",
+    "RAW_EVIDENCE_IMMUTABILITY",
+    "PROVENANCE_FOR_EVERY_CLAIM",
+    "CONTRADICTION_AND_NULL_RESULT_SEARCH",
+    "UNCERTAINTY_AND_EFFECT_SIZE_REPORTING",
+    "CONTAMINATION_AND_LEAKAGE_CONTROL",
+    "INDEPENDENT_REPLICATION_BEFORE_ESTABLISHED_CLAIM",
+    "NO_PUBLICATION_WITHOUT_COMPLETED_EVIDENCE_GRAPH"
+  ],
+  "canonical_components": {
+    "librarian": "${NEXUS_ROOT}/systems/librarian",
+    "experiment_registry": "${NEXUS_ROOT}/systems/librarian/experiments/registry.json",
+    "research_assistant_view": "${NEXUS_ROOT}/systems/librarian/research_assistant/PIONEER_LINK.json",
+    "academic_corpus": "${NEXUS_ROOT}/systems/librarian/data/academic_corpus.db",
+    "retrieval_corpus": "${NEXUS_ROOT}/systems/librarian/data/librarian.db",
+    "resource_optimization": "${NEXUS_ROOT}/systems/librarian/pioneer/PIONEER_RESOURCE_OPTIMIZATION.json",
+    "storage_policy": "${NEXUS_ROOT}/systems/librarian/pioneer/PIONEER_STORAGE_POLICY.json",
+    "engineering_takeover": "${NEXUS_ROOT}/systems/librarian/pioneer/ENGINEERING_STUDIO_TAKEOVER.md"
+  },
+  "noncanonical_surfaces": [
+    "/Volumes/NEXUS/NEXUS_LOCAL/systems/librarian",
+    "/Volumes/NEXUS_ARCHIVE/07_RESEARCH_CORPUS",
+    "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/NEXUS/NEXUS_SPECIFICATIONS/04_RESEARCH_CORPUS",
+    "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/NEXUS/NEXUS_STUDIO_REVIEW/10_RESEARCH_CORPUS"
+  ]
+}

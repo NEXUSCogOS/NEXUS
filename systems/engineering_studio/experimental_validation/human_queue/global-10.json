@@ -1,0 +1,13 @@
+{
+  "gate_id": "global-10",
+  "scope": "GLOBAL",
+  "canonical_gate_text": "independent reviewer signs the readiness record",
+  "required_role": "INDEPENDENT_READINESS_REVIEWER",
+  "status": "PENDING_HUMAN_ATTESTATION",
+  "attestor": null,
+  "verified_at": null,
+  "evidence_refs": [],
+  "decision": null,
+  "machine_satisfiable": false,
+  "formal_pass_created": false
+}

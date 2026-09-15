@@ -1,0 +1,16 @@
+{
+  "counts_by_type": {
+    "ACADEMIC_COMPARISON": 0,
+    "DECISION": 2,
+    "FAILURE": 3,
+    "LESSON": 1,
+    "OPTIMIZATION": 0,
+    "REASONING": 0,
+    "SUCCESS": 2,
+    "THOUGHT": 0
+  },
+  "detail": "8 events verified",
+  "event_count": 8,
+  "last_event_sha256": "14e825dc6f615acaab92f12dbc4b6dda6ad3281d76daac75975a9ddb84f87e0e",
+  "status": "PASS"
+}

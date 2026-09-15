@@ -1,0 +1,26 @@
+{
+  "gate_id": "NEXUS-EXP-004-02",
+  "gate": "classification ontology frozen",
+  "status": "PASS",
+  "reviewer": "GPT-5.6-Sol-assisted-evidence-adjudication-003",
+  "verified_at": "2026-09-14T02:45:11.188842+00:00",
+  "contradictions_resolved": true,
+  "evidence_refs": [
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_MACHINE_CLOSURE_V2_20260914T024254Z/evidence/EXP004_TAXONOMY.json",
+      "sha256": "6caaf94e8a25f81d5a2b87702bcecb1d85addef50c79a3da9be8b861d5c34ab3"
+    },
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_MACHINE_CLOSURE_V2_20260914T024254Z/logs/EXP004_TAXONOMY.log",
+      "sha256": "49fe519117eb3a1a0dbce40d1dab9c45780991249ad6d7555781869efa04df51"
+    },
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_MACHINE_CLOSURE_V2_20260914T024254Z/freeze/ontology/FREEZE_RECORD.json",
+      "sha256": "b1b29040adedcadf7e9eb7c5b7fa60058c65dcd05499e2a046c264b157880da0"
+    },
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_MACHINE_CLOSURE_V2_20260914T024254Z/freeze/ontology/SHA256SUMS.txt",
+      "sha256": "2849b8c26c7c55b88f592f4cdc41cc964b87b9cbc570606ef0b64958062046f0"
+    }
+  ]
+}

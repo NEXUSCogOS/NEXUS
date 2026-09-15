@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "nexus://librarian/experimental-validation-registry.schema.json",
+  "title": "NEXUS Canonical Experimental Validation Registry",
+  "type": "object",
+  "required": ["registry_id", "schema_version", "canonical", "canonical_path", "source_basis", "governance", "global_stability_gates", "experiments"],
+  "properties": {
+    "registry_id": {"const": "NEXUS-EVR-001"},
+    "schema_version": {"type": "string"},
+    "canonical": {"const": true},
+    "canonical_path": {"type": "string"},
+    "source_basis": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["path", "sha256", "use"]}},
+    "governance": {"type": "object"},
+    "global_stability_gates": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "experiments": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["experiment_id", "subsystem_layer", "claim_under_test", "falsifiable_hypothesis", "predicted_result", "null_alternative_outcome", "independent_variables", "dependent_variables", "controls", "dataset_source_requirements", "provenance_requirements", "pre_registered_protocol", "acceptance_rejection_thresholds", "statistical_reproducibility_criteria", "contamination_leakage_checks", "execution_prerequisites_stability_gates", "evidence_artifacts", "replication_plan", "external_literature_cross_check_status", "contradictory_findings", "result_status", "final_verdict"],
+        "properties": {
+          "experiment_id": {"type": "string", "pattern": "^NEXUS-EXP-[0-9]{3}$"},
+          "subsystem_layer": {"type": "string"},
+          "claim_under_test": {"type": "string"},
+          "falsifiable_hypothesis": {"type": "string"},
+          "predicted_result": {"type": "string"},
+          "null_alternative_outcome": {"type": "string"},
+          "independent_variables": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "dependent_variables": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "controls": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "dataset_source_requirements": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "provenance_requirements": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "pre_registered_protocol": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "acceptance_rejection_thresholds": {"type": "object", "required": ["accept", "reject", "otherwise"]},
+          "statistical_reproducibility_criteria": {"type": "string"},
+          "contamination_leakage_checks": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "execution_prerequisites_stability_gates": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "evidence_artifacts": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "replication_plan": {"type": "string"},
+          "external_literature_cross_check_status": {"type": "string"},
+          "contradictory_findings": {"type": "array", "items": {"type": "string"}},
+          "result_status": {"enum": ["PREREGISTERED", "BLOCKED", "READY", "RUNNING", "COMPLETED", "INVALIDATED"]},
+          "final_verdict": {"enum": ["PENDING", "SUPPORTED", "REJECTED", "QUALIFIED", "INCONCLUSIVE", "INVALID"]}
+        }
+      }
+    }
+  }
+}

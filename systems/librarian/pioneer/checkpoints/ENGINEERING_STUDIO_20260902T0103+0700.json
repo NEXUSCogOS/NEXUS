@@ -1,0 +1,32 @@
+{
+  "checkpoint": "engineering-studio-20260902T0103+0700",
+  "status": "PASS_WITH_OBSERVED_RECOVERY",
+  "schedule": {"due_at": "2026-09-02T01:03:00+07:00", "delay_minutes": 2.29, "status": "ON_TIME", "alert_threshold_minutes": 15},
+  "nso": {
+    "cycle": "PASS", "architecture": "3.0-consolidated", "stages": "15/15", "acceptance_controls": "22/22",
+    "raw_verifier_duration_seconds": 0.758,
+    "frozen_source_status": "NOT_CERTIFIED_WITH_4_PRESERVED_SERIALIZATION_DEFECTS",
+    "operational_status": "CERTIFIED_502_OF_502",
+    "archive_sha256": "33b8001fc23d2854bc0a80ee30327b0f4a4b195a9d5612c209be41978e91c50a",
+    "archive_repeat_sha256": "33b8001fc23d2854bc0a80ee30327b0f4a4b195a9d5612c209be41978e91c50a",
+    "archive_members": 533, "cleanroom_reproduction": "PASS",
+    "scientific_findings": {"review_findings": 29, "resolved": 17, "open_method_review": 12, "aggregation_identities": "140/140", "external_metadata_sample": "36/36", "external_value_sample": "4/4"}
+  },
+  "pioneer": {
+    "controls": "14/14", "tests": "127/127", "database_integrity": "PASS", "retrieval_equivalence": "PASS", "content_address_integrity": "PASS", "journal_chain": "PASS_3_EVENTS", "pending_feedback": 2,
+    "academic_sources": 22, "citation_edges": 0, "retrieval_sources": 93, "retrieval_documents": 297, "experiments": "6_BLOCKED", "publications": "EVIDENCE_GATES_BLOCKED"
+  },
+  "comparison_to_previous_checkpoint": [
+    {"surface": "academic_and_retrieval_databases", "classification": "UNCHANGED", "reason": "database hashes and corpus counts are identical"},
+    {"surface": "scientific_findings", "classification": "UNCHANGED", "reason": "no new anomalies, resolutions, or external confirmation"},
+    {"surface": "raw_verifier_duration", "classification": "IMPROVEMENT", "previous_seconds": 705.673, "current_seconds": 0.758, "interpretation": "observed recovery only; cause and permanence remain UNVERIFIED"},
+    {"surface": "operational_archive_hash", "classification": "EXPECTED_GROWTH", "previous_sha256": "0bab937e5fc6e99406db73141a19d26348bdd5201956cbc1df70a6f0f9aec761", "current_sha256": "33b8001fc23d2854bc0a80ee30327b0f4a4b195a9d5612c209be41978e91c50a", "reason": "refreshed control records; same-run repeat and clean-room reproduction match"},
+    {"surface": "journal", "classification": "EXPECTED_GROWTH", "reason": "one evidence-linked recovery observation appended; feedback count unchanged"},
+    {"surface": "retrieval_performance", "classification": "UNVERIFIED", "reason": "equivalent results; no speedup claim"}
+  ],
+  "recommendation_review": "${NEXUS_ROOT}/systems/librarian/pioneer/engineering_feedback/review-20260902T0103+0700.json",
+  "scientific_defects": [], "operational_regressions": [],
+  "open_operational_review": ["PRIOR_RAW_VERIFIER_LATENCY_CAUSE_UNVERIFIED"],
+  "automation_action": "CONTINUE_MONITORING",
+  "next_due": "2026-09-02T13:03:00+07:00"
+}

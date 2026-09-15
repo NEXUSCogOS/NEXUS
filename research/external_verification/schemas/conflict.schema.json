@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NEXUS-EVA Conflict Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "conflict_id",
+    "verifier_id",
+    "status"
+  ],
+  "properties": {
+    "conflict_id": {
+      "type": "string"
+    },
+    "verifier_id": {
+      "type": "string"
+    },
+    "financial_interest": {
+      "type": ["string", "null"]
+    },
+    "professional_relationship": {
+      "type": ["string", "null"]
+    },
+    "prior_project_involvement": {
+      "type": ["string", "null"]
+    },
+    "other_conflict": {
+      "type": ["string", "null"]
+    },
+    "status": {
+      "enum": [
+        "NONE_DECLARED",
+        "DECLARED",
+        "UNKNOWN"
+      ]
+    }
+  }
+}

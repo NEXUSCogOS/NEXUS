@@ -1,0 +1,8 @@
+{
+  "default_disclosure": "PRIVATE",
+  "external_publish_requires_human_approval": true,
+  "canonical_mutation_from_publication_layer": false,
+  "allow_wholesale_nexus_export": false,
+  "allow_unverified_claims_as_facts": false,
+  "allow_secret_scan_failure": false
+}

@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NEXUS-EVA Sealed Evidence Reference",
+  "type": "object",
+  "additionalProperties": false,
+
+  "required": [
+    "verification_id",
+    "evidence_id",
+    "layer",
+    "claim_ids",
+    "verifier_id",
+    "independence_status",
+    "verdict",
+    "package_sha256",
+    "system_version",
+    "lifecycle_state",
+    "original_evidence_sha256"
+  ],
+
+  "properties": {
+
+    "verification_id": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "evidence_id": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "layer": {
+      "enum": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5"
+      ]
+    },
+
+    "claim_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+
+    "experiment_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+
+    "verifier_id": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "independence_status": {
+      "enum": [
+        "INDEPENDENT",
+        "DECLARED_CONFLICT",
+        "NOT_INDEPENDENT",
+        "UNKNOWN"
+      ]
+    },
+
+    "conflict_status": {
+      "enum": [
+        "NONE_DECLARED",
+        "DECLARED",
+        "UNKNOWN"
+      ]
+    },
+
+    "verdict": {
+      "enum": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "INCONCLUSIVE"
+      ]
+    },
+
+    "package_sha256": {
+      "type": "string",
+      "pattern": "^[a-fA-F0-9]{64}$"
+    },
+
+    "protocol_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-fA-F0-9]{64}$"
+    },
+
+    "original_evidence_sha256": {
+      "type": "string",
+      "pattern": "^[a-fA-F0-9]{64}$"
+    },
+
+    "system_version": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "lifecycle_state": {
+      "const": "SEALED"
+    },
+
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+
+    "sealed_utc": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+
+    "evidence_locator": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

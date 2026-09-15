@@ -1,0 +1,36 @@
+{
+  "schema_name": "EvidencePack / EvidenceItem",
+  "source_module": "systems/youtube_production/schema.py",
+  "construction_function": "evidence_pack.py::build_evidence_pack()",
+  "mission": "NEXUS_FEDERATION_F8",
+  "description": "The factual ceiling for the script -- nothing in script.py may state a claim not traceable to an EvidenceItem here.",
+  "EvidenceItem_fields": {
+    "evidence_id": "e.g. '<mission_id>:support:0' or '<mission_id>:contradict:1'",
+    "source_institution": "e.g. 'specialist_synthesis'",
+    "source_ref": "the synthesis_id or original finding reference",
+    "claim_text": "verbatim finding text from the specialist synthesis, e.g. 'DERIVED_METRIC: KBC classified INDIRECT (real estate sector, no facility-level confirmation)'",
+    "claim_class": "FACT | ANALYSIS | INTERPRETATION | HYPOTHESIS | UNVERIFIED -- mapped from the specialist institution's own leading tag via evidence_pack.py::_TAG_TO_CLAIM_CLASS, never re-classified upward",
+    "uncertainty": "string or null",
+    "stale": "bool"
+  },
+  "EvidencePack_fields": {
+    "evidence_pack_id": "deterministic uuid5 from production_mission_id",
+    "production_mission_id": "str",
+    "source_event_ref": "the originating trigger_id",
+    "nexus_synthesis_ref": "the originating synthesis_id",
+    "specialist_findings_refs": "list[str] -- the specialist report_ids/input_report_ids that fed the synthesis",
+    "items": "list[EvidenceItem]",
+    "contradictions": "list[str] -- verbatim contradictory finding text, both sides preserved",
+    "stale_evidence": "list[str] -- from the synthesis's own temporal_mismatches",
+    "prohibited_extrapolations": "list[str] -- fixed, disclosed rules, e.g. 'no specific numeric market forecast beyond what a FACT/ANALYSIS-class item states'",
+    "created_at": "ISO 8601 timestamp"
+  },
+  "claim_class_mapping_table": {
+    "OBSERVED_MARKET_FACT / SOURCE_FACT / PRIMARY_SOURCE_FACT / OBSERVED": "FACT",
+    "DERIVED_METRIC / DERIVED_SYNTHESIS / DERIVED": "ANALYSIS",
+    "MODEL_ESTIMATE / SIGNAL / INFERENCE": "INTERPRETATION",
+    "RECOMMENDATION / HYPOTHESIS": "HYPOTHESIS",
+    "CONTRADICTION / CONTRADICTORY": "INTERPRETATION",
+    "UNKNOWN / INSUFFICIENT_EVIDENCE": "UNVERIFIED"
+  }
+}

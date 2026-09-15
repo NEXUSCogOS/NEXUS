@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+
+  "claims": [],
+
+  "allowed_validation_states": [
+    "SUPPORTED",
+    "VERIFIED",
+    "REPRODUCED",
+    "INDEPENDENTLY_REPRODUCED"
+  ]
+}

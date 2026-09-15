@@ -1,0 +1,23 @@
+{
+  "pid": 94887,
+  "report_id": "01b829ad-6c71-49bf-879a-24e1f424041d",
+  "mission_id": "00165319-e05c-421b-ab99-88a4080ed0bb",
+  "ingress_accepted": true,
+  "provenance_ids": [
+    "2a2a8a01-eea1-4c5f-8db8-64e75d15e831"
+  ],
+  "zone_project_id": "camduong",
+  "zone_admin_code": "26401",
+  "zone_source_url": "https://drive.google.com/file/d/1SusRNW4tQEtswqSoVkqbML-0wLTikWen/view?usp=sharing",
+  "federation_store_path": "/tmp/f6_final_run2.db",
+  "resource_usage": {
+    "cpu_seconds": 0.009922,
+    "peak_rss_bytes": 37568512,
+    "elapsed_seconds": 0.011254,
+    "local_storage_delta_bytes": null,
+    "external_storage_activity": null,
+    "api_calls": null,
+    "api_cost_usd": null,
+    "model_tokens": null
+  }
+}

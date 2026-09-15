@@ -1,0 +1,8 @@
+{
+  "created_at": "2026-09-13T23:39:01.985919+00:00",
+  "nexus_root": "${NEXUS_ROOT}",
+  "engineering_studio_root": "${NEXUS_ROOT}/systems/engineering_studio",
+  "git_toplevel": "${NEXUS_ROOT}",
+  "git_head": "46c0ebfd8133169b45ad10f45bac43741240831f",
+  "note": "Descriptive inventory only; no artifact is classified publishable by this report."
+}

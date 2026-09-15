@@ -1,0 +1,12 @@
+{
+  "checkpoint": "engineering-studio-20260904T0103+0700",
+  "status": "SEVERE_OPERATIONAL_RELIABILITY_ALERT",
+  "reviewed_feedback": 3,
+  "decisions": [
+    {"feedback_id": "PIONEER-FEEDBACK-7e64a6dd-78f0-4ea4-b9d1-f54889ad1bc4", "classification": "SUPERSEDED", "reason": "Implemented governance mechanisms remain validated.", "runtime_action": "NONE"},
+    {"feedback_id": "PIONEER-FEEDBACK-bb36102e-bdf2-4221-8871-fd9f0f6774eb", "classification": "ACCEPTED_FOR_CONSIDERATION", "priority": "HIGH_OPERATIONAL", "reason": "Raw verification again required 706.914 seconds.", "recommendation": "Perform read-only per-file latency and storage-residency profiling.", "runtime_action": "NONE", "human_review": "PENDING"},
+    {"feedback_id": "PIONEER-FEEDBACK-f0dcb24c-583d-4a78-ac0a-11974cce904f", "classification": "ACCEPTED_FOR_CONSIDERATION", "priority": "CRITICAL_OPERATIONAL", "reason": "The checkpoint completed 896.44 minutes late and the following cadence point elapsed without an independent cycle.", "evidence_linkage": "PASS", "duplicate": false, "recommendation": "Diagnose automation wake delivery, host sleep/resume, and overlap handling; record scheduled, wake, start, and completion timestamps separately.", "scientific_effect": "NONE_OBSERVED", "runtime_action": "NONE", "human_review": "PENDING"}
+  ],
+  "accepted_for_consideration": 2, "rejected": 0, "superseded": 1, "unresolved": 2,
+  "policy": "CONSIDER_ONLY_DO_NOT_AUTO_EXECUTE"
+}

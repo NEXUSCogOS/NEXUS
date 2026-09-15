@@ -1,0 +1,18 @@
+{
+  "gate_id": "NEXUS-EXP-004-01",
+  "gate": "Research Assistant interface explicitly commissioned",
+  "status": "PASS",
+  "reviewer": "GPT-5.6-Sol-assisted-evidence-adjudication-003",
+  "verified_at": "2026-09-14T02:45:11.187873+00:00",
+  "contradictions_resolved": true,
+  "evidence_refs": [
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_MACHINE_CLOSURE_V2_20260914T024254Z/evidence/EXP004_01_RESEARCH_ASSISTANT.json",
+      "sha256": "866f44f90dac02971481889dfae38dc6f0e958060bb3ab90fffe4b85752432ad"
+    },
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_MACHINE_CLOSURE_V2_20260914T024254Z/logs/EXP004_01_RESEARCH_ASSISTANT.log",
+      "sha256": "1e6d0ad4be2a16dc82fe7b4d64ad462630f2c107fdfe4e45219235fae4f9e309"
+    }
+  ]
+}

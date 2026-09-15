@@ -1,0 +1,25 @@
+{
+  "checkpoint": "engineering-studio-20260903T1303+0700",
+  "status": "PASS_WITH_PERSISTENT_OPERATIONAL_DEGRADATION",
+  "schedule": {"due_at": "2026-09-03T13:03:00+07:00", "delay_minutes": 14.66, "status": "ON_TIME_NEAR_THRESHOLD", "remaining_margin_minutes": 0.34, "alert_threshold_minutes": 15},
+  "nso": {
+    "cycle": "PASS", "architecture": "3.0-consolidated", "stages": "15/15", "acceptance_controls": "22/22", "raw_verifier_duration_seconds": 717.984,
+    "frozen_source_status": "NOT_CERTIFIED_WITH_4_PRESERVED_SERIALIZATION_DEFECTS", "operational_status": "CERTIFIED_502_OF_502",
+    "archive_sha256": "940bd2c36083707245b762771324bf37e4ecaad1c2b4547a8bf29fadbc244eb3", "archive_repeat_sha256": "940bd2c36083707245b762771324bf37e4ecaad1c2b4547a8bf29fadbc244eb3", "archive_members": 533, "cleanroom_reproduction": "PASS",
+    "scientific_findings": {"review_findings": 29, "resolved": 17, "open_method_review": 12, "aggregation_identities": "140/140", "external_metadata_sample": "36/36", "external_value_sample": "4/4"}
+  },
+  "pioneer": {"controls": "14/14", "tests": "127/127", "database_integrity": "PASS", "retrieval_equivalence": "PASS", "content_address_integrity": "PASS", "journal_chain": "PASS_5_EVENTS", "pending_feedback": 2, "academic_sources": 22, "citation_edges": 0, "retrieval_sources": 93, "retrieval_documents": 297, "experiments": "6_BLOCKED", "publications": "EVIDENCE_GATES_BLOCKED"},
+  "comparison_to_previous_checkpoint": [
+    {"surface": "academic_and_retrieval_databases", "classification": "UNCHANGED", "reason": "database hashes and counts identical"},
+    {"surface": "scientific_findings", "classification": "UNCHANGED", "reason": "no scientific or integrity drift"},
+    {"surface": "raw_verifier_duration", "classification": "REGRESSION", "previous_seconds": 687.661, "current_seconds": 717.984, "interpretation": "third slow occurrence confirms persistent intermittent degradation; cause UNVERIFIED"},
+    {"surface": "schedule_margin", "classification": "REGRESSION", "previous_minutes": 0.61, "current_minutes": 0.34},
+    {"surface": "operational_archive_hash", "classification": "EXPECTED_GROWTH", "current_sha256": "940bd2c36083707245b762771324bf37e4ecaad1c2b4547a8bf29fadbc244eb3", "reason": "refreshed controls; same-run builds and clean-room reproduction match"},
+    {"surface": "journal", "classification": "EXPECTED_GROWTH", "reason": "persistent-latency lesson appended; feedback count unchanged"}
+  ],
+  "scientific_defects": [],
+  "operational_regressions": ["PERSISTENT_INTERMITTENT_RAW_VERIFIER_LATENCY", "SCHEDULE_MARGIN_0_34_MINUTES"],
+  "recommendation_review": "${NEXUS_ROOT}/systems/librarian/pioneer/engineering_feedback/review-20260903T1303+0700.json",
+  "automation_action": "CONTINUE_ACTIVE_UNDER_CURRENT_POLICY; ALERT_IF_DELAY_EXCEEDS_15_MINUTES; PAUSE_ON_CERTIFICATION_OR_MATERIAL_SCIENTIFIC_FAILURE",
+  "next_due": "2026-09-04T01:03:00+07:00"
+}

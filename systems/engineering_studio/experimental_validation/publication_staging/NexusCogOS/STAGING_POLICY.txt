@@ -1,0 +1,20 @@
+NexusCogOS publication staging
+
+Authority:
+- downstream only
+- canonical NEXUS remains authoritative
+
+Forbidden:
+- GitHub credentials
+- git push
+- gh repo create
+- private datasets
+- raw canonical databases
+- unsupported claims
+- personal information
+- machine-specific absolute paths
+
+Release content may be generated only from completed experiments,
+final verdicts and hash-valid sealed evidence bundles.
+
+GitHub publication requires separate explicit human authorization.

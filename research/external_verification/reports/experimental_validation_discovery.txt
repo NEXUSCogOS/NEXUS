@@ -1,0 +1,13 @@
+NEXUS-EVA EXPERIMENTAL VALIDATION DISCOVERY
+UTC=2026-09-15T11:25:10Z
+
+IMPORTANT:
+Discovery does not grant integration or mutation authority.
+
+CANDIDATES:
+
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/config/experiment_requirements.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/readiness.py
+${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_COMPLETION_PREP_20260914T171503Z/snapshot/experiment_requirements.json
+${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_GLOBAL10_INDEPENDENT_REVIEW_PACKET_20260914T171034Z/experiment_requirements.json

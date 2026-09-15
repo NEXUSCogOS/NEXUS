@@ -1,0 +1,27 @@
+{
+  "pid": 94893,
+  "already_claimed": false,
+  "mission_id": "9b1cfb8e-7a25-5dba-8179-115bf05f58db-mission-l",
+  "delegation_id": "2fb21d41-088e-536f-9b98-84b15e013056",
+  "claim_id": "ad38a390-48e5-407e-a384-1cbe96cf1401",
+  "report_id": "66130697-b6ce-4062-818d-dc20117d9dfa",
+  "claim_class": "INSUFFICIENT_EVIDENCE",
+  "sources_retrieved": 4,
+  "evidence_refs": [
+    "arxiv:1908.03438",
+    "arxiv:2107.10894",
+    "arxiv:2602.12430",
+    "arxiv:2004.01504"
+  ],
+  "federation_store_path": "/tmp/f6_final_run2.db",
+  "resource_usage": {
+    "cpu_seconds": 0.004061,
+    "peak_rss_bytes": 36454400,
+    "elapsed_seconds": 0.004542,
+    "local_storage_delta_bytes": null,
+    "external_storage_activity": null,
+    "api_calls": null,
+    "api_cost_usd": null,
+    "model_tokens": null
+  }
+}

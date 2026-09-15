@@ -1,0 +1,14 @@
+{
+  "gate_id": "global-09",
+  "gate": "protocol, analysis code, thresholds and stopping rules are frozen",
+  "status": "PASS",
+  "reviewer": "GPT-5.6-Sol-assisted-adjudication-001",
+  "verified_at": "2026-09-14T00:56:10.118269+00:00",
+  "contradictions_resolved": true,
+  "evidence_refs": [
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_REMEDIATION_001_20260914T005238Z/protocol/EXP002_PROTOCOL_FREEZE.json",
+      "sha256": "4b987da52c918222b0d2ccae943169ec4391e088d579a1c694edac5e35f0c69d"
+    }
+  ]
+}

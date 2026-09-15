@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NEXUS-EVA External Verification Result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "verification_id",
+    "verifier_id",
+    "layer",
+    "claim_ids",
+    "package_sha256",
+    "system_version",
+    "verdict",
+    "independence_status"
+  ],
+  "properties": {
+    "verification_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "verifier_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "layer": {
+      "enum": ["L0", "L1", "L2", "L3", "L4", "L5"]
+    },
+    "claim_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "experiment_id": {
+      "type": ["string", "null"]
+    },
+    "package_sha256": {
+      "type": "string",
+      "pattern": "^[a-fA-F0-9]{64}$"
+    },
+    "protocol_sha256": {
+      "type": ["string", "null"],
+      "pattern": "^[a-fA-F0-9]{64}$"
+    },
+    "system_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "verdict": {
+      "enum": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "INCONCLUSIVE"
+      ]
+    },
+    "independence_status": {
+      "enum": [
+        "INDEPENDENT",
+        "DECLARED_CONFLICT",
+        "NOT_INDEPENDENT",
+        "UNKNOWN"
+      ]
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

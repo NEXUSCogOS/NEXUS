@@ -1,0 +1,14 @@
+{
+  "gate_id": "global-03",
+  "gate": "clean-environment build or environment lock reproduced",
+  "status": "PASS",
+  "reviewer": "GPT-5.6-Sol-assisted-adjudication-002",
+  "verified_at": "2026-09-14T00:59:25.584835+00:00",
+  "contradictions_resolved": true,
+  "evidence_refs": [
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_MACHINE_CLOSURE_002_20260914T005925Z/environment/global-03.json",
+      "sha256": "407a72855f48fc0bea1e4b2d82aa1885dba5bfb26455f5ef105f1b3cc3b4328b"
+    }
+  ]
+}

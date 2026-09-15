@@ -1,0 +1,47 @@
+{
+  "checks": {
+    "all_experiments_preregistered_and_blocked": true,
+    "canonical_storage_policy_enforced": true,
+    "content_inventory_valid": true,
+    "corpus_populated": true,
+    "engineering_feedback_fail_closed": true,
+    "experiment_registry_valid": true,
+    "full_test_suite_last_observed_pass": true,
+    "journal_snapshot_anchored": true,
+    "learning_journal_chain_valid": true,
+    "nso_dataset_manifest_identity": true,
+    "nso_dataset_operational_certified": true,
+    "publication_claims_fail_closed": true,
+    "research_assistant_reference_only": true,
+    "resource_optimization_valid": true
+  },
+  "details": {
+    "academic_sources": 22,
+    "citation_edges": 0,
+    "ingestion_events": 202,
+    "journal_chain": "8 events verified",
+    "journal_events": 8,
+    "pending_engineering_feedback": 3,
+    "retrieval_documents": 297,
+    "retrieval_sources": 93,
+    "test_suite": {
+      "command": "python3 -m pytest -q",
+      "duration_seconds": 20.26,
+      "failed": 0,
+      "observed_at_utc": "2026-09-04T16:08:07Z",
+      "passed": 127,
+      "status": "PASS"
+    }
+  },
+  "experiments": {
+    "blocked": 6,
+    "total": 6
+  },
+  "legacy_surfaces": "REFERENCE_ONLY_NOT_SYNCHRONIZED_CANONICAL_STORES",
+  "publications": {
+    "project_paper": "NOT_STARTED",
+    "white_paper": "NOT_STARTED"
+  },
+  "scientific_truth_status": "INFRASTRUCTURE_VALIDATED_EXPERIMENTAL_CLAIMS_NOT_YET_ESTABLISHED",
+  "status": "PASS_WITH_BLOCKED_RESEARCH"
+}

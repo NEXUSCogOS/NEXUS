@@ -1,0 +1,100 @@
+{
+  "mission": "NEXUS_FEDERATION_F8",
+  "date": "2026-08-28",
+  "classification_vocabulary": ["ACTIVE", "TESTED", "INTEGRATED", "PARTIAL", "DORMANT", "BROKEN", "HISTORICAL", "MOCK", "SYNTHETIC", "UNVERIFIED"],
+  "note": "Classifications reflect the pre-existing estate at /Volumes/NEXUS/NEXUS_LOCAL/systems/youtube/ as found, per YOUTUBE_F8_FORENSIC_REPORT.md. Operationality is inferred from execution evidence (cron logs, DB row counts, installed-dependency checks), never from filenames alone.",
+  "categories": {
+    "topic_discovery": {
+      "classification": "PARTIAL",
+      "evidence": "trending_sources.py::TrendingFetcher makes real requests.get() calls; config.yaml enables only google_trends (twitter/reddit/newsapi/youtube sources disabled). Never successfully executed on schedule (cron permission failure, 82/82 log lines identical failure). No evidence of a successful manual run either.",
+      "gap": "Real code, real intended external calls, zero confirmed successful executions in this environment."
+    },
+    "research": {
+      "classification": "DORMANT",
+      "evidence": "config.yaml's data_sources.sentinel/datai point at placeholder hostnames (api.sentinel.local, api.datai.local) with no running service. No real integration with the actual Sentinel SQLite DB or DAT.AI system observed at runtime, despite channels_config.json separately referencing the real Sentinel DB path for editorial seed context only.",
+      "gap": "Config describes an integration that was never actually wired to a live service."
+    },
+    "evidence_pack": {
+      "classification": "MISSING_NOT_BUILT",
+      "evidence": "No concept of a persistent, structured evidence pack (source claims + provenance + uncertainty) exists anywhere in the existing estate.",
+      "gap": "F8 builds this new; not present in the prior system at all."
+    },
+    "script_generation": {
+      "classification": "MISSING_NOT_BUILT",
+      "evidence": "No script-generation module found anywhere in src/application/shorts/ or elsewhere in the tree; template_injector.py injects data into a DaVinci Resolve template, it does not generate narrative script text.",
+      "gap": "F8 builds this new, with claim-class separation (FACT/ANALYSIS/INTERPRETATION/HYPOTHESIS/EDITORIAL_TRANSITION), which the prior system had no equivalent of."
+    },
+    "citation_fact_check": {
+      "classification": "MISSING_NOT_BUILT",
+      "evidence": "No fact-checking or citation-verification stage exists in the prior pipeline.",
+      "gap": "F8 builds this new."
+    },
+    "voice_generation": {
+      "classification": "BROKEN",
+      "evidence": "No TTS/voice module found in src/application/shorts/ at all; DELIVERY_SUMMARY.md's own deployment checklist lists 'Real TTS engine configuration (requires user)' as unchecked. No cloud TTS credentials found anywhere.",
+      "gap": "Prior system never had a working voice path. F8 uses a genuinely different, real, credential-free path (macOS `say`, confirmed present) rather than reviving anything."
+    },
+    "visual_generation": {
+      "classification": "PARTIAL",
+      "evidence": "template_injector.py and render_queue.py exist and are real code, but the only render backend (DaVinci Resolve CLI) requires an application (DaVinci Resolve) confirmed NOT installed on this machine. Zero rendered media files (.mp4/.mov) exist anywhere in the tree.",
+      "gap": "Real code, hard-blocked by a missing local dependency; never produced real output."
+    },
+    "media_acquisition": {
+      "classification": "UNVERIFIED",
+      "evidence": "No dedicated stock-footage/image-acquisition module found distinct from trending_sources.py/media_intelligence.py; those focus on topic/trend signal, not asset acquisition.",
+      "gap": "Not clearly present as a distinct capability in the prior estate."
+    },
+    "editing": {
+      "classification": "BROKEN",
+      "evidence": "render_queue.py's render() shells out via subprocess to a DaVinci Resolve binary path that does not exist on this machine (/Applications/DaVinci Resolve/... confirmed absent).",
+      "gap": "Real code, non-functional in this environment due to a missing hard dependency, not a code defect."
+    },
+    "rendering": {
+      "classification": "BROKEN",
+      "evidence": "Same as editing -- single render backend, DaVinci Resolve, not installed. Zero real rendered output on record (both production DBs show videos: 0; one historical spec-only artifact test-topic-e2e-2026-08-02 has no rendered media).",
+      "gap": "Never produced a single real video in this estate's history."
+    },
+    "thumbnail_generation": {
+      "classification": "PARTIAL",
+      "evidence": "test-topic-e2e-2026-08-02/thumbnail_spec.json exists (a spec, real JSON) but no actual thumbnail image file was found alongside it anywhere in the tree.",
+      "gap": "Spec-stage only, never reached a real rendered image in this estate's history."
+    },
+    "metadata_generation": {
+      "classification": "PARTIAL",
+      "evidence": "pipeline.py::_build_description() is real, working code (constructs title/description/tags from a candidate + config template). test-topic-e2e-2026-08-02/metadata.json is a real historical artifact of this kind of output.",
+      "gap": "Function is real and would work if invoked; never exercised end-to-end because upstream (approval, render) never completes."
+    },
+    "rights_check": {
+      "classification": "MISSING_NOT_BUILT",
+      "evidence": "No rights/licensing tracking of any kind (per-asset rights_status, attribution, license) found anywhere in the prior estate.",
+      "gap": "F8 builds this new."
+    },
+    "safety_check": {
+      "classification": "PARTIAL",
+      "evidence": "approval_server.py implements a real Slack-based human-approval gate, and Pipeline.run_upload_cycle() correctly fails closed (returns without rendering/uploading) when the approver is not configured -- a genuine, working fail-safe default, not a bug. Separately, the crontab's own PUBLISH_GATE_DISABLED comment is direct evidence a prior human operator already exercised safety judgment over this system.",
+      "gap": "The only 'safety check' is a human-approval gate contingent on Slack credentials that are not configured; no automated factual/rights/editorial safety check exists."
+    },
+    "publication": {
+      "classification": "BROKEN",
+      "evidence": "youtube_uploader.py contains real, complete Google YouTube Data API v3 client code (OAuth token load/refresh, upload(), playlist assignment, monetization-metrics fetch) -- not a stub. But: no OAuth token file exists anywhere, YOUTUBE_CREDENTIALS_FILE is unset, all 4 channel manifests show youtube_channel_id: UNASSIGNED and publishing_enabled: false, the publish-cycle crontab lines are manually disabled (PUBLISH_GATE_DISABLED), and both production DBs show videos: 0. The code could execute a real upload if ever given real credentials and a real channel -- neither exists, and this must never be assumed to exist by F8's own new institution.",
+      "gap": "Complete, real, never-authenticated, never-executed publication code. F8's new institution is built so that it can never reach this code path without a separate future authorization step."
+    },
+    "analytics": {
+      "classification": "PARTIAL",
+      "evidence": "youtube_uploader.py::fetch_monetization_metrics()/get_video_metrics()/get_all_videos()/get_monetization_summary() are real, complete methods against a real schema (storage/databases/shorts_monetization.db). All tables are empty (videos: 0, monetization_metrics: 0) because no video has ever been uploaded to measure.",
+      "gap": "Real code with nothing to measure yet -- entirely downstream of the broken render/publication chain."
+    },
+    "feedback_learning": {
+      "classification": "MISSING_NOT_BUILT",
+      "evidence": "No feedback loop from analytics back into topic scoring/selection was found; data_fetch.py::CandidateScorer's scoring weights and 'use_ml_ranking: true' flag in config.yaml are static/opaque, not evidenced as adaptive from real historical performance (there is no historical performance data to adapt from -- videos: 0).",
+      "gap": "F8 does not build this; out of scope for a first bounded production mission, and there is no real outcome data yet to learn from."
+    }
+  },
+  "additional_findings": {
+    "opaque_scoring_flag": "config.yaml sets scoring.use_ml_ranking: true with weighted-sum virality/relevance/recency/engagement factors -- an existing design choice in the prior estate, inconsistent with this federation's deterministic/disclosed-scoring convention (established in F6/F7). Not modified by F8 since F8 does not touch this code; noted for the record only.",
+    "duplicate_or_adjacent_systems_ruled_out": [
+      "systems/engineering_studio/studio_v3/platforms/youtube_automation.py -- confirmed downstream/legacy content-generation code, out of scope, already identified in F7",
+      "${HOME}/.moved_Projects_20260503_084213/yt-engine-clean/ -- confirmed retired, unreferenced, not part of the active estate"
+    ]
+  }
+}

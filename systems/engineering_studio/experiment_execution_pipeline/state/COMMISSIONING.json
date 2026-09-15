@@ -1,0 +1,9 @@
+{
+  "commissioned": true,
+  "commissioned_at": "20260914T152952Z",
+  "current_execution_authorized": false,
+  "human_review_pending": true,
+  "registry_transition_performed": false,
+  "experiment_execution_performed": false,
+  "github_action_performed": false
+}

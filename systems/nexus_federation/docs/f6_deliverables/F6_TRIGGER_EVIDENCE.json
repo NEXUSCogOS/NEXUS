@@ -1,0 +1,16 @@
+{
+  "trigger_id": "9b1cfb8e-7a25-5dba-8179-115bf05f58db",
+  "source_report_id": "01b829ad-6c71-49bf-879a-24e1f424041d",
+  "source_finding_id": "camduong",
+  "geography": "Long Thanh district, Dong Nai province, Vietnam",
+  "materiality": 0.65,
+  "candidate_implications": [
+    "policy",
+    "economic",
+    "sector"
+  ],
+  "source_institution": "dat_ai",
+  "observation_timestamp": "2025-10-13T03:40:37+00:00",
+  "claim_class": "OBSERVED",
+  "freshness": "STALE_BUT_USABLE_AS_HISTORICAL_CONTEXT"
+}

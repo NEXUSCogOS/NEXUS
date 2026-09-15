@@ -1,0 +1,75 @@
+{
+  "Event": {
+    "fields": [
+      "event_id",
+      "event_type",
+      "headline_summary",
+      "entities",
+      "locations",
+      "event_time",
+      "publication_time",
+      "first_seen",
+      "last_seen",
+      "source_ids",
+      "source_count",
+      "independent_source_count",
+      "evidence_refs",
+      "provenance_refs",
+      "novelty",
+      "materiality",
+      "uncertainty",
+      "freshness",
+      "status",
+      "claim_epistemology",
+      "cluster_id"
+    ]
+  },
+  "EventType": [
+    "REGULATORY",
+    "POLICY",
+    "CORPORATE",
+    "EARNINGS",
+    "CAPITAL_MARKETS",
+    "M_AND_A",
+    "INFRASTRUCTURE",
+    "PLANNING",
+    "GEOPOLITICAL",
+    "MACROECONOMIC",
+    "SUPPLY_CHAIN",
+    "COMMODITY",
+    "TECHNOLOGY",
+    "CYBER",
+    "LEGAL",
+    "ENVIRONMENTAL",
+    "EDUCATION",
+    "OTHER",
+    "UNKNOWN"
+  ],
+  "ClaimEpistemology": [
+    "REPORTED_CLAIM",
+    "PRIMARY_SOURCE_FACT",
+    "MULTI_SOURCE_CORROBORATED_EVENT",
+    "UNVERIFIED_REPORT",
+    "RUMOR",
+    "CORRECTION",
+    "RETRACTION",
+    "CONTRADICTORY_REPORTING",
+    "UNKNOWN"
+  ],
+  "NoveltyState": [
+    "NEW",
+    "UPDATE",
+    "REPEAT",
+    "CORRECTION",
+    "RETRACTION",
+    "ONGOING",
+    "UNKNOWN"
+  ],
+  "CorroborationState": [
+    "CORROBORATED",
+    "PARTIAL",
+    "CONTRADICTORY",
+    "UNVERIFIED",
+    "RETRACTED"
+  ]
+}

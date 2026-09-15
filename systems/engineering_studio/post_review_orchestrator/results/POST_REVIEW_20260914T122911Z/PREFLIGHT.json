@@ -1,0 +1,74 @@
+{
+  "status": "HUMAN_REVIEW_PENDING",
+  "formal_store_valid": true,
+  "ready_eligible": [],
+  "ready": [],
+  "blocked": [
+    {
+      "experiment_id": "NEXUS-EXP-001",
+      "verified": 13,
+      "required": 14,
+      "unresolved": [
+        {
+          "gate_id": "global-10",
+          "reason": "FORMAL_GATE_RECORD_MISSING"
+        }
+      ]
+    },
+    {
+      "experiment_id": "NEXUS-EXP-002",
+      "verified": 13,
+      "required": 14,
+      "unresolved": [
+        {
+          "gate_id": "global-10",
+          "reason": "FORMAL_GATE_RECORD_MISSING"
+        }
+      ]
+    },
+    {
+      "experiment_id": "NEXUS-EXP-003",
+      "verified": 12,
+      "required": 14,
+      "unresolved": [
+        {
+          "gate_id": "global-10",
+          "reason": "FORMAL_GATE_RECORD_MISSING"
+        },
+        {
+          "gate_id": "NEXUS-EXP-003-04",
+          "reason": "FORMAL_GATE_RECORD_MISSING"
+        }
+      ]
+    },
+    {
+      "experiment_id": "NEXUS-EXP-004",
+      "verified": 12,
+      "required": 14,
+      "unresolved": [
+        {
+          "gate_id": "global-10",
+          "reason": "FORMAL_GATE_RECORD_MISSING"
+        },
+        {
+          "gate_id": "NEXUS-EXP-004-04",
+          "reason": "FORMAL_GATE_RECORD_MISSING"
+        }
+      ]
+    },
+    {
+      "experiment_id": "NEXUS-EXP-005",
+      "verified": 14,
+      "required": 15,
+      "unresolved": [
+        {
+          "gate_id": "global-10",
+          "reason": "FORMAL_GATE_RECORD_MISSING"
+        }
+      ]
+    }
+  ],
+  "execution_authorized": false,
+  "registry_transition_performed": false,
+  "experiment_execution_performed": false
+}

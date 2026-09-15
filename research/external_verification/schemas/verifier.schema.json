@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NEXUS-EVA External Verifier",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "verifier_id",
+    "name",
+    "independence_status",
+    "conflict_status"
+  ],
+  "properties": {
+    "verifier_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "organisation": {
+      "type": ["string", "null"]
+    },
+    "professional_role": {
+      "type": ["string", "null"]
+    },
+    "independence_status": {
+      "enum": [
+        "INDEPENDENT",
+        "DECLARED_CONFLICT",
+        "NOT_INDEPENDENT",
+        "UNKNOWN"
+      ]
+    },
+    "conflict_status": {
+      "enum": [
+        "NONE_DECLARED",
+        "DECLARED",
+        "UNKNOWN"
+      ]
+    },
+    "prior_involvement": {
+      "type": ["string", "null"]
+    }
+  }
+}

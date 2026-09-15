@@ -1,0 +1,891 @@
+[
+  {
+    "gate_id": "global-01",
+    "scope": "GLOBAL",
+    "canonical_gate_text": "canonical code, configuration, dataset and database authority recorded",
+    "candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 6,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 5,
+        "ratio": 0.833
+      },
+      {
+        "path": "${NEXUS_ROOT}/EXTERNAL_STORAGE_MANIFEST.md",
+        "hits": 5,
+        "ratio": 0.833
+      },
+      {
+        "path": "${NEXUS_ROOT}/QUICK_START.md",
+        "hits": 5,
+        "ratio": 0.833
+      },
+      {
+        "path": "${NEXUS_ROOT}/README.md",
+        "hits": 5,
+        "ratio": 0.833
+      }
+    ],
+    "review_state": "PENDING_REVIEW",
+    "formal_pass_created": false,
+    "review_requirements": [
+      "candidate artifact exists",
+      "artifact is non-circular",
+      "artifact is authoritative for gate",
+      "artifact actually demonstrates gate",
+      "artifact timestamp is appropriate",
+      "artifact hash is captured",
+      "contradictory evidence resolved",
+      "reviewer identity recorded"
+    ]
+  },
+  {
+    "gate_id": "global-02",
+    "scope": "GLOBAL",
+    "canonical_gate_text": "required services healthy for the preregistered observation window",
+    "candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/SLA.md",
+        "hits": 3,
+        "ratio": 0.6
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/nexus_federation/NEXUS_F9_EXECUTIVE_KERNEL_ARCHITECTURE.md",
+        "hits": 3,
+        "ratio": 0.6
+      },
+      {
+        "path": "${NEXUS_ROOT}/.observatory/reports/audit_report_20260826T163000Z_97f6b2a5.json",
+        "hits": 2,
+        "ratio": 0.4
+      },
+      {
+        "path": "${NEXUS_ROOT}/.observatory/reports/audit_report_20260827T163001Z_d999137a.json",
+        "hits": 2,
+        "ratio": 0.4
+      },
+      {
+        "path": "${NEXUS_ROOT}/.observatory/reports/audit_report_20260828T163000Z_a0377402.json",
+        "hits": 2,
+        "ratio": 0.4
+      }
+    ],
+    "review_state": "PENDING_REVIEW",
+    "formal_pass_created": false,
+    "review_requirements": [
+      "candidate artifact exists",
+      "artifact is non-circular",
+      "artifact is authoritative for gate",
+      "artifact actually demonstrates gate",
+      "artifact timestamp is appropriate",
+      "artifact hash is captured",
+      "contradictory evidence resolved",
+      "reviewer identity recorded"
+    ]
+  },
+  {
+    "gate_id": "global-07",
+    "scope": "GLOBAL",
+    "canonical_gate_text": "dataset snapshots are immutable, hashed, licensed and provenance-complete",
+    "candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 3,
+        "ratio": 0.5
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/experiments/RESEARCH_WORKFLOW.md",
+        "hits": 3,
+        "ratio": 0.5
+      }
+    ],
+    "review_state": "PENDING_REVIEW",
+    "formal_pass_created": false,
+    "review_requirements": [
+      "candidate artifact exists",
+      "artifact is non-circular",
+      "artifact is authoritative for gate",
+      "artifact actually demonstrates gate",
+      "artifact timestamp is appropriate",
+      "artifact hash is captured",
+      "contradictory evidence resolved",
+      "reviewer identity recorded"
+    ]
+  },
+  {
+    "gate_id": "global-08",
+    "scope": "GLOBAL",
+    "canonical_gate_text": "secrets and live financial operations are excluded from experiment scope",
+    "candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 6,
+        "ratio": 0.857
+      },
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 5,
+        "ratio": 0.714
+      },
+      {
+        "path": "${NEXUS_ROOT}/.superpowers/sdd/phase-0-youtube-concepts/concepts.json",
+        "hits": 4,
+        "ratio": 0.571
+      },
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_PHD_DOCUMENTATION_REPOSITORY_COMMISSIONING.md",
+        "hits": 4,
+        "ratio": 0.571
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/engineering_studio/research_evidence/ARCHITECTURE_RECONCILIATION_REPORT.md",
+        "hits": 4,
+        "ratio": 0.571
+      }
+    ],
+    "review_state": "PENDING_REVIEW",
+    "formal_pass_created": false,
+    "review_requirements": [
+      "candidate artifact exists",
+      "artifact is non-circular",
+      "artifact is authoritative for gate",
+      "artifact actually demonstrates gate",
+      "artifact timestamp is appropriate",
+      "artifact hash is captured",
+      "contradictory evidence resolved",
+      "reviewer identity recorded"
+    ]
+  },
+  {
+    "gate_id": "global-09",
+    "scope": "GLOBAL",
+    "canonical_gate_text": "protocol, analysis code, thresholds and stopping rules are frozen",
+    "candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 6,
+        "ratio": 0.857
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/experiments/RESEARCH_WORKFLOW.md",
+        "hits": 5,
+        "ratio": 0.714
+      },
+      {
+        "path": "${NEXUS_ROOT}/PHASE2_FRONTIER_IMPLEMENTATION.md",
+        "hits": 4,
+        "ratio": 0.571
+      },
+      {
+        "path": "${NEXUS_ROOT}/RESEARCH_BRIEF_NEXUS_SYSTEM.md",
+        "hits": 4,
+        "ratio": 0.571
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/academic/real_source_manifest.json",
+        "hits": 4,
+        "ratio": 0.571
+      }
+    ],
+    "review_state": "PENDING_REVIEW",
+    "formal_pass_created": false,
+    "review_requirements": [
+      "candidate artifact exists",
+      "artifact is non-circular",
+      "artifact is authoritative for gate",
+      "artifact actually demonstrates gate",
+      "artifact timestamp is appropriate",
+      "artifact hash is captured",
+      "contradictory evidence resolved",
+      "reviewer identity recorded"
+    ]
+  },
+  {
+    "gate_id": "NEXUS-EXP-001-01",
+    "scope": "NEXUS-EXP-001",
+    "canonical_gate_text": "federation E2E path commissioned",
+    "candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/F4C_COMMISSIONING_FINAL_EVIDENCE.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/F4C_COMMISSIONING_STATUS.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/LIBRARIAN_F4C_E2E_COMMISSIONING_REPORT.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/LIBRARIAN_F4_CURRENT_STATUS.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/LIBRARIAN_F4_IMPLEMENTATION_REPORT.md",
+        "hits": 3,
+        "ratio": 1.0
+      }
+    ],
+    "review_state": "PENDING_REVIEW",
+    "formal_pass_created": false,
+    "review_requirements": [
+      "candidate artifact exists",
+      "artifact is non-circular",
+      "artifact is authoritative for gate",
+      "artifact actually demonstrates gate",
+      "artifact timestamp is appropriate",
+      "artifact hash is captured",
+      "contradictory evidence resolved",
+      "reviewer identity recorded"
+    ]
+  },
+  {
+    "gate_id": "NEXUS-EXP-001-02",
+    "scope": "NEXUS-EXP-001",
+    "canonical_gate_text": "research domain READY",
+    "candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/.superpowers/sdd/phase-0-youtube-concepts/task-0.1-report.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/AUTONOMOUS_CONTINUATION_PROTOCOL.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_APPROVAL_AND_RATIONALE.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_COMPLETE.md",
+        "hits": 3,
+        "ratio": 1.0
+      }
+    ],
+    "review_state": "PENDING_REVIEW",
+    "formal_pass_created": false,
+    "review_requirements": [
+      "candidate artifact exists",
+      "artifact is non-circular",
+      "artifact is authoritative for gate",
+      "artifact actually demonstrates gate",
+      "artifact timestamp is appropriate",
+      "artifact hash is captured",
+      "contradictory evidence resolved",
+      "reviewer identity recorded"
+    ]
+  },
+  {
+    "gate_id": "NEXUS-EXP-001-03",
+    "scope": "NEXUS-EXP-001",
+    "canonical_gate_text": "no fallback placeholder mode",
+    "candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/systems/dat_ai/docs/PRESERVED_EVIDENCE_CONCLUSIONS.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/CITATION_VALIDATION_REPORT.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/docs/LIBRARIAN_EVIDENCE_STANDARD.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/MEDIA_INTELLIGENCE_IMPLEMENTATION_GUIDE.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/docs/superpowers/plans/2026-08-16-frontier-youtube-media-intelligence.md",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "review_state": "PENDING_REVIEW",
+    "formal_pass_created": false,
+    "review_requirements": [
+      "candidate artifact exists",
+      "artifact is non-circular",
+      "artifact is authoritative for gate",
+      "artifact actually demonstrates gate",
+      "artifact timestamp is appropriate",
+      "artifact hash is captured",
+      "contradictory evidence resolved",
+      "reviewer identity recorded"
+    ]
+  },
+  {
+    "gate_id": "NEXUS-EXP-002-01",
+    "scope": "NEXUS-EXP-002",
+    "canonical_gate_text": "provenance schema frozen",
+    "candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/engineering_studio_retirement_index/INDEX_20260907T083119Z/system_history/SYSTEM_TIMELINE.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/docs/LIBRARIAN_INSTITUTIONAL_CONTRACT.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/experiments/RESEARCH_WORKFLOW.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/news_intelligence/NEWS_INSTITUTIONAL_CONTRACT.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_APPROVAL_AND_RATIONALE.md",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "review_state": "PENDING_REVIEW",
+    "formal_pass_created": false,
+    "review_requirements": [
+      "candidate artifact exists",
+      "artifact is non-circular",
+      "artifact is authoritative for gate",
+      "artifact actually demonstrates gate",
+      "artifact timestamp is appropriate",
+      "artifact hash is captured",
+      "contradictory evidence resolved",
+      "reviewer identity recorded"
+    ]
+  },
+  {
+    "gate_id": "NEXUS-EXP-002-02",
+    "scope": "NEXUS-EXP-002",
+    "canonical_gate_text": "quarantine path writable and auditable",
+    "candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/RUNBOOK.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 2,
+        "ratio": 0.5
+      },
+      {
+        "path": "${NEXUS_ROOT}/COMPLETE_SYSTEM_MAP.md",
+        "hits": 2,
+        "ratio": 0.5
+      },
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_APPROVAL_AND_RATIONALE.md",
+        "hits": 2,
+        "ratio": 0.5
+      },
+      {
+        "path": "${NEXUS_ROOT}/SLA.md",
+        "hits": 2,
+        "ratio": 0.5
+      }
+    ],
+    "review_state": "PENDING_REVIEW",
+    "formal_pass_created": false,
+    "review_requirements": [
+      "candidate artifact exists",
+      "artifact is non-circular",
+      "artifact is authoritative for gate",
+      "artifact actually demonstrates gate",
+      "artifact timestamp is appropriate",
+      "artifact hash is captured",
+      "contradictory evidence resolved",
+      "reviewer identity recorded"
+    ]
+  },
+  {
+    "gate_id": "NEXUS-EXP-003-01",
+    "scope": "NEXUS-EXP-003",
+    "canonical_gate_text": "benchmark labels complete",
+    "candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/MEDIA_INTELLIGENCE_IMPLEMENTATION_GUIDE.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/.directives-ingestion/completed/master-mission-directive.yaml",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/.directives-ingestion/completed/master-mission-phase-16.yaml",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/.superpowers/optimization_phases_briefs.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/.superpowers/sdd/phase-0-youtube-concepts/concepts.json",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "review_state": "PENDING_REVIEW",
+    "formal_pass_created": false,
+    "review_requirements": [
+      "candidate artifact exists",
+      "artifact is non-circular",
+      "artifact is authoritative for gate",
+      "artifact actually demonstrates gate",
+      "artifact timestamp is appropriate",
+      "artifact hash is captured",
+      "contradictory evidence resolved",
+      "reviewer identity recorded"
+    ]
+  },
+  {
+    "gate_id": "NEXUS-EXP-003-02",
+    "scope": "NEXUS-EXP-003",
+    "canonical_gate_text": "corpus snapshot immutable",
+    "candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/RESEARCH_CORPUS_TIERED_SYSTEM.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/TIERED_SYSTEM_IMPLEMENTATION.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/MASTER_MISSION_COMPLETION_REPORT.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/NEXUS_OPTIMIZATION_PLAN.md",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "review_state": "PENDING_REVIEW",
+    "formal_pass_created": false,
+    "review_requirements": [
+      "candidate artifact exists",
+      "artifact is non-circular",
+      "artifact is authoritative for gate",
+      "artifact actually demonstrates gate",
+      "artifact timestamp is appropriate",
+      "artifact hash is captured",
+      "contradictory evidence resolved",
+      "reviewer identity recorded"
+    ]
+  },
+  {
+    "gate_id": "NEXUS-EXP-003-03",
+    "scope": "NEXUS-EXP-003",
+    "canonical_gate_text": "retrieval configuration frozen",
+    "candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/README.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/RESEARCH_CORPUS_COGNITIVE_MEMORY_ROUTING.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/SYSTEM_STRUCTURE.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/docs/superpowers/specs/2026-08-16-engineering-studio-v4-phase2-spec.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/engineering_studio/programs/research_validation_framework/mission/MASTER_DIRECTIVE.md",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "review_state": "PENDING_REVIEW",
+    "formal_pass_created": false,
+    "review_requirements": [
+      "candidate artifact exists",
+      "artifact is non-circular",
+      "artifact is authoritative for gate",
+      "artifact actually demonstrates gate",
+      "artifact timestamp is appropriate",
+      "artifact hash is captured",
+      "contradictory evidence resolved",
+      "reviewer identity recorded"
+    ]
+  },
+  {
+    "gate_id": "NEXUS-EXP-004-01",
+    "scope": "NEXUS-EXP-004",
+    "canonical_gate_text": "Research Assistant interface explicitly commissioned",
+    "candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_PHD_DOCUMENTATION_REPOSITORY_COMMISSIONING.md",
+        "hits": 3,
+        "ratio": 0.6
+      },
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_APPROVAL_AND_RATIONALE.md",
+        "hits": 3,
+        "ratio": 0.6
+      },
+      {
+        "path": "${NEXUS_ROOT}/NEXT_PHASES_HANDOFF.md",
+        "hits": 3,
+        "ratio": 0.6
+      },
+      {
+        "path": "${NEXUS_ROOT}/RESEARCH_BRIEF_NEXUS_SYSTEM.md",
+        "hits": 3,
+        "ratio": 0.6
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/engineering_studio/research_evidence/ARCHITECTURE_RECONCILIATION_REPORT.md",
+        "hits": 3,
+        "ratio": 0.6
+      }
+    ],
+    "review_state": "PENDING_REVIEW",
+    "formal_pass_created": false,
+    "review_requirements": [
+      "candidate artifact exists",
+      "artifact is non-circular",
+      "artifact is authoritative for gate",
+      "artifact actually demonstrates gate",
+      "artifact timestamp is appropriate",
+      "artifact hash is captured",
+      "contradictory evidence resolved",
+      "reviewer identity recorded"
+    ]
+  },
+  {
+    "gate_id": "NEXUS-EXP-004-02",
+    "scope": "NEXUS-EXP-004",
+    "canonical_gate_text": "classification ontology frozen",
+    "candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_APPROVAL_AND_RATIONALE.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_UNIFIED_IMPLEMENTATION_DIRECTIVE.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/dat_ai/docs/DATAI_LIMITATIONS.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/LIBRARIAN_F4_CURRENT_STATUS.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/engineering_studio_retirement_index/INDEX_20260907T083119Z/system_history/SYSTEM_TIMELINE.md",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "review_state": "PENDING_REVIEW",
+    "formal_pass_created": false,
+    "review_requirements": [
+      "candidate artifact exists",
+      "artifact is non-circular",
+      "artifact is authoritative for gate",
+      "artifact actually demonstrates gate",
+      "artifact timestamp is appropriate",
+      "artifact hash is captured",
+      "contradictory evidence resolved",
+      "reviewer identity recorded"
+    ]
+  },
+  {
+    "gate_id": "NEXUS-EXP-004-03",
+    "scope": "NEXUS-EXP-004",
+    "canonical_gate_text": "citation passage storage operational",
+    "candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 4,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/RESEARCH_CORPUS_TIERED_SYSTEM.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/LIBRARIAN_F4_IMPLEMENTATION_REPORT.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/docs/LIBRARIAN_INSTITUTIONAL_CONTRACT.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/pioneer/PIONEER_AUDIT.json",
+        "hits": 3,
+        "ratio": 0.75
+      }
+    ],
+    "review_state": "PENDING_REVIEW",
+    "formal_pass_created": false,
+    "review_requirements": [
+      "candidate artifact exists",
+      "artifact is non-circular",
+      "artifact is authoritative for gate",
+      "artifact actually demonstrates gate",
+      "artifact timestamp is appropriate",
+      "artifact hash is captured",
+      "contradictory evidence resolved",
+      "reviewer identity recorded"
+    ]
+  },
+  {
+    "gate_id": "NEXUS-EXP-005-02",
+    "scope": "NEXUS-EXP-005",
+    "canonical_gate_text": "research/production physical or logical separation",
+    "candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_APPROVAL_AND_RATIONALE.md",
+        "hits": 4,
+        "ratio": 0.8
+      },
+      {
+        "path": "${NEXUS_ROOT}/RESEARCH_CORPUS_COGNITIVE_MEMORY_ROUTING.md",
+        "hits": 4,
+        "ratio": 0.8
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 4,
+        "ratio": 0.8
+      },
+      {
+        "path": "${NEXUS_ROOT}/.superpowers/sdd/phase-0-youtube-concepts/task-0.1-report.md",
+        "hits": 3,
+        "ratio": 0.6
+      },
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 3,
+        "ratio": 0.6
+      }
+    ],
+    "review_state": "PENDING_REVIEW",
+    "formal_pass_created": false,
+    "review_requirements": [
+      "candidate artifact exists",
+      "artifact is non-circular",
+      "artifact is authoritative for gate",
+      "artifact actually demonstrates gate",
+      "artifact timestamp is appropriate",
+      "artifact hash is captured",
+      "contradictory evidence resolved",
+      "reviewer identity recorded"
+    ]
+  },
+  {
+    "gate_id": "NEXUS-EXP-005-03",
+    "scope": "NEXUS-EXP-005",
+    "canonical_gate_text": "writer identities known",
+    "candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/RESEARCH_BRIEF_NEXUS_SYSTEM.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/docs/superpowers/plans/2026-08-16-engineering-studio-v4-phase1.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/research/engineering_studio/architecture/phase1_scientific_assessment.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/sentinel/SENTINEL_PRICE_DATE_FORENSIC_REPORT.md",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "review_state": "PENDING_REVIEW",
+    "formal_pass_created": false,
+    "review_requirements": [
+      "candidate artifact exists",
+      "artifact is non-circular",
+      "artifact is authoritative for gate",
+      "artifact actually demonstrates gate",
+      "artifact timestamp is appropriate",
+      "artifact hash is captured",
+      "contradictory evidence resolved",
+      "reviewer identity recorded"
+    ]
+  },
+  {
+    "gate_id": "NEXUS-EXP-005-05",
+    "scope": "NEXUS-EXP-005",
+    "canonical_gate_text": "schema and unit conflicts resolved",
+    "candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 4,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/engineering_studio_retirement_index/INDEX_20260907T083119Z/system_history/SYSTEM_TIMELINE.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/sentinel/SENTINEL_F5_1_IMPLEMENTATION_REPORT.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/sentinel/SENTINEL_F5_FORENSIC_AUDIT.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/sentinel/SENTINEL_F5_PHASE_2A_REPORT.md",
+        "hits": 3,
+        "ratio": 0.75
+      }
+    ],
+    "review_state": "PENDING_REVIEW",
+    "formal_pass_created": false,
+    "review_requirements": [
+      "candidate artifact exists",
+      "artifact is non-circular",
+      "artifact is authoritative for gate",
+      "artifact actually demonstrates gate",
+      "artifact timestamp is appropriate",
+      "artifact hash is captured",
+      "contradictory evidence resolved",
+      "reviewer identity recorded"
+    ]
+  },
+  {
+    "gate_id": "NEXUS-EXP-006-01",
+    "scope": "NEXUS-EXP-006",
+    "canonical_gate_text": "original experiment completed validly",
+    "candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/experiments/RESEARCH_WORKFLOW.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/.directives-ingestion/completed/master-mission-directive.yaml",
+        "hits": 2,
+        "ratio": 0.5
+      },
+      {
+        "path": "${NEXUS_ROOT}/.directives-ingestion/completed/master-mission-phase-01.yaml",
+        "hits": 2,
+        "ratio": 0.5
+      }
+    ],
+    "review_state": "PENDING_REVIEW",
+    "formal_pass_created": false,
+    "review_requirements": [
+      "candidate artifact exists",
+      "artifact is non-circular",
+      "artifact is authoritative for gate",
+      "artifact actually demonstrates gate",
+      "artifact timestamp is appropriate",
+      "artifact hash is captured",
+      "contradictory evidence resolved",
+      "reviewer identity recorded"
+    ]
+  },
+  {
+    "gate_id": "NEXUS-EXP-006-02",
+    "scope": "NEXUS-EXP-006",
+    "canonical_gate_text": "evidence bundle sealed",
+    "candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_APPROVAL_AND_RATIONALE.md",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "review_state": "PENDING_REVIEW",
+    "formal_pass_created": false,
+    "review_requirements": [
+      "candidate artifact exists",
+      "artifact is non-circular",
+      "artifact is authoritative for gate",
+      "artifact actually demonstrates gate",
+      "artifact timestamp is appropriate",
+      "artifact hash is captured",
+      "contradictory evidence resolved",
+      "reviewer identity recorded"
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PIONEER Learning Journal Event",
+  "type": "object",
+  "required": ["event_id", "timestamp_utc", "event_type", "actor", "statement", "reasoning", "evidence_refs", "uncertainty", "academic_comparisons", "system_implications", "optimization_proposals", "review_status", "previous_event_sha256", "event_sha256"],
+  "properties": {
+    "event_type": {"enum": ["THOUGHT", "REASONING", "DECISION", "SUCCESS", "FAILURE", "ACADEMIC_COMPARISON", "OPTIMIZATION", "LESSON"]},
+    "review_status": {"enum": ["UNREVIEWED", "EVIDENCE_LINKED", "REVIEWED", "REJECTED", "PROMOTED_TO_ENGINEERING"]},
+    "uncertainty": {"enum": ["UNKNOWN", "LOW", "MEDIUM", "HIGH"]}
+  }
+}

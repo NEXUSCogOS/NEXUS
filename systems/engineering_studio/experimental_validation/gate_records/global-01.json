@@ -1,0 +1,14 @@
+{
+  "gate_id": "global-01",
+  "gate": "canonical code, configuration, dataset and database authority recorded",
+  "status": "PASS",
+  "reviewer": "GPT-5.6-Sol-assisted-adjudication-002",
+  "verified_at": "2026-09-14T00:59:25.584835+00:00",
+  "contradictions_resolved": true,
+  "evidence_refs": [
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_MACHINE_CLOSURE_002_20260914T005925Z/authority/global-01.json",
+      "sha256": "d6e552e633fd64b386b13e34a06e1c1762e2319da7de56d274e250ed6b3a614f"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "checkpoint": "engineering-studio-20260831T1303+0700",
+  "status": "PASS_WITH_BLOCKED_RESEARCH",
+  "schedule": {"due_at": "2026-08-31T13:03:00+07:00", "delay_minutes": 2.15, "status": "ON_TIME"},
+  "nso": {
+    "cycle": "PASS",
+    "architecture": "3.0-consolidated",
+    "stages": "15/15",
+    "acceptance_controls": "22/22",
+    "frozen_source_status": "NOT_CERTIFIED_WITH_4_PRESERVED_SERIALIZATION_DEFECTS",
+    "operational_status": "CERTIFIED_502_OF_502",
+    "archive_sha256": "aa9b6053a761b390be2f47cc8b4ea7af136af021c766168aa7046a4d14d952bb",
+    "archive_members": 533,
+    "cleanroom_reproduction": "PASS",
+    "scientific_findings": {"review_findings": 29, "resolved": 17, "open_method_review": 12, "aggregation_identities": "140/140", "external_metadata_sample": "36/36", "external_value_sample": "4/4"}
+  },
+  "pioneer": {
+    "controls": "14/14",
+    "tests": "127/127",
+    "database_integrity": "PASS",
+    "retrieval_equivalence": "PASS",
+    "content_address_integrity": "PASS",
+    "journal_chain": "PASS",
+    "academic_sources": 22,
+    "citation_edges": 0,
+    "retrieval_sources": 93,
+    "retrieval_documents": 297,
+    "experiments": "6_BLOCKED",
+    "publications": "EVIDENCE_GATES_BLOCKED"
+  },
+  "comparison_to_takeover_baseline": [
+    {"surface": "academic_database", "classification": "UNCHANGED", "sha256": "112ff545f5427fc4ffb76abd11d534621e44637fe63b503a83703604a205ae49"},
+    {"surface": "retrieval_database", "classification": "UNCHANGED", "sha256": "cad4bf0c51f7ef7f4ea3addad5fd7684b517668a6759173eda5a0cc779988f8c"},
+    {"surface": "journal_and_anchor", "classification": "UNCHANGED", "journal_sha256": "facf49702e19ee8434227cf64fe4c07f1f9c53cc5d278802ea3d8dcf60d089c7", "index_sha256": "0f236ab4872da466d48c275ac255f8b400d8354dd6e19aff62710d5384e7afab"},
+    {"surface": "optimization_report", "classification": "EXPECTED_GROWTH", "reason": "scheduled measurement timestamp and timing observations refreshed; certification gates and database identities unchanged"},
+    {"surface": "audit_report", "classification": "EXPECTED_GROWTH", "reason": "new test observation recorded; all 14 controls remain true"},
+    {"surface": "retrieval_performance", "classification": "UNVERIFIED", "reason": "indexed results are equivalent but remain slower at the present 22-source scale; no speedup claim"}
+  ],
+  "recommendation_review": "${NEXUS_ROOT}/systems/librarian/pioneer/engineering_feedback/review-20260831T1303+0700.json",
+  "regressions": [],
+  "material_defects": [],
+  "next_due": "2026-09-01T01:03:00+07:00"
+}

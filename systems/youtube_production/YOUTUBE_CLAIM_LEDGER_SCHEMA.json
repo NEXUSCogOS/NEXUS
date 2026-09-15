@@ -1,0 +1,19 @@
+{
+  "schema_name": "ClaimLedgerEntry",
+  "source_module": "systems/youtube_production/schema.py",
+  "construction_function": "evidence_pack.py::build_claim_ledger()",
+  "mission": "NEXUS_FEDERATION_F8",
+  "description": "Maps every factual script claim to its evidence. Mission section 7's explicit requirement: unverified factual claims may not silently enter the final script -- enforced downstream by script.py::fact_check_script(), which removes any claim whose ledger entry is not VERIFIED/PARTIAL.",
+  "fields": {
+    "claim_id": "matches an EvidenceItem.evidence_id, or is REJECTED if the script referenced a claim_id with no matching evidence item (this is itself a finding, never silently dropped)",
+    "script_segment": "the ScriptSegment.segment_id this claim appears in",
+    "claim_text": "the segment's spoken text",
+    "claim_class": "FACT | ANALYSIS | INTERPRETATION | HYPOTHESIS | EDITORIAL_TRANSITION",
+    "evidence_refs": "list[str]",
+    "provenance_refs": "list[str]",
+    "verification_status": "VERIFIED | PARTIAL | UNVERIFIED | OPINION | HYPOTHESIS | REJECTED",
+    "uncertainty": "string or null, carried from the source EvidenceItem",
+    "editorial_transform_status": "UNCHANGED_FROM_EVIDENCE | REWORDED -- REWORDED only when the spoken text differs from the source claim_text after leading-tag stripping"
+  },
+  "verification_status_rule": "VERIFIED if the source EvidenceItem's claim_class is FACT or ANALYSIS; PARTIAL otherwise (INTERPRETATION/HYPOTHESIS/UNVERIFIED); REJECTED if no matching evidence item exists at all."
+}

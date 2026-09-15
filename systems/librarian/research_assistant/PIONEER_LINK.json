@@ -1,0 +1,12 @@
+{
+  "view": "RESEARCH_ASSISTANT",
+  "system_id": "NEXUS-PIONEER-001",
+  "canonical_system_path": "${NEXUS_ROOT}/systems/librarian/pioneer/PIONEER_SYSTEM.json",
+  "canonical_experiment_registry": "${NEXUS_ROOT}/systems/librarian/experiments/registry.json",
+  "dataset_registry": "${NEXUS_ROOT}/systems/librarian/pioneer/PIONEER_DATASET_REGISTER.json",
+  "publication_registry": "${NEXUS_ROOT}/systems/librarian/pioneer/PIONEER_PUBLICATION_REGISTER.json",
+  "learning_journal": "${NEXUS_ROOT}/systems/librarian/pioneer/journal/events.jsonl",
+  "engineering_feedback_queue": "${NEXUS_ROOT}/systems/librarian/pioneer/engineering_feedback/pending.jsonl",
+  "duplication_policy": "REFERENCE_ONLY_DO_NOT_COPY_CANONICAL_RECORDS",
+  "execution_authority": "NONE_WITHOUT_REGISTRY_GATE_AUTHORISATION"
+}

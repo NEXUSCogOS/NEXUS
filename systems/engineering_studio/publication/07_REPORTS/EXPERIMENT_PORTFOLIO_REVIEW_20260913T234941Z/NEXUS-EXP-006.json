@@ -1,0 +1,79 @@
+{
+  "experiment_id": "NEXUS-EXP-006",
+  "subsystem_layer": "Cross-system reproducibility and independent replication",
+  "claim_under_test": "A completed NEXUS experiment can be independently reproduced from its evidence bundle and preregistration without undocumented operator knowledge.",
+  "falsifiable_hypothesis": "A reviewer who did not design or run the original experiment can reconstruct the environment, verify inputs, rerun the analysis, and reach the same preregistered verdict within the specified tolerance.",
+  "predicted_result": "Environment reconstruction succeeds; input hashes match; primary metrics reproduce within tolerance; verdict and deviations agree.",
+  "null_alternative_outcome": "Replication requires undocumented steps, cannot resolve provenance, uses different inputs, exceeds metric tolerance, or reaches a different verdict.",
+  "independent_variables": [
+    "operator",
+    "clean environment",
+    "execution host"
+  ],
+  "dependent_variables": [
+    "reconstruction success",
+    "input hash agreement",
+    "metric delta",
+    "verdict agreement",
+    "undocumented-step count"
+  ],
+  "controls": [
+    "known-complete reference bundle",
+    "intentionally incomplete bundle must fail closed"
+  ],
+  "dataset_source_requirements": [
+    "immutable input snapshot",
+    "machine-readable manifest",
+    "environment lock",
+    "analysis code and seeds"
+  ],
+  "provenance_requirements": [
+    "artifact hashes",
+    "code commit",
+    "dependency lock",
+    "host/runtime manifest",
+    "operator and timestamps",
+    "documented deviations"
+  ],
+  "pre_registered_protocol": [
+    "seal original bundle before results are shared with replicator",
+    "replicator validates provenance first",
+    "reconstruct clean environment",
+    "run frozen analysis",
+    "compare metrics and verdict",
+    "record every deviation and failed step"
+  ],
+  "acceptance_rejection_thresholds": {
+    "accept": "all input hashes equal; undocumented steps=0; verdict agreement=100%; deterministic metrics exact and stochastic metrics within preregistered CI/tolerance",
+    "reject": "missing provenance, input mismatch, undocumented intervention or verdict disagreement",
+    "otherwise": "INCONCLUSIVE for infrastructure failure unrelated to the bundle"
+  },
+  "statistical_reproducibility_criteria": "At least one blinded independent replication for every accepted experiment; two for high-impact claims; stochastic experiments repeat enough seeds for CI overlap and effect-direction agreement.",
+  "contamination_leakage_checks": [
+    "replicator has no access to mutable original working data",
+    "result blinding until replication verdict",
+    "bundle hash verified before use",
+    "fresh output namespace"
+  ],
+  "execution_prerequisites_stability_gates": [
+    "original experiment completed validly",
+    "evidence bundle sealed",
+    "replicator independent",
+    "clean environment available"
+  ],
+  "evidence_artifacts": [
+    "sealed replication bundle",
+    "environment reconstruction log",
+    "replication outputs",
+    "metric comparison",
+    "deviation log",
+    "signed replication verdict"
+  ],
+  "replication_plan": "This record defines the mandatory replication phase for NEXUS-EXP-001 through NEXUS-EXP-005 and future experiments.",
+  "external_literature_cross_check_status": "PENDING_METHODS_REVIEW",
+  "contradictory_findings": [
+    "Current readiness evidence reports no tested restore and non-reproducible runtime/dependency conditions."
+  ],
+  "result_status": "BLOCKED",
+  "final_verdict": "PENDING"
+}

@@ -1,0 +1,32 @@
+# Secrets
+.env
+*.env
+.env.bak*
+.env.*
+!.env.example
+
+# Virtualenv / caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+
+# Model weights are large binaries and live on external storage per NEXUS
+# storage policy (DATAI_CANONICAL_STORAGE_MAP.md) -- never committed here.
+# Only models/MODEL_REGISTRY_METADATA.json (small, honest metadata) is tracked.
+models/*.pth
+models/*.pt
+models/*.onnx
+
+# Data caches -- external-first, never in git. Satellite imagery cache and
+# logs are genuinely bulk/regenerable; excluded.
+data/satellite_cache/
+data/logs/
+data/labeled_datasets/
+
+# Real Dong Nai zoning data (data/zoning/, data/zoning_raw/) is NOT excluded:
+# it is small (~12KB each), real (not synthetic), and required as a test
+# fixture for the ingestion pipeline this phase recovers. It is tracked here
+# the same way the donor tracked it (donor .gitignore excluded only
+# satellite_cache/ and logs/, not zoning data).

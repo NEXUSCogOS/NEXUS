@@ -1,0 +1,82 @@
+{
+  "experiment_id": "NEXUS-EXP-004",
+  "subsystem_layer": "Research Assistant evidence synthesis and contradiction detection",
+  "claim_under_test": "Research Assistant can classify evidence as confirming, contradicting, qualifying, or disproving a hypothesis using source-grounded reasoning rather than keyword polarity alone.",
+  "falsifiable_hypothesis": "Against a blinded expert-labelled claim-evidence set, the system reaches macro-F1 >=0.80, contradiction recall >=0.90, and citation entailment precision >=0.95, while abstaining on insufficient evidence.",
+  "predicted_result": "All primary thresholds met; every classification links to exact source passages and provenance records; uncertainty is calibrated.",
+  "null_alternative_outcome": "Performance is at or below the baseline, contradiction recall is below threshold, citations do not entail classifications, or unsupported evidence is overclaimed.",
+  "independent_variables": [
+    "evidence relationship class",
+    "domain",
+    "source quality",
+    "claim complexity"
+  ],
+  "dependent_variables": [
+    "macro-F1",
+    "contradiction recall",
+    "citation entailment precision",
+    "abstention accuracy",
+    "calibration error"
+  ],
+  "controls": [
+    "current keyword-marker heuristic",
+    "label-shuffled negative control",
+    "clear entailment/contradiction anchor cases",
+    "insufficient-evidence cases"
+  ],
+  "dataset_source_requirements": [
+    "blinded expert-labelled claim-evidence pairs",
+    "balanced four-way relationship classes plus insufficient evidence",
+    "primary-source text with stable identifiers"
+  ],
+  "provenance_requirements": [
+    "source identifiers and hashes",
+    "passage offsets",
+    "annotator identities and conflicts",
+    "adjudication log",
+    "model/prompt/config version"
+  ],
+  "pre_registered_protocol": [
+    "freeze ontology and labelling guide",
+    "double-annotate and adjudicate",
+    "seal test split",
+    "run heuristic baseline and candidate once",
+    "score primary and safety endpoints",
+    "manually audit every high-confidence error"
+  ],
+  "acceptance_rejection_thresholds": {
+    "accept": "macro-F1>=0.80; contradiction recall>=0.90; entailment precision>=0.95; unsupported overclaim rate<=0.02",
+    "reject": "contradiction recall<0.90, entailment precision<0.95, confirmed leakage, or any fabricated citation",
+    "otherwise": "QUALIFIED or INCONCLUSIVE"
+  },
+  "statistical_reproducibility_criteria": "At least 100 adjudicated examples per relationship class; bootstrap 95% CIs; inter-annotator agreement reported; independent repeat on a second-domain sample.",
+  "contamination_leakage_checks": [
+    "sealed test split",
+    "near-duplicate source and claim detection",
+    "prompt and corpus scan for labels",
+    "chronological holdout",
+    "no manual correction before scoring"
+  ],
+  "execution_prerequisites_stability_gates": [
+    "Research Assistant interface explicitly commissioned",
+    "classification ontology frozen",
+    "citation passage storage operational",
+    "expert adjudicators assigned"
+  ],
+  "evidence_artifacts": [
+    "label guide",
+    "adjudicated dataset",
+    "predictions",
+    "confusion matrix",
+    "calibration plot",
+    "citation entailment audit",
+    "error analysis"
+  ],
+  "replication_plan": "Independent annotators build a second held-out set; replication runner receives only the frozen protocol and artifact bundle.",
+  "external_literature_cross_check_status": "PENDING",
+  "contradictory_findings": [
+    "Current synthesis evidence explicitly describes support/contradiction classification as a keyword-marker heuristic, not semantic entailment."
+  ],
+  "result_status": "BLOCKED",
+  "final_verdict": "PENDING"
+}

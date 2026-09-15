@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "states": [
+    "DRAFT",
+    "PACKAGE_FROZEN",
+    "DISPATCHED",
+    "RECEIVED",
+    "INTEGRITY_VERIFIED",
+    "INDEPENDENCE_VERIFIED",
+    "ADJUDICATED",
+    "SEALED"
+  ],
+  "allowed_transitions": {
+    "DRAFT": [
+      "PACKAGE_FROZEN"
+    ],
+    "PACKAGE_FROZEN": [
+      "DISPATCHED"
+    ],
+    "DISPATCHED": [
+      "RECEIVED"
+    ],
+    "RECEIVED": [
+      "INTEGRITY_VERIFIED"
+    ],
+    "INTEGRITY_VERIFIED": [
+      "INDEPENDENCE_VERIFIED"
+    ],
+    "INDEPENDENCE_VERIFIED": [
+      "ADJUDICATED"
+    ],
+    "ADJUDICATED": [
+      "SEALED"
+    ],
+    "SEALED": []
+  }
+}

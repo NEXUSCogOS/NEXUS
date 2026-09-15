@@ -1,0 +1,14 @@
+{
+  "gate_id": "NEXUS-EXP-005-02",
+  "gate": "research/production physical or logical separation",
+  "status": "PASS",
+  "reviewer": "GPT-5.6-Sol-assisted-final-adjudication-001",
+  "verified_at": "2026-09-14T02:39:13.338991+00:00",
+  "contradictions_resolved": true,
+  "evidence_refs": [
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_MASTER_BATCH_001_20260914T023759Z/evidence/NEXUS-EXP-005-02.json",
+      "sha256": "63dcc2f69055bb52100de540df2f87a0047fc14735cc473183f7df0aa2b6dde0"
+    }
+  ]
+}

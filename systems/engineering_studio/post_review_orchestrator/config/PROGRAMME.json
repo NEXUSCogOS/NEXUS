@@ -1,0 +1,18 @@
+{
+  "programme": "NEXUS-EV-POST-REVIEW",
+  "primary_experiments": [
+    "NEXUS-EXP-001",
+    "NEXUS-EXP-002",
+    "NEXUS-EXP-003",
+    "NEXUS-EXP-004",
+    "NEXUS-EXP-005"
+  ],
+  "replication_experiment": "NEXUS-EXP-006",
+  "required_human_gates": [
+    "global-10",
+    "NEXUS-EXP-003-04",
+    "NEXUS-EXP-004-04"
+  ],
+  "execution_policy": "FAIL_CLOSED",
+  "github_action": false
+}

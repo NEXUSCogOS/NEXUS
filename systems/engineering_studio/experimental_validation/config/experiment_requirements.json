@@ -1,0 +1,390 @@
+[
+  {
+    "experiment_id": "NEXUS-EXP-001",
+    "registry_status": "BLOCKED",
+    "final_verdict": "PENDING",
+    "required_gates": [
+      {
+        "gate_id": "global-01",
+        "gate": "canonical code, configuration, dataset and database authority recorded"
+      },
+      {
+        "gate_id": "global-02",
+        "gate": "required services healthy for the preregistered observation window"
+      },
+      {
+        "gate_id": "global-03",
+        "gate": "clean-environment build or environment lock reproduced"
+      },
+      {
+        "gate_id": "global-04",
+        "gate": "research data physically or logically isolated from production writers"
+      },
+      {
+        "gate_id": "global-05",
+        "gate": "backup integrity verified and at least one restore rehearsal passed"
+      },
+      {
+        "gate_id": "global-06",
+        "gate": "monitoring detects a deliberately injected non-destructive failure"
+      },
+      {
+        "gate_id": "global-07",
+        "gate": "dataset snapshots are immutable, hashed, licensed and provenance-complete"
+      },
+      {
+        "gate_id": "global-08",
+        "gate": "secrets and live financial operations are excluded from experiment scope"
+      },
+      {
+        "gate_id": "global-09",
+        "gate": "protocol, analysis code, thresholds and stopping rules are frozen"
+      },
+      {
+        "gate_id": "global-10",
+        "gate": "independent reviewer signs the readiness record"
+      },
+      {
+        "gate_id": "NEXUS-EXP-001-01",
+        "gate": "federation E2E path commissioned"
+      },
+      {
+        "gate_id": "NEXUS-EXP-001-02",
+        "gate": "research domain READY"
+      },
+      {
+        "gate_id": "NEXUS-EXP-001-03",
+        "gate": "no fallback placeholder mode"
+      },
+      {
+        "gate_id": "NEXUS-EXP-001-04",
+        "gate": "corpus and event log restore tested"
+      }
+    ],
+    "required_gate_count": 14
+  },
+  {
+    "experiment_id": "NEXUS-EXP-002",
+    "registry_status": "BLOCKED",
+    "final_verdict": "PENDING",
+    "required_gates": [
+      {
+        "gate_id": "global-01",
+        "gate": "canonical code, configuration, dataset and database authority recorded"
+      },
+      {
+        "gate_id": "global-02",
+        "gate": "required services healthy for the preregistered observation window"
+      },
+      {
+        "gate_id": "global-03",
+        "gate": "clean-environment build or environment lock reproduced"
+      },
+      {
+        "gate_id": "global-04",
+        "gate": "research data physically or logically isolated from production writers"
+      },
+      {
+        "gate_id": "global-05",
+        "gate": "backup integrity verified and at least one restore rehearsal passed"
+      },
+      {
+        "gate_id": "global-06",
+        "gate": "monitoring detects a deliberately injected non-destructive failure"
+      },
+      {
+        "gate_id": "global-07",
+        "gate": "dataset snapshots are immutable, hashed, licensed and provenance-complete"
+      },
+      {
+        "gate_id": "global-08",
+        "gate": "secrets and live financial operations are excluded from experiment scope"
+      },
+      {
+        "gate_id": "global-09",
+        "gate": "protocol, analysis code, thresholds and stopping rules are frozen"
+      },
+      {
+        "gate_id": "global-10",
+        "gate": "independent reviewer signs the readiness record"
+      },
+      {
+        "gate_id": "NEXUS-EXP-002-01",
+        "gate": "provenance schema frozen"
+      },
+      {
+        "gate_id": "NEXUS-EXP-002-02",
+        "gate": "quarantine path writable and auditable"
+      },
+      {
+        "gate_id": "NEXUS-EXP-002-03",
+        "gate": "restore rehearsal passed"
+      },
+      {
+        "gate_id": "NEXUS-EXP-002-04",
+        "gate": "test store demonstrably isolated"
+      }
+    ],
+    "required_gate_count": 14
+  },
+  {
+    "experiment_id": "NEXUS-EXP-003",
+    "registry_status": "BLOCKED",
+    "final_verdict": "PENDING",
+    "required_gates": [
+      {
+        "gate_id": "global-01",
+        "gate": "canonical code, configuration, dataset and database authority recorded"
+      },
+      {
+        "gate_id": "global-02",
+        "gate": "required services healthy for the preregistered observation window"
+      },
+      {
+        "gate_id": "global-03",
+        "gate": "clean-environment build or environment lock reproduced"
+      },
+      {
+        "gate_id": "global-04",
+        "gate": "research data physically or logically isolated from production writers"
+      },
+      {
+        "gate_id": "global-05",
+        "gate": "backup integrity verified and at least one restore rehearsal passed"
+      },
+      {
+        "gate_id": "global-06",
+        "gate": "monitoring detects a deliberately injected non-destructive failure"
+      },
+      {
+        "gate_id": "global-07",
+        "gate": "dataset snapshots are immutable, hashed, licensed and provenance-complete"
+      },
+      {
+        "gate_id": "global-08",
+        "gate": "secrets and live financial operations are excluded from experiment scope"
+      },
+      {
+        "gate_id": "global-09",
+        "gate": "protocol, analysis code, thresholds and stopping rules are frozen"
+      },
+      {
+        "gate_id": "global-10",
+        "gate": "independent reviewer signs the readiness record"
+      },
+      {
+        "gate_id": "NEXUS-EXP-003-01",
+        "gate": "benchmark labels complete"
+      },
+      {
+        "gate_id": "NEXUS-EXP-003-02",
+        "gate": "corpus snapshot immutable"
+      },
+      {
+        "gate_id": "NEXUS-EXP-003-03",
+        "gate": "retrieval configuration frozen"
+      },
+      {
+        "gate_id": "NEXUS-EXP-003-04",
+        "gate": "independent adjudicator assigned"
+      }
+    ],
+    "required_gate_count": 14
+  },
+  {
+    "experiment_id": "NEXUS-EXP-004",
+    "registry_status": "BLOCKED",
+    "final_verdict": "PENDING",
+    "required_gates": [
+      {
+        "gate_id": "global-01",
+        "gate": "canonical code, configuration, dataset and database authority recorded"
+      },
+      {
+        "gate_id": "global-02",
+        "gate": "required services healthy for the preregistered observation window"
+      },
+      {
+        "gate_id": "global-03",
+        "gate": "clean-environment build or environment lock reproduced"
+      },
+      {
+        "gate_id": "global-04",
+        "gate": "research data physically or logically isolated from production writers"
+      },
+      {
+        "gate_id": "global-05",
+        "gate": "backup integrity verified and at least one restore rehearsal passed"
+      },
+      {
+        "gate_id": "global-06",
+        "gate": "monitoring detects a deliberately injected non-destructive failure"
+      },
+      {
+        "gate_id": "global-07",
+        "gate": "dataset snapshots are immutable, hashed, licensed and provenance-complete"
+      },
+      {
+        "gate_id": "global-08",
+        "gate": "secrets and live financial operations are excluded from experiment scope"
+      },
+      {
+        "gate_id": "global-09",
+        "gate": "protocol, analysis code, thresholds and stopping rules are frozen"
+      },
+      {
+        "gate_id": "global-10",
+        "gate": "independent reviewer signs the readiness record"
+      },
+      {
+        "gate_id": "NEXUS-EXP-004-01",
+        "gate": "Research Assistant interface explicitly commissioned"
+      },
+      {
+        "gate_id": "NEXUS-EXP-004-02",
+        "gate": "classification ontology frozen"
+      },
+      {
+        "gate_id": "NEXUS-EXP-004-03",
+        "gate": "citation passage storage operational"
+      },
+      {
+        "gate_id": "NEXUS-EXP-004-04",
+        "gate": "expert adjudicators assigned"
+      }
+    ],
+    "required_gate_count": 14
+  },
+  {
+    "experiment_id": "NEXUS-EXP-005",
+    "registry_status": "BLOCKED",
+    "final_verdict": "PENDING",
+    "required_gates": [
+      {
+        "gate_id": "global-01",
+        "gate": "canonical code, configuration, dataset and database authority recorded"
+      },
+      {
+        "gate_id": "global-02",
+        "gate": "required services healthy for the preregistered observation window"
+      },
+      {
+        "gate_id": "global-03",
+        "gate": "clean-environment build or environment lock reproduced"
+      },
+      {
+        "gate_id": "global-04",
+        "gate": "research data physically or logically isolated from production writers"
+      },
+      {
+        "gate_id": "global-05",
+        "gate": "backup integrity verified and at least one restore rehearsal passed"
+      },
+      {
+        "gate_id": "global-06",
+        "gate": "monitoring detects a deliberately injected non-destructive failure"
+      },
+      {
+        "gate_id": "global-07",
+        "gate": "dataset snapshots are immutable, hashed, licensed and provenance-complete"
+      },
+      {
+        "gate_id": "global-08",
+        "gate": "secrets and live financial operations are excluded from experiment scope"
+      },
+      {
+        "gate_id": "global-09",
+        "gate": "protocol, analysis code, thresholds and stopping rules are frozen"
+      },
+      {
+        "gate_id": "global-10",
+        "gate": "independent reviewer signs the readiness record"
+      },
+      {
+        "gate_id": "NEXUS-EXP-005-01",
+        "gate": "tested restore"
+      },
+      {
+        "gate_id": "NEXUS-EXP-005-02",
+        "gate": "research/production physical or logical separation"
+      },
+      {
+        "gate_id": "NEXUS-EXP-005-03",
+        "gate": "writer identities known"
+      },
+      {
+        "gate_id": "NEXUS-EXP-005-04",
+        "gate": "disk headroom safe"
+      },
+      {
+        "gate_id": "NEXUS-EXP-005-05",
+        "gate": "schema and unit conflicts resolved"
+      }
+    ],
+    "required_gate_count": 15
+  },
+  {
+    "experiment_id": "NEXUS-EXP-006",
+    "registry_status": "BLOCKED",
+    "final_verdict": "PENDING",
+    "required_gates": [
+      {
+        "gate_id": "global-01",
+        "gate": "canonical code, configuration, dataset and database authority recorded"
+      },
+      {
+        "gate_id": "global-02",
+        "gate": "required services healthy for the preregistered observation window"
+      },
+      {
+        "gate_id": "global-03",
+        "gate": "clean-environment build or environment lock reproduced"
+      },
+      {
+        "gate_id": "global-04",
+        "gate": "research data physically or logically isolated from production writers"
+      },
+      {
+        "gate_id": "global-05",
+        "gate": "backup integrity verified and at least one restore rehearsal passed"
+      },
+      {
+        "gate_id": "global-06",
+        "gate": "monitoring detects a deliberately injected non-destructive failure"
+      },
+      {
+        "gate_id": "global-07",
+        "gate": "dataset snapshots are immutable, hashed, licensed and provenance-complete"
+      },
+      {
+        "gate_id": "global-08",
+        "gate": "secrets and live financial operations are excluded from experiment scope"
+      },
+      {
+        "gate_id": "global-09",
+        "gate": "protocol, analysis code, thresholds and stopping rules are frozen"
+      },
+      {
+        "gate_id": "global-10",
+        "gate": "independent reviewer signs the readiness record"
+      },
+      {
+        "gate_id": "NEXUS-EXP-006-01",
+        "gate": "original experiment completed validly"
+      },
+      {
+        "gate_id": "NEXUS-EXP-006-02",
+        "gate": "evidence bundle sealed"
+      },
+      {
+        "gate_id": "NEXUS-EXP-006-03",
+        "gate": "replicator independent"
+      },
+      {
+        "gate_id": "NEXUS-EXP-006-04",
+        "gate": "clean environment available"
+      }
+    ],
+    "required_gate_count": 14
+  }
+]

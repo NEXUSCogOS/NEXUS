@@ -1,0 +1,145 @@
+-- Migration: Add Satellite Intelligence tables
+-- Created: 2026-08-02
+-- Purpose: Foundation for satellite data storage + active learning
+
+BEGIN;
+
+-- 1. Satellite land-use classification layers (weekly from Sentinel-2)
+CREATE TABLE satellite_layers (
+  id BIGSERIAL PRIMARY KEY,
+  week_start DATE NOT NULL,
+  tile_id VARCHAR(50) NOT NULL,
+  land_use_class VARCHAR(30) NOT NULL,
+  confidence FLOAT NOT NULL,
+  geom GEOMETRY(POLYGON, 4326) NOT NULL,
+  source VARCHAR(50) DEFAULT 'sentinel2',
+  model_version VARCHAR(20),
+  created_at TIMESTAMP DEFAULT NOW(),
+  updated_at TIMESTAMP DEFAULT NOW(),
+  UNIQUE(week_start, tile_id, geom),
+  CONSTRAINT valid_confidence CHECK (confidence >= 0 AND confidence <= 1),
+  CONSTRAINT valid_land_use CHECK (land_use_class IN ('urban', 'agricultural', 'water', 'forest', 'vacant'))
+);
+CREATE INDEX idx_satellite_layers_geom ON satellite_layers USING GIST(geom);
+CREATE INDEX idx_satellite_layers_week ON satellite_layers(week_start);
+CREATE INDEX idx_satellite_layers_class ON satellite_layers(land_use_class);
+CREATE INDEX idx_satellite_layers_tile ON satellite_layers(tile_id);
+
+-- 2. Change detection (week-to-week differences)
+CREATE TABLE satellite_changes (
+  id BIGSERIAL PRIMARY KEY,
+  week_start DATE NOT NULL,
+  prev_week_start DATE,
+  change_type VARCHAR(50) NOT NULL,
+  prev_class VARCHAR(30),
+  new_class VARCHAR(30),
+  confidence FLOAT NOT NULL,
+  geom GEOMETRY(POLYGON, 4326) NOT NULL,
+  severity VARCHAR(20),
+  area_sqm INT,
+  created_at TIMESTAMP DEFAULT NOW(),
+  CONSTRAINT valid_confidence CHECK (confidence >= 0 AND confidence <= 1),
+  CONSTRAINT valid_change_type CHECK (change_type IN ('new_construction', 'clearing', 'vegetation_loss', 'water_change', 'zoning_mismatch')),
+  CONSTRAINT valid_severity CHECK (severity IN ('low', 'medium', 'high'))
+);
+CREATE INDEX idx_satellite_changes_geom ON satellite_changes USING GIST(geom);
+CREATE INDEX idx_satellite_changes_week ON satellite_changes(week_start);
+CREATE INDEX idx_satellite_changes_type ON satellite_changes(change_type);
+CREATE INDEX idx_satellite_changes_severity ON satellite_changes(severity);
+
+-- 3. Validation ground-truth collection (Dong Nai focus)
+CREATE TABLE satellite_validations (
+  id BIGSERIAL PRIMARY KEY,
+  listing_id BIGINT NOT NULL REFERENCES listings(id) ON DELETE CASCADE,
+  satellite_change_id BIGINT REFERENCES satellite_changes(id),
+  validation_source VARCHAR(50),
+  validation_status VARCHAR(30) DEFAULT 'pending',
+  confidence FLOAT,
+  notes TEXT,
+  validated_date TIMESTAMP,
+  created_at TIMESTAMP DEFAULT NOW(),
+  updated_at TIMESTAMP DEFAULT NOW(),
+  CONSTRAINT valid_validation_confidence CHECK (confidence IS NULL OR (confidence >= 0 AND confidence <= 1)),
+  CONSTRAINT valid_validation_status CHECK (validation_status IN ('pending', 'confirmed', 'rejected', 'uncertain'))
+);
+CREATE INDEX idx_validations_listing ON satellite_validations(listing_id);
+CREATE INDEX idx_validations_status ON satellite_validations(validation_status);
+CREATE INDEX idx_validations_change ON satellite_validations(satellite_change_id);
+
+-- 4. Planet Labs high-resolution validation imagery
+CREATE TABLE planet_imagery (
+  id BIGSERIAL PRIMARY KEY,
+  listing_id BIGINT NOT NULL REFERENCES listings(id) ON DELETE CASCADE,
+  satellite_validation_id BIGINT REFERENCES satellite_validations(id),
+  planet_image_id VARCHAR(255) UNIQUE,
+  acquisition_date DATE NOT NULL,
+  image_url TEXT NOT NULL,
+  resolution_m FLOAT,
+  confidence FLOAT,
+  stored_locally BOOLEAN DEFAULT FALSE,
+  local_path VARCHAR(255),
+  created_at TIMESTAMP DEFAULT NOW(),
+  CONSTRAINT valid_planet_confidence CHECK (confidence >= 0 AND confidence <= 1)
+);
+CREATE INDEX idx_planet_listing ON planet_imagery(listing_id);
+CREATE INDEX idx_planet_validation ON planet_imagery(satellite_validation_id);
+CREATE INDEX idx_planet_date ON planet_imagery(acquisition_date);
+
+-- 5. Scraped photos with extracted features
+CREATE TABLE satellite_photos (
+  id BIGSERIAL PRIMARY KEY,
+  listing_id BIGINT NOT NULL REFERENCES listings(id) ON DELETE CASCADE,
+  photo_url TEXT NOT NULL,
+  photo_source VARCHAR(50),
+  photo_order INT,
+  extracted_features JSONB,
+  created_at TIMESTAMP DEFAULT NOW(),
+  CONSTRAINT valid_photo_source CHECK (photo_source IN ('batdongsan', 'chotot', 'planet_labs'))
+);
+CREATE INDEX idx_photos_listing ON satellite_photos(listing_id);
+CREATE INDEX idx_photos_source ON satellite_photos(photo_source);
+
+-- 6. Update existing listings table
+ALTER TABLE listings
+  ADD COLUMN IF NOT EXISTS satellite_land_use VARCHAR(30),
+  ADD COLUMN IF NOT EXISTS satellite_confidence FLOAT,
+  ADD COLUMN IF NOT EXISTS zoning_type VARCHAR(50),
+  ADD COLUMN IF NOT EXISTS land_use_zoning_match FLOAT,
+  ADD COLUMN IF NOT EXISTS last_satellite_update TIMESTAMP;
+
+-- 7. Update valuation_history table
+ALTER TABLE valuation_history
+  ADD COLUMN IF NOT EXISTS satellite_signal_boost INT DEFAULT 0,
+  ADD COLUMN IF NOT EXISTS change_flagged BOOLEAN DEFAULT FALSE,
+  ADD COLUMN IF NOT EXISTS change_type VARCHAR(50);
+
+-- 8. Model performance tracking
+CREATE TABLE IF NOT EXISTS model_metrics (
+  id BIGSERIAL PRIMARY KEY,
+  model_version VARCHAR(20) UNIQUE NOT NULL,
+  accuracy FLOAT NOT NULL,
+  trained_date TIMESTAMP NOT NULL,
+  training_samples INT,
+  test_set_accuracy FLOAT,
+  created_at TIMESTAMP DEFAULT NOW(),
+  CONSTRAINT valid_accuracy CHECK (accuracy >= 0 AND accuracy <= 1)
+);
+CREATE INDEX idx_model_version ON model_metrics(model_version);
+
+-- 9. Satellite ingestion log
+CREATE TABLE IF NOT EXISTS satellite_ingest_log (
+  id BIGSERIAL PRIMARY KEY,
+  week_start DATE NOT NULL,
+  tile_id VARCHAR(50),
+  ingestion_status VARCHAR(50),
+  cloud_cover_percent FLOAT,
+  file_size_bytes BIGINT,
+  processing_time_seconds INT,
+  error_message TEXT,
+  created_at TIMESTAMP DEFAULT NOW(),
+  CONSTRAINT valid_status CHECK (ingestion_status IN ('success', 'failed', 'skipped', 'processing'))
+);
+CREATE INDEX idx_ingest_week ON satellite_ingest_log(week_start);
+CREATE INDEX idx_ingest_status ON satellite_ingest_log(ingestion_status);
+
+COMMIT;

@@ -1,0 +1,22 @@
+{
+  "programme_id": "NEXUS-EV-CANONICAL-EXECUTION-ORCHESTRATOR-001",
+  "execution_order": [
+    "NEXUS-EXP-002",
+    "NEXUS-EXP-005",
+    "NEXUS-EXP-001",
+    "NEXUS-EXP-003",
+    "NEXUS-EXP-004"
+  ],
+  "replication_experiment": "NEXUS-EXP-006",
+  "allowed_verdicts": [
+    "PASS",
+    "FAIL",
+    "INCONCLUSIVE"
+  ],
+  "require_all_gates": true,
+  "require_registry_ready": true,
+  "automatic_registry_edit": false,
+  "automatic_human_attestation": false,
+  "automatic_github_publication": false,
+  "stop_on_non_pass_verdict": true
+}

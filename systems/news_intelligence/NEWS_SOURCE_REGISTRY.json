@@ -1,0 +1,22 @@
+{
+  "sources": [
+    {
+      "source_id": "vnexpress_kinh_doanh",
+      "feed_url": "https://vnexpress.net/rss/kinh-doanh.rss",
+      "publisher": "VnExpress",
+      "source_class": "MAINSTREAM_NEWS",
+      "language": "vi",
+      "geography": "Vietnam",
+      "access": "PUBLIC_RSS_NO_AUTH"
+    },
+    {
+      "source_id": "bbc_business",
+      "feed_url": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "publisher": "BBC News",
+      "source_class": "MAINSTREAM_NEWS",
+      "language": "en",
+      "geography": "UK/International",
+      "access": "PUBLIC_RSS_NO_AUTH"
+    }
+  ]
+}

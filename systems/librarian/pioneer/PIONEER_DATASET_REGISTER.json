@@ -1,0 +1,15 @@
+{
+  "datasets": [
+    {
+      "dataset_id": "NSO-VN-502-OPERATIONAL-2026",
+      "title": "Vietnam NSO 502-matrix operational statistical corpus",
+      "role": "REGISTERED_EXTERNAL_DATASET_REFERENCE",
+      "manifest_path": "${HOME}/Documents/Codex/2026-08-29/referenced-chatgpt-conversation-this-is-an-4/outputs/nso-502-evidence-closure/handoff/NSO_502_OPERATIONAL_CORPUS.json",
+      "manifest_sha256": "0bdb7b469c71830284ca60e13c27f2df7c3f09a240e6588eb6de33f5e0a8fa73",
+      "operational_files": 502,
+      "status": "CERTIFIED_FOR_CONTROLLED_INGESTION",
+      "ingestion_status": "REGISTERED_BY_REFERENCE_NOT_COPIED_INTO_LITERATURE_DATABASE",
+      "limitations": "Twelve E03.23 values remain open methodology reviews; external corroboration is sampled."
+    }
+  ]
+}

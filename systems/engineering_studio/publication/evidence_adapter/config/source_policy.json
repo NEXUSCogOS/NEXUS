@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+
+  "authority": "CANONICAL_NEXUS",
+
+  "mode": "READ_ONLY_SOURCE",
+
+  "allowed_source_classes": [
+    "VALIDATED_EXPERIMENT",
+    "VERIFIED_CLAIM",
+    "PUBLIC_ARCHITECTURE",
+    "PUBLIC_TEST_RESULT",
+    "PUBLIC_REPRODUCIBILITY_ARTIFACT",
+    "PUBLIC_PROVENANCE_RECORD"
+  ],
+
+  "default_export_state": "DENY",
+
+  "rules": {
+    "wholesale_nexus_export": false,
+    "canonical_mutation": false,
+    "raw_private_database_export": false,
+    "credential_export": false,
+    "private_dataset_export": false,
+    "unverified_claim_as_fact": false,
+    "automatic_publication": false
+  }
+}

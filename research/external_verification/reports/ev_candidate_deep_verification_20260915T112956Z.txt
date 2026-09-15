@@ -1,0 +1,209 @@
+======================================================================
+ NEXUS-EVA — EXPERIMENTAL VALIDATION DEEP CANDIDATE VERIFICATION
+======================================================================
+
+UTC=2026-09-15T11:29:57Z
+MODE=READ_ONLY
+MUTATION=NONE
+STEP7_DECISION=SINGLE_STRONG_CANDIDATE
+CANDIDATE=${NEXUS_ROOT}/systems/engineering_studio/experimental_validation
+
+=== 1. CANDIDATE IDENTITY ===
+REALPATH=${NEXUS_ROOT}/systems/engineering_studio/experimental_validation
+
+=== 2. TOP-LEVEL STRUCTURE ===
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/__init__.py
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/__pycache__
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/__pycache__/__init__.cpython-313.pyc
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/__pycache__/__init__.cpython-314.pyc
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/__pycache__/bundle_sealer.cpython-313.pyc
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/__pycache__/dossier.cpython-313.pyc
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/__pycache__/execution_boundary.cpython-313.pyc
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/__pycache__/gate_validator.cpython-313.pyc
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/__pycache__/gate_validator.cpython-314.pyc
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/__pycache__/publication_bridge.cpython-313.pyc
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/__pycache__/readiness.cpython-313.pyc
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/__pycache__/readiness.cpython-314.pyc
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/__pycache__/replication.cpython-313.pyc
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/__pycache__/result_validator.cpython-313.pyc
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/__pycache__/technical_verifier.cpython-313.pyc
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/bundle_sealer.py
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/bundles
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/config
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/config/experiment_requirements.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/dossier.py
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/evidence
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/evidence/closure_evidence_snapshot.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/evidence/evidence_review_queue.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/evidence/remediation_plan_snapshot.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/execution_boundary.py
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/global-01.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/global-02.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/global-03.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/global-04.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/global-05.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/global-06.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/global-07.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/global-08.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/global-09.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/NEXUS-EXP-001-01.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/NEXUS-EXP-001-02.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/NEXUS-EXP-001-03.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/NEXUS-EXP-001-04.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/NEXUS-EXP-002-01.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/NEXUS-EXP-002-02.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/NEXUS-EXP-002-03.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/NEXUS-EXP-002-04.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/NEXUS-EXP-003-01.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/NEXUS-EXP-003-02.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/NEXUS-EXP-003-03.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/NEXUS-EXP-004-01.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/NEXUS-EXP-004-02.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/NEXUS-EXP-004-03.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/NEXUS-EXP-005-01.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/NEXUS-EXP-005-02.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/NEXUS-EXP-005-03.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/NEXUS-EXP-005-04.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/NEXUS-EXP-005-05.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_validator.py
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/human_queue
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/human_queue/global-10.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/human_queue/NEXUS-EXP-003-04.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/human_queue/NEXUS-EXP-004-04.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/human_queue/NEXUS-EXP-006-03.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/publication_bridge.py
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/publication_staging
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/publication_staging/NexusCogOS
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/readiness.py
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/replication
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/replication.py
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/replication/exp006_predecessor_state.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/reports
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/reports/staging_security_scan.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/result_validator.py
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/runs
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/state
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/state/canonical_runtime_inspection.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/state/execution_boundary.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/state/executor_candidates.txt
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/state/gate_state.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/state/readiness.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/technical
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/technical_verifier.py
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/technical/commissioning_observations.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/tests
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/tests/__pycache__
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/tests/test_gate_validator.py
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/tests/test_post_execution.py
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/tests/test_publication_bridge.py
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/tests/test_technical_verifier.py
+
+=== 3. EXPERIMENT REQUIREMENTS ===
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/config/experiment_requirements.json
+
+=== 4. READINESS IMPLEMENTATION ===
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/readiness.py
+
+=== 5. REGISTRIES ===
+
+=== 6. RUNNERS / SCHEDULERS / ORCHESTRATORS ===
+
+=== 7. EXP-002 REFERENCES ===
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/config/experiment_requirements.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/evidence/closure_evidence_snapshot.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/evidence/evidence_review_queue.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/evidence/remediation_plan_snapshot.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/NEXUS-EXP-002-01.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/NEXUS-EXP-002-02.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/NEXUS-EXP-002-03.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/NEXUS-EXP-002-04.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/replication/exp006_predecessor_state.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/state/execution_boundary.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/state/readiness.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/technical_verifier.py
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/technical/commissioning_observations.json
+
+=== 8. NEXUS-EVR-001 REFERENCES ===
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/publication_bridge.py
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/tests/test_publication_bridge.py
+
+=== 9. READINESS / BLOCKED / READY REFERENCES ===
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/config/experiment_requirements.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/evidence/closure_evidence_snapshot.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/evidence/evidence_review_queue.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/evidence/remediation_plan_snapshot.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/execution_boundary.py
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/gate_records/NEXUS-EXP-001-02.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/human_queue/global-10.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/readiness.py
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/replication/exp006_predecessor_state.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/state/canonical_runtime_inspection.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/state/execution_boundary.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/state/readiness.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/tests/test_post_execution.py
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/tests/test_publication_bridge.py
+
+=== 10. EXTERNAL / INDEPENDENT REVIEW REFERENCES ===
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/config/experiment_requirements.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/evidence/closure_evidence_snapshot.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/evidence/remediation_plan_snapshot.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/human_queue/global-10.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/human_queue/NEXUS-EXP-003-04.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/human_queue/NEXUS-EXP-004-04.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/human_queue/NEXUS-EXP-006-03.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/state/gate_state.json
+${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/tests/test_gate_validator.py
+
+=== 11. GOVERNANCE / MANIFESTS ===
+
+=== 12. GIT PROVENANCE ===
+GIT_TOPLEVEL=${NEXUS_ROOT}
+GIT_HEAD=46c0ebfd8133169b45ad10f45bac43741240831f
+GIT_BRANCH=main
+
+--- STATUS ---
+?? systems/engineering_studio/experimental_validation/
+
+--- RECENT HISTORY ---
+
+=== 13. EVA AUTHORITY BARRIER ===
+NEXUS-EVA
+STATUS=CANONICAL_CANDIDATE
+EXPERIMENT_EXECUTION=PROHIBITED
+EXPERIMENT_STATE_TRANSITION=PROHIBITED
+EXPERIMENT_REGISTRY_MUTATION=PROHIBITED
+SELF_VERIFICATION=PROHIBITED
+EXTERNAL_VERDICT_GENERATION=PROHIBITED
+EXTERNAL_VERDICT_MUTATION=PROHIBITED
+
+=== 14. EVA INTERFACE STATUS ===
+{
+  "schema_version": 1,
+  "status": "INTEGRATION_PENDING",
+  "authority": "NONE",
+  "experiment_execution": "PROHIBITED",
+  "experiment_state_transition": "PROHIBITED",
+  "experimental_registry_mutation": "PROHIBITED",
+  "automatic_gate_satisfaction": "PROHIBITED"
+}
+
+======================================================================
+ DEEP DISCOVERY COMPLETE
+ NO INTEGRATION PERFORMED
+ NO REGISTRY MUTATION PERFORMED
+ NO EXPERIMENT EXECUTED
+======================================================================
+
+MACHINE_ASSESSMENT
+EXPERIMENT_REQUIREMENTS=PASS
+READINESS_IMPLEMENTATION=PASS
+REGISTRY=WARN
+RUNNER_OR_ORCHESTRATOR=WARN
+EXP002=PASS
+EVR001=PASS
+EXTERNAL_REVIEW_SEMANTICS=PASS
+SIGNALS_PRESENT=5
+SIGNALS_TOTAL=7
+ASSESSMENT=STRONG_STRUCTURAL_CONVERGENCE

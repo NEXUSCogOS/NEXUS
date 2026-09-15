@@ -1,0 +1,89 @@
+{
+  "created_at": "2026-09-07T13:25:44.150103+00:00",
+  "expected_response_schema": {
+    "adjacent_findings": [],
+    "comparison_summary": "",
+    "contradictory_prior_findings": [],
+    "correspondence_assessment": [],
+    "corroborating_prior_findings": [],
+    "external_validation_status": "UNASSESSED",
+    "no_close_prior_study_found": false
+  },
+  "experiment_family": "F03",
+  "hypothesis": {
+    "alternative_explanations": [
+      "Exact duplicates can be trivial if ground truth depends only on hash equality."
+    ],
+    "family": "F03",
+    "hypothesis_id": "HYP_F03_F_fcb2e506b665",
+    "mechanistic_reasoning": [
+      "Hash identity alone does not establish lifecycle authority.",
+      "PACE should incorporate canonical-survivor and dependency evidence."
+    ],
+    "modifiable_after_execution": false,
+    "predicted_direction": "F >= A",
+    "predicted_effect": "PACE expected to preserve canonical survivor reasoning while avoiding unsafe duplicate deletion.",
+    "preregistered_at": "2026-09-07T13:00:29.114589+00:00",
+    "primary_metric": "accuracy",
+    "refutation_criteria": {
+      "F_materially_worse_than_A": true
+    },
+    "results_seen": false,
+    "run_id": "F03_F_fcb2e506b665",
+    "support_criteria": {
+      "minimum_accuracy_delta_F_vs_A": 0.0
+    },
+    "title": "Governed/PACE reasoning should improve exact-duplicate reconciliation."
+  },
+  "hypothesis_id": "HYP_F03_F_fcb2e506b665",
+  "internal_adjudication": {
+    "arm": "F",
+    "family": "F03",
+    "negative_result_preserved": true,
+    "reason": "Single-arm execution complete; comparative family-level adjudication requires merged A-F results.",
+    "run_id": "F03_F_fcb2e506b665",
+    "verdict": "REPLICATION_REQUIRED"
+  },
+  "metrics": {
+    "arms": {
+      "F": {
+        "accuracy": 0.68,
+        "accuracy_ci95": [
+          0.5418944286372394,
+          0.792419559060006
+        ],
+        "correct": 34,
+        "mean_absolute_calibration_error": 0.3342,
+        "mean_latency_seconds": 30.19982035334222,
+        "mean_score": 0.68,
+        "n": 50
+      }
+    },
+    "effect_sizes": {
+      "accuracy_delta_F_vs_A": null
+    }
+  },
+  "requested_analysis": {
+    "correspondence_classes": [
+      "DIRECT_REPLICATION_ANALOGUE",
+      "CLOSE_METHOD_ANALOGUE",
+      "CONCEPTUAL_ANALOGUE",
+      "MECHANISTICALLY_RELEVANT",
+      "WEAKLY_RELATED",
+      "NO_MEANINGFUL_COMPARATOR"
+    ],
+    "find": [
+      "CORROBORATING_PRIOR_FINDINGS",
+      "CONTRADICTORY_PRIOR_FINDINGS",
+      "ADJACENT_OR_MECHANISTICALLY_RELEVANT_FINDINGS"
+    ],
+    "requirements": [
+      "Do not treat conceptual similarity as replication.",
+      "Separate corroborating from contradictory findings.",
+      "Identify alternative mechanisms.",
+      "Return NO_CLOSE_PRIOR_STUDY_FOUND where appropriate.",
+      "Do not promote internal findings to external validation."
+    ]
+  },
+  "schema": "ENGINEERING_STUDIO_RESEARCH_ASSISTANT_REQUEST_V1"
+}

@@ -1,0 +1,22 @@
+{
+  "gate_id": "global-07",
+  "gate": "dataset snapshots are immutable, hashed, licensed and provenance-complete",
+  "status": "PASS",
+  "reviewer": "GPT-5.6-Sol-assisted-adjudication-002",
+  "verified_at": "2026-09-14T00:59:25.584835+00:00",
+  "contradictions_resolved": true,
+  "evidence_refs": [
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_MACHINE_CLOSURE_002_20260914T005925Z/dataset/global-07.json",
+      "sha256": "71674dc1c003f111b21f3a605f156c0db7c73b15f76de37e0cd38bdbb8b82869"
+    },
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_MACHINE_CLOSURE_002_20260914T005925Z/dataset/fixtures.frozen.json",
+      "sha256": "b8180e00cffc40e347baca3b772f90b7308a810c8b4239a6faf8e345b570abf1"
+    },
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_MACHINE_CLOSURE_002_20260914T005925Z/dataset/fixture_hashes.frozen.json",
+      "sha256": "2b8f98d9b7eec7bf621141e2bb99f7179b16129f60665b09915a91d754c1b008"
+    }
+  ]
+}

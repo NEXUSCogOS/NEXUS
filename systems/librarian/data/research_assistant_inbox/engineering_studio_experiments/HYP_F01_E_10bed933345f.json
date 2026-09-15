@@ -1,0 +1,92 @@
+{
+  "created_at": "2026-09-07T12:02:47.188200+00:00",
+  "expected_response_schema": {
+    "adjacent_findings": [],
+    "comparison_summary": "",
+    "contradictory_prior_findings": [],
+    "correspondence_assessment": [],
+    "corroborating_prior_findings": [],
+    "external_validation_status": "UNASSESSED",
+    "no_close_prior_study_found": false
+  },
+  "experiment_family": "F01",
+  "hypothesis": {
+    "alternative_explanations": [
+      "Prompt verbosity rather than architecture may drive improvement.",
+      "Case construction may favor governance language.",
+      "Model stochasticity may dominate small effect sizes."
+    ],
+    "family": "F01",
+    "hypothesis_id": "HYP_F01_E_10bed933345f",
+    "mechanistic_reasoning": [
+      "Ownership resolution benefits from explicit authority boundaries.",
+      "PACE distinguishes current canonical authority from historical provenance.",
+      "Governance-aware reasoning should reduce attribution to legacy or external-owned artifacts."
+    ],
+    "modifiable_after_execution": false,
+    "predicted_direction": "F > A",
+    "predicted_effect": "PACE expected to improve ownership-resolution accuracy over plain baseline.",
+    "preregistered_at": "2026-09-07T11:39:46.077561+00:00",
+    "primary_metric": "accuracy",
+    "refutation_criteria": {
+      "F_not_better_than_A": true
+    },
+    "results_seen": false,
+    "run_id": "F01_E_10bed933345f",
+    "support_criteria": {
+      "minimum_accuracy_delta_F_vs_A": 0.05
+    },
+    "title": "Governed/PACE reasoning should improve ownership resolution."
+  },
+  "hypothesis_id": "HYP_F01_E_10bed933345f",
+  "internal_adjudication": {
+    "arm": "E",
+    "family": "F01",
+    "negative_result_preserved": true,
+    "reason": "Single-arm execution complete; comparative family-level adjudication requires merged A-F results.",
+    "run_id": "F01_E_10bed933345f",
+    "verdict": "REPLICATION_REQUIRED"
+  },
+  "metrics": {
+    "arms": {
+      "E": {
+        "accuracy": 0.02,
+        "accuracy_ci95": [
+          0.0035391680889764604,
+          0.10495686471836953
+        ],
+        "correct": 1,
+        "mean_absolute_calibration_error": 0.621,
+        "mean_latency_seconds": 27.554326974200084,
+        "mean_score": 0.02,
+        "n": 50
+      }
+    },
+    "effect_sizes": {
+      "accuracy_delta_F_vs_A": null
+    }
+  },
+  "requested_analysis": {
+    "correspondence_classes": [
+      "DIRECT_REPLICATION_ANALOGUE",
+      "CLOSE_METHOD_ANALOGUE",
+      "CONCEPTUAL_ANALOGUE",
+      "MECHANISTICALLY_RELEVANT",
+      "WEAKLY_RELATED",
+      "NO_MEANINGFUL_COMPARATOR"
+    ],
+    "find": [
+      "CORROBORATING_PRIOR_FINDINGS",
+      "CONTRADICTORY_PRIOR_FINDINGS",
+      "ADJACENT_OR_MECHANISTICALLY_RELEVANT_FINDINGS"
+    ],
+    "requirements": [
+      "Do not treat conceptual similarity as replication.",
+      "Separate corroborating from contradictory findings.",
+      "Identify alternative mechanisms.",
+      "Return NO_CLOSE_PRIOR_STUDY_FOUND where appropriate.",
+      "Do not promote internal findings to external validation."
+    ]
+  },
+  "schema": "ENGINEERING_STUDIO_RESEARCH_ASSISTANT_REQUEST_V1"
+}

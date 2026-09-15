@@ -1,0 +1,148 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Academic Provenance Record",
+  "description": "Mission section 8: Complete metadata and ingestion lineage for academic/research sources",
+  "type": "object",
+  "required": [
+    "source_id",
+    "title",
+    "authors",
+    "publication_date",
+    "journal_or_venue",
+    "publisher",
+    "doi",
+    "external_identifiers",
+    "canonical_url",
+    "source_type",
+    "peer_review_status",
+    "retrieval_timestamp",
+    "content_hash",
+    "license",
+    "language",
+    "version",
+    "retraction_status",
+    "correction_status",
+    "ingestion_method",
+    "verification_status"
+  ],
+  "properties": {
+    "source_id": {
+      "type": "string",
+      "description": "Stable identifier: 'arxiv:ID', 'doi:ID', 'url:...' or 'content:sha256'",
+      "pattern": "^(arxiv|doi|url|content):[a-zA-Z0-9._/-]+$"
+    },
+    "title": {
+      "type": "string",
+      "description": "Publication title (exact from source metadata)",
+      "minLength": 1
+    },
+    "authors": {
+      "type": "array",
+      "description": "Author list",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "email": { "type": ["string", "null"] },
+          "affiliation": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "publication_date": {
+      "type": "string",
+      "description": "ISO 8601 date or 'UNKNOWN'",
+      "pattern": "^(UNKNOWN|[0-9]{4}-[0-9]{2}-[0-9]{2})$"
+    },
+    "journal_or_venue": {
+      "type": "string",
+      "description": "Journal name, conference name, or 'UNKNOWN' if not independently verified"
+    },
+    "publisher": {
+      "type": "string",
+      "description": "Publisher name (e.g., 'arXiv', 'Springer', 'IEEE')"
+    },
+    "doi": {
+      "type": "string",
+      "description": "Digital Object Identifier or 'UNKNOWN'. If present, must resolve to real publication."
+    },
+    "external_identifiers": {
+      "type": "object",
+      "description": "Map of identifier types to values (e.g., {'arxiv': '2104.08663'})",
+      "additionalProperties": { "type": "string" }
+    },
+    "canonical_url": {
+      "type": "string",
+      "description": "Long-term resolvable URL to source (e.g., 'https://arxiv.org/abs/2104.08663')"
+    },
+    "source_type": {
+      "type": "string",
+      "enum": [
+        "PRIMARY_SOURCE",
+        "PEER_REVIEWED_JOURNAL",
+        "PEER_REVIEWED_CONFERENCE",
+        "SYSTEMATIC_REVIEW",
+        "META_ANALYSIS",
+        "ACADEMIC_BOOK",
+        "ACADEMIC_PREPRINT",
+        "GOVERNMENT",
+        "INTERGOVERNMENTAL",
+        "STANDARDS_BODY",
+        "UNIVERSITY",
+        "OFFICIAL_TECHNICAL_DOCUMENTATION",
+        "INDUSTRY_RESEARCH",
+        "TECHNICAL_REPORT",
+        "NEWS",
+        "SECONDARY_WEB",
+        "INTERNAL_NEXUS_DOCUMENT",
+        "UNKNOWN"
+      ],
+      "description": "Closed taxonomy per mission section 3"
+    },
+    "peer_review_status": {
+      "type": "string",
+      "enum": ["VERIFIED", "UNVERIFIED", "NOT_APPLICABLE", "UNKNOWN"],
+      "description": "Peer-review status confidence"
+    },
+    "retrieval_timestamp": {
+      "type": "string",
+      "description": "ISO 8601 timestamp when source was retrieved/ingested",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}"
+    },
+    "content_hash": {
+      "type": "string",
+      "description": "SHA256 hash of retrievable_text for deduplication",
+      "pattern": "^(UNKNOWN|[a-f0-9]{64})$"
+    },
+    "license": {
+      "type": "string",
+      "description": "License/copyright status (e.g., 'CC-BY-4.0') or 'UNKNOWN'"
+    },
+    "language": {
+      "type": "string",
+      "description": "ISO 639-1 language code (e.g., 'en', 'fr') or 'UNKNOWN'",
+      "pattern": "^[a-z]{2}$|^UNKNOWN$"
+    },
+    "version": {
+      "type": "string",
+      "description": "Version identifier (e.g., 'v3', '2nd edition') or 'UNKNOWN'"
+    },
+    "retraction_status": {
+      "type": "string",
+      "enum": ["ACTIVE", "CORRECTED", "RETRACTED", "SUPERSEDED", "UNKNOWN"],
+      "description": "Retraction/correction status per mission section 9 (append-only via events)"
+    },
+    "correction_status": {
+      "type": "string",
+      "description": "Details of any corrections applied (e.g., 'ERRATA_ISSUED')"
+    },
+    "ingestion_method": {
+      "type": "string",
+      "description": "How this source was added (e.g., 'arxiv_export_api_live_fetch_2026-08-27')"
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": ["FULL", "PARTIAL", "MINIMAL", "UNKNOWN"],
+      "description": "Degree of verification performed on metadata"
+    }
+  }
+}

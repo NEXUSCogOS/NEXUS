@@ -1,0 +1,38 @@
+==============================================================================
+NEXUS-EVA EXPERIMENTAL VALIDATION AUTHORITY CANDIDATE ASSESSMENT
+==============================================================================
+
+UTC=2026-09-15T11:29:46Z
+MODE=READ_ONLY
+MUTATION=NONE
+CANDIDATE_COUNT=1
+
+--- CANDIDATE 1 ---
+PATH=${NEXUS_ROOT}/systems/engineering_studio/experimental_validation
+SCORE=45
+EXP002=True
+EVR001=True
+SIGNALS:
+  +10 config/experiment_requirements.json
+  +8 readiness.py
+  +12 EXP-002 evidence
+  +12 NEXUS-EVR-001 evidence
+  +3 git context ${NEXUS_ROOT}
+REQUIREMENTS:
+  ${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/config/experiment_requirements.json
+REGISTRIES:
+READINESS:
+  ${NEXUS_ROOT}/systems/engineering_studio/experimental_validation/readiness.py
+RUNNERS:
+
+==============================================================================
+ASSESSMENT
+==============================================================================
+DECISION=SINGLE_STRONG_CANDIDATE
+RECOMMENDED_CANDIDATE=${NEXUS_ROOT}/systems/engineering_studio/experimental_validation
+
+IMPORTANT:
+A recommended candidate is not automatically granted canonical authority.
+No files, registries, gates or experiment states were modified.
+NEXUS-EVA remains without Experimental Validation mutation authority.
+==============================================================================

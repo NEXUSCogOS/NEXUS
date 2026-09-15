@@ -1,0 +1,67 @@
+[
+  {
+    "experiment_id": "NEXUS-EXP-001",
+    "result_status": "BLOCKED",
+    "final_verdict": "PENDING",
+    "exp006_eligible": false,
+    "reasons": [
+      "PREDECESSOR_NOT_COMPLETED",
+      "PREDECESSOR_VERDICT_NOT_VALID",
+      "SEALED_BUNDLE_MISSING",
+      "INDEPENDENT_REPLICATOR_REQUIRED",
+      "CLEAN_REPLICATION_ENVIRONMENT_REQUIRED"
+    ]
+  },
+  {
+    "experiment_id": "NEXUS-EXP-002",
+    "result_status": "BLOCKED",
+    "final_verdict": "PENDING",
+    "exp006_eligible": false,
+    "reasons": [
+      "PREDECESSOR_NOT_COMPLETED",
+      "PREDECESSOR_VERDICT_NOT_VALID",
+      "SEALED_BUNDLE_MISSING",
+      "INDEPENDENT_REPLICATOR_REQUIRED",
+      "CLEAN_REPLICATION_ENVIRONMENT_REQUIRED"
+    ]
+  },
+  {
+    "experiment_id": "NEXUS-EXP-003",
+    "result_status": "BLOCKED",
+    "final_verdict": "PENDING",
+    "exp006_eligible": false,
+    "reasons": [
+      "PREDECESSOR_NOT_COMPLETED",
+      "PREDECESSOR_VERDICT_NOT_VALID",
+      "SEALED_BUNDLE_MISSING",
+      "INDEPENDENT_REPLICATOR_REQUIRED",
+      "CLEAN_REPLICATION_ENVIRONMENT_REQUIRED"
+    ]
+  },
+  {
+    "experiment_id": "NEXUS-EXP-004",
+    "result_status": "BLOCKED",
+    "final_verdict": "PENDING",
+    "exp006_eligible": false,
+    "reasons": [
+      "PREDECESSOR_NOT_COMPLETED",
+      "PREDECESSOR_VERDICT_NOT_VALID",
+      "SEALED_BUNDLE_MISSING",
+      "INDEPENDENT_REPLICATOR_REQUIRED",
+      "CLEAN_REPLICATION_ENVIRONMENT_REQUIRED"
+    ]
+  },
+  {
+    "experiment_id": "NEXUS-EXP-005",
+    "result_status": "BLOCKED",
+    "final_verdict": "PENDING",
+    "exp006_eligible": false,
+    "reasons": [
+      "PREDECESSOR_NOT_COMPLETED",
+      "PREDECESSOR_VERDICT_NOT_VALID",
+      "SEALED_BUNDLE_MISSING",
+      "INDEPENDENT_REPLICATOR_REQUIRED",
+      "CLEAN_REPLICATION_ENVIRONMENT_REQUIRED"
+    ]
+  }
+]

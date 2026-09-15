@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+
+  "commissioned_at": "20260913T234445Z",
+
+  "state": "LOCAL_OPERATIONAL",
+
+  "source_authority":
+      "CANONICAL_NEXUS",
+
+  "canonical_access":
+      "READ_ONLY_BY_POLICY",
+
+  "default_export":
+      "DENY",
+
+  "dependency_tracking":
+      "ENABLED",
+
+  "staleness_detection":
+      "ENABLED",
+
+  "claim_eligibility":
+      "ENABLED",
+
+  "automatic_github_publication":
+      "DISABLED",
+
+  "external_publication":
+      "NOT_AUTHORISED"
+}

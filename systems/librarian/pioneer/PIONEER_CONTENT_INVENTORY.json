@@ -1,0 +1,9 @@
+{
+  "addressing": "SHA256_CONTENT_ADDRESSED",
+  "duplication_policy": "ONE_OBJECT_PER_CONTENT_HASH",
+  "logical_utf8_bytes": 278596,
+  "status": "PASS",
+  "store_path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+  "unique_objects": 297,
+  "verified_hashes": 297
+}

@@ -1,0 +1,225 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Source Quality Taxonomy",
+  "description": "Mission section 3-4: Source type hierarchy and domain-sensitive weighting",
+  "type": "object",
+  "properties": {
+    "source_types": {
+      "type": "object",
+      "description": "18-category closed taxonomy",
+      "properties": {
+        "PRIMARY_SOURCE": {
+          "type": "object",
+          "properties": {
+            "description": "Original experimental data, raw observations, primary legislation",
+            "base_weight": { "type": "number", "const": 1 },
+            "examples": ["Laboratory data", "Field observations", "Primary legislation"]
+          }
+        },
+        "PEER_REVIEWED_JOURNAL": {
+          "type": "object",
+          "properties": {
+            "description": "Published in journal with peer review",
+            "base_weight": { "type": "number", "const": 2 },
+            "examples": ["Nature", "Science", "IEEE Transactions"]
+          }
+        },
+        "PEER_REVIEWED_CONFERENCE": {
+          "type": "object",
+          "properties": {
+            "description": "Published in proceedings with peer review",
+            "base_weight": { "type": "number", "const": 2 },
+            "examples": ["NeurIPS", "ICML", "ACM SIGCOMM"]
+          }
+        },
+        "SYSTEMATIC_REVIEW": {
+          "type": "object",
+          "properties": {
+            "description": "Systematic literature review per PRISMA",
+            "base_weight": { "type": "number", "const": 1.5 },
+            "examples": ["Cochrane reviews", "Systematic evidence synthesis"]
+          }
+        },
+        "META_ANALYSIS": {
+          "type": "object",
+          "properties": {
+            "description": "Statistical meta-analysis of multiple studies",
+            "base_weight": { "type": "number", "const": 1.5 },
+            "examples": ["Effect size synthesis", "Pooled statistical analysis"]
+          }
+        },
+        "ACADEMIC_BOOK": {
+          "type": "object",
+          "properties": {
+            "description": "Published academic book or chapter",
+            "base_weight": { "type": "number", "const": 2.5 },
+            "examples": ["Academic Press", "University Press"]
+          }
+        },
+        "ACADEMIC_PREPRINT": {
+          "type": "object",
+          "properties": {
+            "description": "Preprint (e.g., arXiv) — not yet peer-reviewed",
+            "base_weight": { "type": "number", "const": 3 },
+            "examples": ["arXiv", "bioRxiv", "medRxiv"]
+          }
+        },
+        "GOVERNMENT": {
+          "type": "object",
+          "properties": {
+            "description": "Government agency publication",
+            "base_weight": { "type": "number", "const": 1.5 },
+            "examples": ["NOAA", "EPA", "NIH"]
+          }
+        },
+        "INTERGOVERNMENTAL": {
+          "type": "object",
+          "properties": {
+            "description": "International organization publication",
+            "base_weight": { "type": "number", "const": 1.5 },
+            "examples": ["IPCC", "World Bank", "UN reports"]
+          }
+        },
+        "STANDARDS_BODY": {
+          "type": "object",
+          "properties": {
+            "description": "Standards and specifications (ISO, IEEE, IETF)",
+            "base_weight": { "type": "number", "const": 1 },
+            "examples": ["ISO standards", "RFC", "IEEE standards"]
+          }
+        },
+        "UNIVERSITY": {
+          "type": "object",
+          "properties": {
+            "description": "University technical report or white paper",
+            "base_weight": { "type": "number", "const": 2.5 },
+            "examples": ["MIT Tech Report", "Stanford research"]
+          }
+        },
+        "OFFICIAL_TECHNICAL_DOCUMENTATION": {
+          "type": "object",
+          "properties": {
+            "description": "Official documentation (API, system specs, etc.)",
+            "base_weight": { "type": "number", "const": 0.5 },
+            "notes": "For software/API behavior, often outranks old journal articles",
+            "examples": ["Python docs", "AWS documentation", "API reference"]
+          }
+        },
+        "INDUSTRY_RESEARCH": {
+          "type": "object",
+          "properties": {
+            "description": "Industry research lab publication",
+            "base_weight": { "type": "number", "const": 2.5 },
+            "examples": ["Google Research", "DeepMind", "OpenAI research"]
+          }
+        },
+        "TECHNICAL_REPORT": {
+          "type": "object",
+          "properties": {
+            "description": "Technical report (internal or limited circulation)",
+            "base_weight": { "type": "number", "const": 2.5 },
+            "examples": ["Internal company reports", "Consultant reports"]
+          }
+        },
+        "NEWS": {
+          "type": "object",
+          "properties": {
+            "description": "News article or journalism",
+            "base_weight": { "type": "number", "const": 4 },
+            "examples": ["New York Times", "Reuters", "BBC"]
+          }
+        },
+        "SECONDARY_WEB": {
+          "type": "object",
+          "properties": {
+            "description": "Secondary web sources (blogs, forums, wikis)",
+            "base_weight": { "type": "number", "const": 5 },
+            "examples": ["Wikipedia", "Stack Overflow", "Medium blogs"]
+          }
+        },
+        "INTERNAL_NEXUS_DOCUMENT": {
+          "type": "object",
+          "properties": {
+            "description": "Internal NEXUS documentation (policy, architecture, etc.)",
+            "base_weight": { "type": "number", "const": 0.5 },
+            "notes": "Separate corpus from academic; used for operational context only"
+          }
+        },
+        "UNKNOWN": {
+          "type": "object",
+          "properties": {
+            "description": "Source type not yet determined",
+            "base_weight": { "type": "number", "const": 10 },
+            "notes": "Maximum uncertainty penalty"
+          }
+        }
+      }
+    },
+    "domain_sensitive_weighting": {
+      "type": "object",
+      "description": "Context-specific evidence hierarchies per mission section 4",
+      "properties": {
+        "software_api_behavior": {
+          "type": "object",
+          "description": "Answering 'How does this API/system work?'",
+          "priority": [
+            { "type": "OFFICIAL_TECHNICAL_DOCUMENTATION", "reason": "Authoritative specification" },
+            { "type": "GOVERNMENT", "reason": "Official standard/regulation" },
+            { "type": "PEER_REVIEWED_JOURNAL", "reason": "Academic validation" },
+            { "type": "INDUSTRY_RESEARCH", "reason": "Vendor-backed research" }
+          ]
+        },
+        "current_law_regulation": {
+          "type": "object",
+          "description": "Answering 'What is the current legal requirement?'",
+          "priority": [
+            { "type": "PRIMARY_SOURCE", "reason": "Actual legislation/regulation text" },
+            { "type": "GOVERNMENT", "reason": "Official interpretation" },
+            { "type": "OFFICIAL_TECHNICAL_DOCUMENTATION", "reason": "Regulatory guidance" },
+            { "type": "PEER_REVIEWED_JOURNAL", "reason": "Legal scholarship" }
+          ]
+        },
+        "scientific_mechanism": {
+          "type": "object",
+          "description": "Answering 'What is the evidence for this biological/physical mechanism?'",
+          "priority": [
+            { "type": "SYSTEMATIC_REVIEW", "reason": "Synthesis of multiple studies" },
+            { "type": "META_ANALYSIS", "reason": "Quantitative evidence synthesis" },
+            { "type": "PEER_REVIEWED_JOURNAL", "reason": "Single rigorous study" },
+            { "type": "ACADEMIC_PREPRINT", "reason": "Unverified but complete work" }
+          ]
+        },
+        "market_fact": {
+          "type": "object",
+          "description": "Answering 'What is the current market price/value?'",
+          "priority": [
+            { "type": "PRIMARY_SOURCE", "reason": "Exchange data, official quotes" },
+            { "type": "GOVERNMENT", "reason": "Statistical agency data" },
+            { "type": "OFFICIAL_TECHNICAL_DOCUMENTATION", "reason": "Authoritative data feed" },
+            { "type": "NEWS", "reason": "Recent reporting" }
+          ]
+        },
+        "historical_fact": {
+          "type": "object",
+          "description": "Answering 'What happened in the past?'",
+          "priority": [
+            { "type": "PRIMARY_SOURCE", "reason": "Contemporaneous record" },
+            { "type": "GOVERNMENT", "reason": "Official record" },
+            { "type": "ACADEMIC_BOOK", "reason": "Scholarly history" },
+            { "type": "NEWS", "reason": "Historical reporting" }
+          ]
+        },
+        "general_neutral": {
+          "type": "object",
+          "description": "Default domain (no specific context)",
+          "priority": [
+            { "type": "SYSTEMATIC_REVIEW", "reason": "Evidence synthesis" },
+            { "type": "META_ANALYSIS", "reason": "Quantitative synthesis" },
+            { "type": "PEER_REVIEWED_JOURNAL", "reason": "Peer-reviewed" },
+            { "type": "ACADEMIC_PREPRINT", "reason": "Complete but unverified" }
+          ]
+        }
+      }
+    }
+  }
+}

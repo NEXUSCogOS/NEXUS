@@ -1,0 +1,12 @@
+{
+  "status": "IMPLEMENTED_PENDING_LIVE_CONFIRMATION",
+  "reviewed_feedback": 3,
+  "decisions": [
+    {"feedback_id": "PIONEER-FEEDBACK-7e64a6dd-78f0-4ea4-b9d1-f54889ad1bc4", "classification": "SUPERSEDED", "runtime_action": "NONE"},
+    {"feedback_id": "PIONEER-FEEDBACK-bb36102e-bdf2-4221-8871-fd9f0f6774eb", "classification": "IMPLEMENTED_PENDING_LIVE_CONFIRMATION", "evidence": "Zero dataless files; verifier 0.84 seconds; complete cycle 10.27 seconds.", "remaining_gate": "REPEATED_SCHEDULED_CHECKPOINTS", "runtime_action": "MATERIALIZATION_PREFLIGHT_ADDED"},
+    {"feedback_id": "PIONEER-FEEDBACK-f0dcb24c-583d-4a78-ac0a-11974cce904f", "classification": "PARTIALLY_IMPLEMENTED_PENDING_LIVE_CONFIRMATION", "evidence": "Automation now wakes hourly and deduplicates fixed 12-hour due checkpoints.", "remaining_gate": "NEXT_LIVE_DUE_CHECKPOINT_ON_TIME", "runtime_action": "HOURLY_CATCHUP_WAKE_ENABLED"}
+  ],
+  "closed": 0,
+  "pending_live_confirmation": 2,
+  "policy": "NO_CLAIM_OF_PERMANENT_FIX_UNTIL_LIVE_CHECKPOINT_EVIDENCE"
+}

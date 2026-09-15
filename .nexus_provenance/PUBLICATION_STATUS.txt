@@ -1,0 +1,46 @@
+NEXUS PUBLICATION CANDIDATE
+
+Generated:
+20260915T150054Z
+
+Source staging tree:
+/tmp/NEXUS_CANONICAL_GITHUB_20260915T144003Z
+
+Source NEXUS mutated:
+NO
+
+Historical Git mutated:
+NO
+
+New Git repository initialised:
+NO
+
+GitHub repository created:
+NO
+
+GitHub push:
+NONE
+
+High-confidence secret scan:
+PASS
+
+Generic credential candidates:
+2
+
+Private absolute path matches:
+990
+
+Files containing private absolute paths:
+98
+
+Files over 10 MB:
+0
+
+Nested Git scan:
+PASS
+
+Scientific validation:
+NOT ESTABLISHED BY PUBLICATION
+
+Publication status:
+PENDING_G5_3_FINAL_REVIEW

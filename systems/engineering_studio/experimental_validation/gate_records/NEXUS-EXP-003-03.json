@@ -1,0 +1,18 @@
+{
+  "gate_id": "NEXUS-EXP-003-03",
+  "gate": "retrieval configuration frozen",
+  "status": "PASS",
+  "reviewer": "GPT-5.6-Sol-assisted-evidence-adjudication-003",
+  "verified_at": "2026-09-14T02:45:11.187183+00:00",
+  "contradictions_resolved": true,
+  "evidence_refs": [
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_MACHINE_CLOSURE_V2_20260914T024254Z/freeze/retrieval/FREEZE_RECORD.json",
+      "sha256": "a63566c39b398c1ffc6d5cd38e191ccbcedf8cfadfcc9a0a142c4af7c391398d"
+    },
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_MACHINE_CLOSURE_V2_20260914T024254Z/freeze/retrieval/SHA256SUMS.txt",
+      "sha256": "3624f91e5d20e76447918a535a8c8b291b5cc3c9b07c78b9a3e684f8a5592444"
+    }
+  ]
+}

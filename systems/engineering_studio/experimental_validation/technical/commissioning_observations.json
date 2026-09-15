@@ -1,0 +1,98 @@
+[
+  {
+    "gate_id": "NEXUS-EXP-001-04",
+    "canonical_gate_text": "corpus and event log restore tested",
+    "status": "HUMAN_REVIEW_REQUIRED",
+    "check": "restore_rehearsal",
+    "observed_at": "2026-09-14T00:27:41.250132+00:00",
+    "formal_gate_pass_created": false,
+    "reason": "Restore PASS requires an actual isolated restore rehearsal with source hash, backup hash, restored hash, timestamps and outcome. Commissioning will not mutate or restore live data."
+  },
+  {
+    "gate_id": "NEXUS-EXP-002-03",
+    "canonical_gate_text": "restore rehearsal passed",
+    "status": "HUMAN_REVIEW_REQUIRED",
+    "check": "restore_rehearsal",
+    "observed_at": "2026-09-14T00:27:41.250297+00:00",
+    "formal_gate_pass_created": false,
+    "reason": "Restore PASS requires an actual isolated restore rehearsal with source hash, backup hash, restored hash, timestamps and outcome. Commissioning will not mutate or restore live data."
+  },
+  {
+    "gate_id": "NEXUS-EXP-002-04",
+    "canonical_gate_text": "test store demonstrably isolated",
+    "status": "HUMAN_REVIEW_REQUIRED",
+    "check": "writer_isolation",
+    "observed_at": "2026-09-14T00:27:41.250318+00:00",
+    "formal_gate_pass_created": false,
+    "reason": "Configuration text alone cannot prove isolation. Verification requires scoped writer/process/open-handle evidence against the actual research store."
+  },
+  {
+    "gate_id": "NEXUS-EXP-005-01",
+    "canonical_gate_text": "tested restore",
+    "status": "HUMAN_REVIEW_REQUIRED",
+    "check": "restore_rehearsal",
+    "observed_at": "2026-09-14T00:27:41.250334+00:00",
+    "formal_gate_pass_created": false,
+    "reason": "Restore PASS requires an actual isolated restore rehearsal with source hash, backup hash, restored hash, timestamps and outcome. Commissioning will not mutate or restore live data."
+  },
+  {
+    "gate_id": "NEXUS-EXP-005-04",
+    "canonical_gate_text": "disk headroom safe",
+    "status": "OBSERVED",
+    "check": "disk_headroom",
+    "observed_at": "2026-09-14T00:27:41.250358+00:00",
+    "formal_gate_pass_created": false,
+    "total_bytes": 245107195904,
+    "used_bytes": 220391575552,
+    "free_bytes": 24715620352,
+    "free_fraction": 0.10083596387631252,
+    "reason": "Disk state measured. No PASS inferred without an authoritative safety threshold."
+  },
+  {
+    "gate_id": "NEXUS-EXP-006-04",
+    "canonical_gate_text": "clean environment available",
+    "status": "HUMAN_REVIEW_REQUIRED",
+    "check": "clean_environment",
+    "observed_at": "2026-09-14T00:27:41.250455+00:00",
+    "formal_gate_pass_created": false,
+    "environment_definition_candidates": [],
+    "reason": "Presence of an environment definition does not prove clean-environment reproduction. A separate isolated reproduction is required."
+  },
+  {
+    "gate_id": "global-03",
+    "canonical_gate_text": "clean-environment build or environment lock reproduced",
+    "status": "HUMAN_REVIEW_REQUIRED",
+    "check": "clean_environment",
+    "observed_at": "2026-09-14T00:27:41.250508+00:00",
+    "formal_gate_pass_created": false,
+    "environment_definition_candidates": [],
+    "reason": "Presence of an environment definition does not prove clean-environment reproduction. A separate isolated reproduction is required."
+  },
+  {
+    "gate_id": "global-04",
+    "canonical_gate_text": "research data physically or logically isolated from production writers",
+    "status": "HUMAN_REVIEW_REQUIRED",
+    "check": "writer_isolation",
+    "observed_at": "2026-09-14T00:27:41.250525+00:00",
+    "formal_gate_pass_created": false,
+    "reason": "Configuration text alone cannot prove isolation. Verification requires scoped writer/process/open-handle evidence against the actual research store."
+  },
+  {
+    "gate_id": "global-05",
+    "canonical_gate_text": "backup integrity verified and at least one restore rehearsal passed",
+    "status": "HUMAN_REVIEW_REQUIRED",
+    "check": "restore_rehearsal",
+    "observed_at": "2026-09-14T00:27:41.250540+00:00",
+    "formal_gate_pass_created": false,
+    "reason": "Restore PASS requires an actual isolated restore rehearsal with source hash, backup hash, restored hash, timestamps and outcome. Commissioning will not mutate or restore live data."
+  },
+  {
+    "gate_id": "global-06",
+    "canonical_gate_text": "monitoring detects a deliberately injected non-destructive failure",
+    "status": "NOT_TESTABLE_DURING_COMMISSIONING",
+    "check": "monitoring_failure_injection",
+    "observed_at": "2026-09-14T00:27:41.250556+00:00",
+    "formal_gate_pass_created": false,
+    "reason": "A deliberate failure will not be injected by the package installer. Run only through a separately authorized non-destructive test procedure."
+  }
+]

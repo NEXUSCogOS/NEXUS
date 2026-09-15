@@ -1,0 +1,159 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Citation Graph",
+  "description": "Mission section 13: Directed graph of source relationships with evidence-gated edges",
+  "type": "object",
+  "properties": {
+    "edges": {
+      "type": "array",
+      "description": "Citation/relationship edges (append-only)",
+      "items": {
+        "type": "object",
+        "required": ["source_from", "source_to", "edge_type", "evidence"],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Unique edge identifier (database primary key)"
+          },
+          "source_from": {
+            "type": "string",
+            "description": "Source ID citing or referencing",
+            "pattern": "^(arxiv|doi|url|content):[a-zA-Z0-9._/-]+$"
+          },
+          "source_to": {
+            "type": "string",
+            "description": "Source ID being cited or referenced",
+            "pattern": "^(arxiv|doi|url|content):[a-zA-Z0-9._/-]+$"
+          },
+          "edge_type": {
+            "type": "string",
+            "enum": [
+              "CITES",
+              "CITED_BY",
+              "SUPPORTS",
+              "CONTRADICTS",
+              "EXTENDS",
+              "REPLICATES",
+              "CORRECTS",
+              "RETRACTS"
+            ],
+            "description": "Relationship type per mission section 13"
+          },
+          "evidence": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Non-empty justification for the edge relationship (required per mission section 13)",
+            "examples": [
+              "source_to's methodology directly supports the argument in section 3.2",
+              "source_to explicitly replicates the experimental design from source_from",
+              "source_to contradicts the findings presented in section 4.1 of source_from"
+            ]
+          },
+          "verified": {
+            "type": "boolean",
+            "description": "Whether this relationship has been manually verified by human review"
+          },
+          "created_at": {
+            "type": "string",
+            "description": "ISO 8601 timestamp when edge was added",
+            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}"
+          }
+        }
+      }
+    },
+    "relationship_types": {
+      "type": "object",
+      "description": "Semantics of edge types",
+      "properties": {
+        "CITES": {
+          "type": "object",
+          "properties": {
+            "description": "source_from cites source_to in its bibliography",
+            "semantic": "Structural reference; no claim about agreement/disagreement"
+          }
+        },
+        "CITED_BY": {
+          "type": "object",
+          "properties": {
+            "description": "source_from is cited by source_to (inverse of CITES)",
+            "semantic": "Structural reference; converse direction"
+          }
+        },
+        "SUPPORTS": {
+          "type": "object",
+          "properties": {
+            "description": "Evidence in source_to supports claims in source_from",
+            "semantic": "Evidential agreement; requires evidence string",
+            "note": "Must not be inferred from citation alone — only from explicit textual claim"
+          }
+        },
+        "CONTRADICTS": {
+          "type": "object",
+          "properties": {
+            "description": "Evidence in source_to contradicts or refutes claims in source_from",
+            "semantic": "Evidential disagreement; requires evidence string",
+            "note": "Must not be inferred from citation alone — only from explicit textual claim"
+          }
+        },
+        "EXTENDS": {
+          "type": "object",
+          "properties": {
+            "description": "source_to builds upon or extends the work in source_from",
+            "semantic": "Methodological or theoretical continuation",
+            "note": "e.g., source_to uses source_from's method in a new domain"
+          }
+        },
+        "REPLICATES": {
+          "type": "object",
+          "properties": {
+            "description": "source_to reproduces or replicates the experiment/analysis in source_from",
+            "semantic": "Methodological confirmation",
+            "note": "Success or failure of replication should be noted in evidence"
+          }
+        },
+        "CORRECTS": {
+          "type": "object",
+          "properties": {
+            "description": "source_to identifies and corrects an error in source_from",
+            "semantic": "Erratum or correction notice",
+            "note": "Links to retraction/correction events in academic_source_events"
+          }
+        },
+        "RETRACTS": {
+          "type": "object",
+          "properties": {
+            "description": "source_to announces retraction of source_from",
+            "semantic": "Full retraction notice",
+            "note": "Both source_from and source_to should have retraction_status=RETRACTED"
+          }
+        }
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "description": "Operational constraints per mission section 13",
+      "properties": {
+        "evidence_requirement": {
+          "type": "string",
+          "const": "NON_EMPTY_REQUIRED",
+          "description": "Every edge requires a non-empty evidence string (mission section 13)"
+        },
+        "semantic_inference": {
+          "type": "string",
+          "const": "REQUIRES_EXPLICIT_EVIDENCE",
+          "description": "SUPPORTS/CONTRADICTS must be derived from explicit textual claims, never inferred from citation existence alone"
+        },
+        "no_silent_edges": {
+          "type": "string",
+          "const": "APPEND_ONLY",
+          "description": "Edges are never deleted or silently modified; corrections create new edges with CORRECTS type"
+        },
+        "uniqueness": {
+          "type": "string",
+          "const": "ONE_PER_TRIPLE",
+          "description": "At most one edge with (source_from, source_to, edge_type) to avoid duplicates"
+        }
+      }
+    }
+  }
+}

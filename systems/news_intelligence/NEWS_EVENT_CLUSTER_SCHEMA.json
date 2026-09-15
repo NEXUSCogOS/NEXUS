@@ -1,0 +1,15 @@
+{
+  "clustering_key": "sha256(event_type + sorted(canonical_entities))[:16]",
+  "independence_assessment": "distinct publishers within one content_hash-identical cluster",
+  "duplicate_detection": [
+    "exact (content_hash)",
+    "canonical_url",
+    "provider guid"
+  ],
+  "fields": [
+    "cluster_id",
+    "source_ids",
+    "source_count",
+    "independent_source_count"
+  ]
+}

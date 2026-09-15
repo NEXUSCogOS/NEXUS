@@ -1,0 +1,22 @@
+NEXUS CLEAN SNAPSHOT EXCLUSION POLICY
+
+EXCLUDED:
+- historical .git metadata
+- virtual environments
+- Python caches
+- test caches
+- runtime databases
+- SQLite journals
+- logs
+- temporary files
+- archives
+- backups
+- HTML coverage output
+- giant NEXUS execution log
+- DAT_AI runtime data
+- Engineering Studio generated top-level reports
+- independent EQTS public release repository
+
+EQTS remains independently versioned under:
+
+NEXUSCogOS/evidence-qualified-task-success

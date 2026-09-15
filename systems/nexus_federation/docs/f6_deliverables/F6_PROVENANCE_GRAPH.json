@@ -1,0 +1,111 @@
+{
+  "description": "Real F6 provenance graph, captured from one actual execution (mission section 17)",
+  "chain_1_librarian": [
+    {
+      "hop": "DAT.AI source evidence",
+      "id": "planning_zones:project_id=camduong (real, government-sourced, DAT.AI ingestion)"
+    },
+    {
+      "hop": "DAT.AI finding",
+      "id": "01b829ad-6c71-49bf-879a-24e1f424041d"
+    },
+    {
+      "hop": "NEXUS trigger",
+      "id": "9b1cfb8e-7a25-5dba-8179-115bf05f58db"
+    },
+    {
+      "hop": "Librarian delegation",
+      "id": "2fb21d41-088e-536f-9b98-84b15e013056"
+    },
+    {
+      "hop": "Librarian source evidence",
+      "id": [
+        "arxiv:1908.03438",
+        "arxiv:2107.10894",
+        "arxiv:2602.12430",
+        "arxiv:2004.01504"
+      ]
+    },
+    {
+      "hop": "Librarian report",
+      "id": "66130697-b6ce-4062-818d-dc20117d9dfa"
+    },
+    {
+      "hop": "NEXUS (ingested)",
+      "id": "kernel.ingest_report -> accepted=True"
+    }
+  ],
+  "chain_2_sentinel": [
+    {
+      "hop": "DAT.AI finding",
+      "id": "01b829ad-6c71-49bf-879a-24e1f424041d"
+    },
+    {
+      "hop": "NEXUS trigger",
+      "id": "9b1cfb8e-7a25-5dba-8179-115bf05f58db"
+    },
+    {
+      "hop": "Sentinel delegation",
+      "id": "face8245-baf3-55f7-8492-e5b79c5b2727"
+    },
+    {
+      "hop": "market record(s)",
+      "id": [
+        {
+          "ticker": "KBC",
+          "classification": "INDIRECT",
+          "basis": "Sentinel's own `companies` table discloses sector='B\u1ea5t \u0111\u1ed9ng s\u1ea3n' (real estate) for KBC (Kinh Bac City Development Holding Corporation) -- a genuine sector-level data field, not a name-based guess. No Sentinel-disclosed text confirms a specific Dong Nai/Long Thanh facility, so this is sector-plausible exposure, not confirmed direct exposure."
+        },
+        {
+          "ticker": "SZC",
+          "classification": "INDIRECT",
+          "basis": "Sentinel's own `companies` table discloses sector='B\u1ea5t \u0111\u1ed9ng s\u1ea3n' (real estate) for SZC (Sonadezi Chau Duc Shareholding Company) -- a genuine sector-level data field, not a name-based guess. No Sentinel-disclosed text confirms a specific Dong Nai/Long Thanh facility, so this is sector-plausible exposure, not confirmed direct exposure."
+        },
+        {
+          "ticker": "GVR",
+          "classification": "HYPOTHETICAL",
+          "basis": "Sentinel's own `companies` table discloses sector='SX Nh\u1ef1a - H\u00f3a ch\u1ea5t' for GVR (Viet Nam Rubber Group - Joint Stock Company) -- not a real-estate/industrial-park sector classification. Public knowledge outside Sentinel's data suggests this company has industrial land holdings, but Sentinel's own governed data neither confirms nor addresses this, so any link is a hypothesis, not a sector-supported inference."
+        },
+        {
+          "ticker": "IDC",
+          "classification": "HYPOTHETICAL",
+          "basis": "Sentinel's own `companies` table discloses sector='Ti\u1ec7n \u00edch' for IDC (IDICO Corporation - JSC) -- not a real-estate/industrial-park sector classification. Public knowledge outside Sentinel's data suggests this company has industrial land holdings, but Sentinel's own governed data neither confirms nor addresses this, so any link is a hypothesis, not a sector-supported inference."
+        },
+        {
+          "ticker": "LHG",
+          "classification": "UNKNOWN",
+          "basis": "LHG has no row in Sentinel's own `companies` table -- no sector/name data governed by Sentinel exists for it, despite being a real, publicly known industrial-park-adjacent operator. Cannot classify beyond UNKNOWN from Sentinel's own data."
+        }
+      ]
+    },
+    {
+      "hop": "Sentinel derived metrics",
+      "id": "entity_mappings + decision findings, see F6_SENTINEL_RESULT.json"
+    },
+    {
+      "hop": "Sentinel report",
+      "id": "64404a43-cde1-446c-88f7-b413abb99a00"
+    },
+    {
+      "hop": "NEXUS (ingested)",
+      "id": "kernel.ingest_report -> accepted=True"
+    }
+  ],
+  "chain_3_synthesis": [
+    {
+      "hop": "both reports",
+      "id": [
+        "66130697-b6ce-4062-818d-dc20117d9dfa",
+        "64404a43-cde1-446c-88f7-b413abb99a00"
+      ]
+    },
+    {
+      "hop": "executive synthesis",
+      "id": "c15b4a85-427a-43da-86c9-40f74a8f4614"
+    },
+    {
+      "hop": "executive state event",
+      "id": "state_event_log: institution_id=nexus, capability_name=cross_domain_synthesis, cycle_id=identity:64404a43-cde1-446c-88f7-b413abb99a00|66130697-b6ce-4062-818d-dc20117d9dfa:c15b4a85-427a-43da-86c9-40f74a8f4614"
+    }
+  ]
+}

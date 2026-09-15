@@ -1,0 +1,76 @@
+{
+  "experiment_id": "NEXUS-EXP-002",
+  "subsystem_layer": "Librarian academic corpus provenance and citation control",
+  "claim_under_test": "Librarian fails closed when a source, citation, transformation, or dataset lacks verifiable provenance.",
+  "falsifiable_hypothesis": "Complete records are accepted, while every fixture missing a required provenance element or containing a hash/identifier mismatch is rejected or quarantined without becoming citable evidence.",
+  "predicted_result": "100% valid fixtures accepted; 100% incomplete, mismatched, or unverifiable fixtures rejected/quarantined; zero invalid records retrievable as evidence.",
+  "null_alternative_outcome": "Any provenance-deficient record is accepted, indexed, retrieved as evidence, or silently repaired without an auditable event.",
+  "independent_variables": [
+    "provenance defect type",
+    "ingestion channel",
+    "source format"
+  ],
+  "dependent_variables": [
+    "accept/reject decision",
+    "quarantine reason accuracy",
+    "retrievability after rejection",
+    "audit-event completeness"
+  ],
+  "controls": [
+    "gold valid records",
+    "one-defect-at-a-time negative fixtures",
+    "tampered-content hash controls",
+    "unresolvable identifier controls"
+  ],
+  "dataset_source_requirements": [
+    "synthetic non-sensitive fixtures",
+    "frozen copies of representative valid source metadata",
+    "no live corpus mutation during dry validation"
+  ],
+  "provenance_requirements": [
+    "fixture generator version",
+    "expected decision per fixture",
+    "SHA-256 before and after ingestion",
+    "validator version",
+    "reviewer identity"
+  ],
+  "pre_registered_protocol": [
+    "freeze defect matrix",
+    "run validation in an isolated temporary store",
+    "attempt ingestion",
+    "attempt retrieval only after decision",
+    "compare actual against expected decision",
+    "verify append-only audit events"
+  ],
+  "acceptance_rejection_thresholds": {
+    "accept": "sensitivity=1.00; specificity=1.00; invalid retrievability=0; complete audit events=100%",
+    "reject": "any false acceptance or invalid record retrievable as evidence",
+    "otherwise": "INCONCLUSIVE only for infrastructure failure before fixture evaluation"
+  },
+  "statistical_reproducibility_criteria": "At least 5 fixtures per required provenance field and ingestion channel; three deterministic repetitions; identical decision vector and audit-event semantics across runs.",
+  "contamination_leakage_checks": [
+    "isolated temporary database",
+    "unique fixture identifiers",
+    "verify no fixture IDs exist in production corpus before or after",
+    "hash all fixtures"
+  ],
+  "execution_prerequisites_stability_gates": [
+    "provenance schema frozen",
+    "quarantine path writable and auditable",
+    "restore rehearsal passed",
+    "test store demonstrably isolated"
+  ],
+  "evidence_artifacts": [
+    "defect matrix",
+    "fixture hashes",
+    "validator output",
+    "quarantine records",
+    "retrieval-negative proof",
+    "audit event export"
+  ],
+  "replication_plan": "Second implementation or independent reviewer regenerates fixtures from the defect specification and repeats against a clean store.",
+  "external_literature_cross_check_status": "PENDING",
+  "contradictory_findings": [],
+  "result_status": "BLOCKED",
+  "final_verdict": "PENDING"
+}

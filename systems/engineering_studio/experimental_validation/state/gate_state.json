@@ -1,0 +1,21 @@
+{
+  "gate_count": 35,
+  "formal_verified_pass": 0,
+  "existing_evidence_review": {
+    "count": 21,
+    "pending": 21
+  },
+  "technical_verification": {
+    "count": 10,
+    "formal_pass": 0,
+    "observations": 10
+  },
+  "human_attestation": {
+    "count": 4,
+    "pending": 4
+  },
+  "experiment_execution_authorized": [],
+  "experiments_executed": [],
+  "registry_transition_performed": false,
+  "github_action_performed": false
+}

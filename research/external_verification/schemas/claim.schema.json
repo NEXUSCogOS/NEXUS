@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NEXUS-EVA Claim",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "claim_id",
+    "statement",
+    "claim_type",
+    "system_version",
+    "falsification_criterion",
+    "status"
+  ],
+  "properties": {
+    "claim_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "statement": {
+      "type": "string",
+      "minLength": 1
+    },
+    "claim_type": {
+      "enum": [
+        "SCIENTIFIC",
+        "CAPABILITY",
+        "SOFTWARE_CONTROL",
+        "REPRODUCIBILITY",
+        "GOVERNANCE",
+        "PROFESSIONAL_ASSURANCE"
+      ]
+    },
+    "system_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "experiment_id": {
+      "type": ["string", "null"]
+    },
+    "falsification_criterion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "verification_layers": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": ["L0", "L1", "L2", "L3", "L4", "L5"]
+      }
+    },
+    "status": {
+      "enum": [
+        "UNTESTED",
+        "INTERNAL_ONLY",
+        "EXTERNALLY_REVIEWED",
+        "INDEPENDENTLY_SUPPORTED",
+        "FLAGSHIP_VALIDATED",
+        "REFUTED",
+        "INCONCLUSIVE"
+      ]
+    }
+  }
+}

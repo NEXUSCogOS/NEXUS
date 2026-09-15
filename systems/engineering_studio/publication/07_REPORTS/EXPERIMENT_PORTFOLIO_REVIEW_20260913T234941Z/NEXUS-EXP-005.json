@@ -1,0 +1,82 @@
+{
+  "experiment_id": "NEXUS-EXP-005",
+  "subsystem_layer": "NEXUS research data integrity and production isolation",
+  "claim_under_test": "Experimental results can be generated from immutable, provenance-complete research datasets without contamination from live or production writers.",
+  "falsifiable_hypothesis": "Repeated reads of the sealed research snapshot remain hash-identical; all rows resolve to a source and transformation chain; no production writer accesses the experimental store during execution.",
+  "predicted_result": "Zero snapshot drift, 100% row-level provenance, zero production-writer overlap, and identical analysis input hashes across repetitions.",
+  "null_alternative_outcome": "Any unexplained hash drift, missing provenance, mixed live/historical data, shared WAL/writer activity, unit ambiguity, or non-repeatable input selection.",
+  "independent_variables": [
+    "dataset snapshot",
+    "reader process",
+    "execution time"
+  ],
+  "dependent_variables": [
+    "snapshot hash stability",
+    "provenance coverage",
+    "writer overlap count",
+    "unit/schema validation failures"
+  ],
+  "controls": [
+    "read-only copied snapshot",
+    "known-tampered snapshot",
+    "known-missing-provenance rows",
+    "production-path access sentinel"
+  ],
+  "dataset_source_requirements": [
+    "read-only experiment-specific snapshot",
+    "explicit source/type/unit fields",
+    "row or partition hashes",
+    "documented inclusion/exclusion manifest"
+  ],
+  "provenance_requirements": [
+    "upstream acquisition record",
+    "transform chain",
+    "schema version",
+    "unit metadata",
+    "snapshot creator and timestamp",
+    "content hashes"
+  ],
+  "pre_registered_protocol": [
+    "create snapshot only after backup/restore gate",
+    "record open-file handles and writers",
+    "validate schema, units and provenance",
+    "hash before and after each read",
+    "run analysis against snapshot only",
+    "quarantine on any mismatch"
+  ],
+  "acceptance_rejection_thresholds": {
+    "accept": "hash drift=0; provenance coverage=100%; writer overlap=0; unit ambiguity=0",
+    "reject": "any unexplained drift, writer overlap, missing provenance or ambiguous unit",
+    "otherwise": "INVALID until provenance is repaired and a new snapshot preregistered"
+  },
+  "statistical_reproducibility_criteria": "Deterministic integrity checks across at least three time-separated reads and two independent processes; exact hash equality required.",
+  "contamination_leakage_checks": [
+    "open-handle census",
+    "WAL and journal isolation",
+    "live-vs-historical source flag validation",
+    "timestamp boundary checks",
+    "duplicate and orphan scan"
+  ],
+  "execution_prerequisites_stability_gates": [
+    "tested restore",
+    "research/production physical or logical separation",
+    "writer identities known",
+    "disk headroom safe",
+    "schema and unit conflicts resolved"
+  ],
+  "evidence_artifacts": [
+    "snapshot manifest",
+    "hash ledger",
+    "writer census",
+    "provenance coverage report",
+    "unit validation report",
+    "quarantine log"
+  ],
+  "replication_plan": "Independent process rebuilds the snapshot from the upstream manifest and must reproduce the same row counts, schema and hashes.",
+  "external_literature_cross_check_status": "NOT_APPLICABLE_INTERNAL_INTEGRITY",
+  "contradictory_findings": [
+    "Platform readiness review reports research and production sharing storage, untested restores, missing provenance flags, and unit/scale mismatches."
+  ],
+  "result_status": "BLOCKED",
+  "final_verdict": "PENDING"
+}

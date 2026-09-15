@@ -1,0 +1,44 @@
+[
+  {
+    "experiment_id": "NEXUS-EXP-001",
+    "status": null,
+    "has_result": false,
+    "has_conclusion": false,
+    "publication_classification": "NOT_RESULT_READY"
+  },
+  {
+    "experiment_id": "NEXUS-EXP-002",
+    "status": null,
+    "has_result": false,
+    "has_conclusion": false,
+    "publication_classification": "NOT_RESULT_READY"
+  },
+  {
+    "experiment_id": "NEXUS-EXP-003",
+    "status": null,
+    "has_result": false,
+    "has_conclusion": false,
+    "publication_classification": "NOT_RESULT_READY"
+  },
+  {
+    "experiment_id": "NEXUS-EXP-004",
+    "status": null,
+    "has_result": false,
+    "has_conclusion": false,
+    "publication_classification": "NOT_RESULT_READY"
+  },
+  {
+    "experiment_id": "NEXUS-EXP-005",
+    "status": null,
+    "has_result": false,
+    "has_conclusion": false,
+    "publication_classification": "NOT_RESULT_READY"
+  },
+  {
+    "experiment_id": "NEXUS-EXP-006",
+    "status": null,
+    "has_result": false,
+    "has_conclusion": false,
+    "publication_classification": "NOT_RESULT_READY"
+  }
+]

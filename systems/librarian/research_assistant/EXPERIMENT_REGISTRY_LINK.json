@@ -1,0 +1,10 @@
+{
+  "view": "research_assistant",
+  "registry_id": "NEXUS-EVR-001",
+  "canonical_path": "${NEXUS_ROOT}/systems/librarian/experiments/registry.json",
+  "workflow_path": "${NEXUS_ROOT}/systems/librarian/experiments/RESEARCH_WORKFLOW.md",
+  "experiment_ids": ["NEXUS-EXP-001", "NEXUS-EXP-002", "NEXUS-EXP-003", "NEXUS-EXP-004", "NEXUS-EXP-005", "NEXUS-EXP-006"],
+  "allowed_updates": ["external_literature_cross_check_status", "contradictory_findings"],
+  "duplication_policy": "REFERENCE_ONLY_DO_NOT_COPY_RECORDS",
+  "execution_authority": "NONE"
+}

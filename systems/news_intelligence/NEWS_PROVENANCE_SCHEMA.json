@@ -1,0 +1,24 @@
+{
+  "SourceItem": {
+    "fields": [
+      "source_item_id",
+      "canonical_url",
+      "publisher",
+      "source_class",
+      "author",
+      "publication_timestamp",
+      "retrieval_timestamp",
+      "content_hash",
+      "headline",
+      "language",
+      "geography",
+      "external_identifiers",
+      "retrieval_method",
+      "license_access_status",
+      "verification_status",
+      "raw_description"
+    ]
+  },
+  "identity_basis": "provider GUID (preferred) else canonical_url, sha256-hashed to 32 hex chars",
+  "versioning": "a genuine content change under the same source_item_id is stored as version+1, never an in-place overwrite"
+}

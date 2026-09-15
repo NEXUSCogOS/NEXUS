@@ -1,0 +1,28 @@
+{
+  "model_id": "satellite_classifier_v1.2",
+  "canonical_status": "BASE_PRETRAINED_WEIGHTS_UNTRAINED_DOMAIN_HEAD",
+  "forbidden_status_labels": ["TRAINED", "VALIDATED", "PROMOTABLE", "PRODUCTION"],
+  "actual_file_location": {
+    "tier": "EXTERNAL_ACTIVE",
+    "path": "/Volumes/NEXUS/NEXUS_LOCAL/systems/dat_ai/backend/models/satellite_classifier_v1.2.pth",
+    "note": "Not duplicated into canonical NEXUS. Referenced via the MODEL_PATH environment variable (see app/config.py::load_settings), consistent with the NEXUS external-first storage policy: this file already resides on external storage and duplicating it locally would serve no operational purpose."
+  },
+  "verification": {
+    "sha256": "65758e1b2cf3b9ac1bdc843f898b0d75c8ce07f833fb7c297ff565a4594a1de8",
+    "size_bytes": 94420602,
+    "verified_by": "app.ml.satellite_classifier.audit_checkpoint()",
+    "verified_during": "DAT.AI Phase A+B donor verification (2026-08-27), re-confirmed Phase C",
+    "findings": [
+      "conv1.weight is bit-identical to torchvision IMAGENET1K_V1 -- the backbone has received no domain training on satellite imagery.",
+      "fc.bias statistics are consistent with fresh initialisation -- the 5-class head has not been trained.",
+      "Checkpoint accepts 3 input channels but the preprocessing contract supplies 4 (B02, B03, B04, B08)."
+    ],
+    "promotion_status": "UNTRAINED_DEVELOPMENT_ONLY"
+  },
+  "enforcement": {
+    "mechanism": "app.ml.satellite_classifier.audit_checkpoint() overrides MODEL_PROMOTED_FOR_PRODUCTION=true when evidence shows the checkpoint is untrained -- configuration cannot promote a model the evidence rejects.",
+    "regression_tests": "tests/unit/test_untrained_model_cannot_be_promoted.py"
+  },
+  "last_updated": "2026-08-27",
+  "updated_by": "DAT.AI Phase C canonical recovery mission"
+}

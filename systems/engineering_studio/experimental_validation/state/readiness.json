@@ -1,0 +1,426 @@
+[
+  {
+    "experiment_id": "NEXUS-EXP-001",
+    "registry_status": "BLOCKED",
+    "required_gate_count": 14,
+    "verified_gate_count": 0,
+    "unresolved_gate_count": 14,
+    "verified_gate_ids": [],
+    "unresolved": [
+      {
+        "gate_id": "global-01",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-02",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-03",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-04",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-05",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-06",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-07",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-08",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-09",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-10",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "NEXUS-EXP-001-01",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "NEXUS-EXP-001-02",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "NEXUS-EXP-001-03",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "NEXUS-EXP-001-04",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      }
+    ],
+    "all_required_gates_verified": false,
+    "authorization": "BLOCKED",
+    "registry_transition_performed": false,
+    "execution_authorized": false
+  },
+  {
+    "experiment_id": "NEXUS-EXP-002",
+    "registry_status": "BLOCKED",
+    "required_gate_count": 14,
+    "verified_gate_count": 0,
+    "unresolved_gate_count": 14,
+    "verified_gate_ids": [],
+    "unresolved": [
+      {
+        "gate_id": "global-01",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-02",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-03",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-04",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-05",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-06",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-07",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-08",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-09",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-10",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "NEXUS-EXP-002-01",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "NEXUS-EXP-002-02",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "NEXUS-EXP-002-03",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "NEXUS-EXP-002-04",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      }
+    ],
+    "all_required_gates_verified": false,
+    "authorization": "BLOCKED",
+    "registry_transition_performed": false,
+    "execution_authorized": false
+  },
+  {
+    "experiment_id": "NEXUS-EXP-003",
+    "registry_status": "BLOCKED",
+    "required_gate_count": 14,
+    "verified_gate_count": 0,
+    "unresolved_gate_count": 14,
+    "verified_gate_ids": [],
+    "unresolved": [
+      {
+        "gate_id": "global-01",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-02",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-03",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-04",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-05",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-06",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-07",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-08",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-09",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-10",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "NEXUS-EXP-003-01",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "NEXUS-EXP-003-02",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "NEXUS-EXP-003-03",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "NEXUS-EXP-003-04",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      }
+    ],
+    "all_required_gates_verified": false,
+    "authorization": "BLOCKED",
+    "registry_transition_performed": false,
+    "execution_authorized": false
+  },
+  {
+    "experiment_id": "NEXUS-EXP-004",
+    "registry_status": "BLOCKED",
+    "required_gate_count": 14,
+    "verified_gate_count": 0,
+    "unresolved_gate_count": 14,
+    "verified_gate_ids": [],
+    "unresolved": [
+      {
+        "gate_id": "global-01",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-02",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-03",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-04",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-05",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-06",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-07",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-08",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-09",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-10",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "NEXUS-EXP-004-01",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "NEXUS-EXP-004-02",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "NEXUS-EXP-004-03",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "NEXUS-EXP-004-04",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      }
+    ],
+    "all_required_gates_verified": false,
+    "authorization": "BLOCKED",
+    "registry_transition_performed": false,
+    "execution_authorized": false
+  },
+  {
+    "experiment_id": "NEXUS-EXP-005",
+    "registry_status": "BLOCKED",
+    "required_gate_count": 15,
+    "verified_gate_count": 0,
+    "unresolved_gate_count": 15,
+    "verified_gate_ids": [],
+    "unresolved": [
+      {
+        "gate_id": "global-01",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-02",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-03",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-04",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-05",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-06",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-07",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-08",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-09",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-10",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "NEXUS-EXP-005-01",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "NEXUS-EXP-005-02",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "NEXUS-EXP-005-03",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "NEXUS-EXP-005-04",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "NEXUS-EXP-005-05",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      }
+    ],
+    "all_required_gates_verified": false,
+    "authorization": "BLOCKED",
+    "registry_transition_performed": false,
+    "execution_authorized": false
+  },
+  {
+    "experiment_id": "NEXUS-EXP-006",
+    "registry_status": "BLOCKED",
+    "required_gate_count": 14,
+    "verified_gate_count": 0,
+    "unresolved_gate_count": 14,
+    "verified_gate_ids": [],
+    "unresolved": [
+      {
+        "gate_id": "global-01",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-02",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-03",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-04",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-05",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-06",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-07",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-08",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-09",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "global-10",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "NEXUS-EXP-006-01",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "NEXUS-EXP-006-02",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "NEXUS-EXP-006-03",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      },
+      {
+        "gate_id": "NEXUS-EXP-006-04",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      }
+    ],
+    "all_required_gates_verified": false,
+    "authorization": "BLOCKED",
+    "registry_transition_performed": false,
+    "execution_authorized": false
+  }
+]

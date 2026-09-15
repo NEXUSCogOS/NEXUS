@@ -1,0 +1,40 @@
+{
+  "SourceHealth": {
+    "fields": [
+      "source_id",
+      "last_success",
+      "latency_seconds",
+      "http_status",
+      "parse_success",
+      "duplicate_rate",
+      "item_yield",
+      "rate_limited",
+      "auth_required",
+      "status"
+    ],
+    "status_values": [
+      "AVAILABLE",
+      "DEGRADED",
+      "UNAVAILABLE",
+      "UNVERIFIED"
+    ]
+  },
+  "SourceClass": [
+    "PRIMARY_OFFICIAL",
+    "GOVERNMENT",
+    "REGULATOR",
+    "EXCHANGE",
+    "COMPANY_PRIMARY",
+    "WIRE_SERVICE",
+    "MAINSTREAM_NEWS",
+    "TRADE_PUBLICATION",
+    "SPECIALIST_MEDIA",
+    "ACADEMIC_OR_RESEARCH",
+    "LOCAL_MEDIA",
+    "SOCIAL_PRIMARY_ACCOUNT",
+    "SOCIAL_SECONDARY",
+    "BLOG",
+    "AGGREGATOR",
+    "UNKNOWN"
+  ]
+}

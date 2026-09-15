@@ -1,0 +1,4 @@
+33e592f65fb86b5894ca371c7a19dcc7a884f3fd20aa644dae08ad504024675e  ./bin/preflight.py
+a8ae088a7daa52393e3be29b8649b8ad213a0069dc64ce7afe277cf365ee80ac  ./bin/run_post_review.sh
+37c701566fc12fd918f823e778f260326a6f7f1ec32c1774fae5dd68cba416b1  ./config/PROGRAMME.json
+757734459b2a3bdae41958c4d21fea2243f869d4d1a77a98acc3f8a0348bb7ad  ./README.md

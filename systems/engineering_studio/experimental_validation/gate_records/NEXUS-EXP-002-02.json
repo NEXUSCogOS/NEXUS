@@ -1,0 +1,18 @@
+{
+  "gate_id": "NEXUS-EXP-002-02",
+  "gate": "quarantine path writable and auditable",
+  "status": "PASS",
+  "reviewer": "GPT-5.6-Sol-assisted-adjudication-001",
+  "verified_at": "2026-09-14T00:56:10.118269+00:00",
+  "contradictions_resolved": true,
+  "evidence_refs": [
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_REMEDIATION_001_20260914T005238Z/quarantine/REHEARSAL.json",
+      "sha256": "e806980a08a38d2674ee19b68ab5b31372e80510f00f7415db35973d13bf3ce5"
+    },
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_STAGE2_VERIFICATION_20260914T005409Z/audit/quarantine_events.jsonl",
+      "sha256": "0b7b505d0f6a57dec0f979338ae4334e352fb94c78a81ac3451a1b0f8f5c8a55"
+    }
+  ]
+}

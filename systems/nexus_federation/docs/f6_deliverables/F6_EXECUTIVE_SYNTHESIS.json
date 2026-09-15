@@ -1,0 +1,43 @@
+{
+  "pid": 94899,
+  "synthesis_id": "c15b4a85-427a-43da-86c9-40f74a8f4614",
+  "trigger_id": "9b1cfb8e-7a25-5dba-8179-115bf05f58db",
+  "librarian_ingress_accepted": true,
+  "sentinel_ingress_accepted": true,
+  "executive_conclusion_class": "PARTIALLY_SUPPORTED",
+  "executive_conclusion": "At least one institution reported supportive evidence; not independently corroborated by the other.",
+  "partial": false,
+  "missing_institutions": [],
+  "supporting_findings_count": 1,
+  "contradictory_findings_count": 0,
+  "independent_corroboration_count": 0,
+  "unsupported_claim_count": 0,
+  "recommended_next_actions": [
+    "continue monitoring"
+  ],
+  "prohibited_actions": [
+    "PROHIBITED: place a live order",
+    "PROHIBITED: cancel an order",
+    "PROHIBITED: change execution_mode",
+    "PROHIBITED: change execution_allowed",
+    "PROHIBITED: invoke broker execution",
+    "PROHIBITED: publish externally",
+    "PROHIBITED: modify another institution's data or code",
+    "PROHIBITED: convert this conclusion directly into a financial trade"
+  ],
+  "temporal_mismatches": [
+    "DAT.AI observation (2025-10-13T03:40:37+00:00) is 318 days old relative to synthesis time -- usable as historical planning context, not presented as a new development.",
+    "Sentinel's macro_data context is stale (see Sentinel report limitations) relative to its own current price/decision data -- flagged, not silently unified."
+  ],
+  "federation_store_path": "/tmp/f6_final_run2.db",
+  "resource_usage": {
+    "cpu_seconds": 0.025144,
+    "peak_rss_bytes": 37666816,
+    "elapsed_seconds": 0.0278,
+    "local_storage_delta_bytes": null,
+    "external_storage_activity": null,
+    "api_calls": null,
+    "api_cost_usd": null,
+    "model_tokens": null
+  }
+}

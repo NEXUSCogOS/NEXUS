@@ -1,0 +1,14 @@
+{
+  "gate_id": "NEXUS-EXP-005-05",
+  "gate": "schema and unit conflicts resolved",
+  "status": "PASS",
+  "reviewer": "GPT-5.6-Sol-assisted-final-machine-adjudication-006",
+  "verified_at": "2026-09-14T02:56:25.711636+00:00",
+  "contradictions_resolved": true,
+  "evidence_refs": [
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_LAST_MACHINE_GATES_20260914T025625Z/evidence/EXP005_05.json",
+      "sha256": "9563d29fe33ab43845fc55572fb0eabf1e4a5917ab3adb146e4a41ced3bda868"
+    }
+  ]
+}

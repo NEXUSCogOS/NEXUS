@@ -1,0 +1,2 @@
+cfcb08985adbc7f2e26b1424e0803a3c689884d70de1c5245e6e7343c5adb460  ${NEXUS_ROOT}/systems/librarian/experiments/registry.json
+7c12161d2b64502e0692bb43550f793f03db8bd436fc0e6e153bbc3e281167c0  ${NEXUS_ROOT}/systems/librarian/experiments/registry.schema.json

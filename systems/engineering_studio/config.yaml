@@ -1,0 +1,16 @@
+# Canonical data authority
+canonical:
+  evidence_db: ${NEXUS_ROOT}/.studio_v2/evidence.db
+  executive_db: ${NEXUS_ROOT}/.studio_v2/executive_memory.db
+  repair_db: ${NEXUS_ROOT}/.studio_v2/repair_memory.db
+  strategic_db: ${NEXUS_ROOT}/.studio_v2/strategic_memory.db
+  proposals_db: ${NEXUS_ROOT}/.studio_v2/proposals.db
+
+backpressure_state: ${NEXUS_ROOT}/.studio_v2/backpressure.json
+
+# Studio execution
+studio:
+  root: ${NEXUS_ROOT}
+  sandbox_base: /tmp/studio_sandbox
+  timeout_seconds: 300
+  max_repair_attempts: 3

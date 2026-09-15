@@ -1,0 +1,26 @@
+{
+  "gate_id": "NEXUS-EXP-003-02",
+  "gate": "corpus snapshot immutable",
+  "status": "PASS",
+  "reviewer": "GPT-5.6-Sol-assisted-evidence-adjudication-003",
+  "verified_at": "2026-09-14T02:45:11.186521+00:00",
+  "contradictions_resolved": true,
+  "evidence_refs": [
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_MACHINE_CLOSURE_V2_20260914T024254Z/evidence/EXP003_CORPUS_STORAGE.json",
+      "sha256": "469912fd3af9b832d0e24c283ae68ebbffe301f3e236e334a1ee1811bcebe022"
+    },
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_MACHINE_CLOSURE_V2_20260914T024254Z/logs/EXP003_CORPUS_STORAGE.log",
+      "sha256": "33ceaa0d737d4006ec8ba3fe8bdb5c94696ba33d8c2c6ca14092b20570b1c688"
+    },
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_MACHINE_CLOSURE_V2_20260914T024254Z/freeze/corpus/FREEZE_RECORD.json",
+      "sha256": "97d5bbad21a00688336c4bd405144803ec9e7ce70b435c2089c8736a2de1fed3"
+    },
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_MACHINE_CLOSURE_V2_20260914T024254Z/freeze/corpus/SHA256SUMS.txt",
+      "sha256": "f0555e71c5bb0dcc76d3d445433af3cf89649a5aabb29ac73360369ddd74eaad"
+    }
+  ]
+}

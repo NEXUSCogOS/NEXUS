@@ -1,0 +1,14 @@
+{
+  "gate_id": "NEXUS-EXP-005-03",
+  "gate": "writer identities known",
+  "status": "PASS",
+  "reviewer": "GPT-5.6-Sol-assisted-targeted-verification-005",
+  "verified_at": "2026-09-14T02:51:45.751489+00:00",
+  "contradictions_resolved": true,
+  "evidence_refs": [
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_FINAL_MACHINE_REMEDIATION_V2_20260914T025145Z/evidence/EXP005_03.json",
+      "sha256": "c406d662da2dfdd52c1e2b1290ff5e4eb0fc2eea5569921ce7b3b0bc33d30efc"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "publication_policy": "No manuscript may be represented as complete without a completed experiment, evidence graph, analysis record, limitations, and replication status.",
+  "outputs": [
+    {"publication_id": "PIONEER-PROJECT-PAPER-001", "type": "PROJECT_PAPER", "status": "NOT_STARTED_EVIDENCE_GATES_BLOCKED", "experiment_ids": ["NEXUS-EXP-001", "NEXUS-EXP-002", "NEXUS-EXP-003", "NEXUS-EXP-004", "NEXUS-EXP-005", "NEXUS-EXP-006"]},
+    {"publication_id": "PIONEER-WHITE-PAPER-001", "type": "WHITE_PAPER", "status": "NOT_STARTED_EVIDENCE_GATES_BLOCKED", "experiment_ids": ["NEXUS-EXP-001", "NEXUS-EXP-002", "NEXUS-EXP-003", "NEXUS-EXP-004", "NEXUS-EXP-005", "NEXUS-EXP-006"]}
+  ]
+}

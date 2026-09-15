@@ -1,0 +1,25 @@
+{
+  "checkpoint": "engineering-studio-20260904T1303+0700",
+  "status": "PASS_LATE_WITH_NORMAL_VERIFIER_DURATION",
+  "schedule": {"due_at": "2026-09-04T13:03:00+07:00", "completed_at": "2026-09-04T16:04:26+07:00", "delay_minutes": 181.44, "status": "LATE", "alert_threshold_minutes": 15},
+  "nso": {
+    "cycle": "PASS", "architecture": "3.0-consolidated", "stages": "15/15", "acceptance_controls": "22/22", "raw_verifier_duration_seconds": 0.745,
+    "frozen_source_status": "NOT_CERTIFIED_WITH_4_PRESERVED_SERIALIZATION_DEFECTS", "operational_status": "CERTIFIED_502_OF_502",
+    "archive_sha256": "61e9ed6942523642c223f29929751f88d107c64ce995bf5e1cc2602f72a3ef84", "archive_repeat_sha256": "61e9ed6942523642c223f29929751f88d107c64ce995bf5e1cc2602f72a3ef84", "archive_members": 533, "cleanroom_reproduction": "PASS",
+    "scientific_findings": {"review_findings": 29, "resolved": 17, "open_method_review": 12, "aggregation_identities": "140/140", "external_metadata_sample": "36/36", "external_value_sample": "4/4"}
+  },
+  "pioneer": {"controls": "14/14", "tests": "127/127", "database_integrity": "PASS", "retrieval_equivalence": "PASS", "content_address_integrity": "PASS", "journal_chain": "PASS_6_EVENTS", "pending_feedback": 3, "academic_sources": 22, "citation_edges": 0, "retrieval_sources": 93, "retrieval_documents": 297, "experiments": "6_BLOCKED", "publications": "EVIDENCE_GATES_BLOCKED"},
+  "comparison_to_previous_checkpoint": [
+    {"surface": "academic_and_retrieval_databases", "classification": "UNCHANGED", "reason": "hashes and counts identical"},
+    {"surface": "scientific_findings", "classification": "UNCHANGED", "reason": "no integrity or scientific drift"},
+    {"surface": "raw_verifier_duration", "classification": "IMPROVEMENT", "previous_seconds": 706.914, "current_seconds": 0.745, "interpretation": "observed recovery; intermittent cause remains UNVERIFIED"},
+    {"surface": "schedule_delivery", "classification": "REGRESSION", "delay_minutes": 181.44, "reason": "delayed heartbeat independent of normal verifier duration"},
+    {"surface": "operational_archive_hash", "classification": "EXPECTED_GROWTH", "current_sha256": "61e9ed6942523642c223f29929751f88d107c64ce995bf5e1cc2602f72a3ef84", "reason": "refreshed control records; same-run builds and clean-room reproduction match"},
+    {"surface": "journal_and_feedback", "classification": "UNCHANGED", "reason": "no new recommendation required; two diagnostics remain open"}
+  ],
+  "scientific_defects": [],
+  "operational_regressions": ["181_44_MINUTE_WAKE_DELAY"],
+  "recommendation_review": "${NEXUS_ROOT}/systems/librarian/pioneer/engineering_feedback/review-20260904T1303+0700.json",
+  "automation_action": "REMAIN_ACTIVE_PER_POLICY; SCHEDULER_DIAGNOSTIC_REMAINS_CRITICAL",
+  "next_due": "2026-09-05T01:03:00+07:00"
+}

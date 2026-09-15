@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "canonical_root": "${NEXUS_ROOT}/systems/librarian",
+  "single_writer_policy": "ONLY_CANONICAL_ROOT_ACCEPTS_OPERATIONAL_WRITES",
+  "evidence_policy": "RAW_EVIDENCE_IMMUTABLE; DERIVATIVES_SEPARATE_WITH_LINEAGE",
+  "tiers": {
+    "hot": ["data/*.db", "pioneer/journal/index.json", "pioneer/PIONEER_AUDIT.json"],
+    "warm": ["data/content/_corpus_chunks.json", "pioneer/engineering_feedback/*.jsonl"],
+    "cold": ["/Volumes/NEXUS_ARCHIVE/07_RESEARCH_CORPUS"]
+  },
+  "reference_only_surfaces": [
+    "/Volumes/NEXUS/NEXUS_LOCAL/systems/librarian",
+    "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/NEXUS/NEXUS_SPECIFICATIONS/04_RESEARCH_CORPUS",
+    "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/NEXUS/NEXUS_STUDIO_REVIEW/10_RESEARCH_CORPUS"
+  ],
+  "cache_limits": {"search_candidate_limit": 500, "persistent_semantic_cache": "NOT_COMMISSIONED"},
+  "retention": {"raw_evidence": "INDEFINITE", "audit_and_lineage": "INDEFINITE", "derived_cache": "REBUILDABLE", "deletion": "HUMAN_APPROVAL_REQUIRED"},
+  "database_policy": {"indexes": "IDEMPOTENT", "vacuum": "NOT_AUTOMATIC", "integrity_check": "REQUIRED_AFTER_MIGRATION"}
+}

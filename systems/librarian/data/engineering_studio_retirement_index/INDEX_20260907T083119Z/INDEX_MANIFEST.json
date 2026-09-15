@@ -1,0 +1,33 @@
+{
+  "canonical_ingestion_interface": "${NEXUS_ROOT}/systems/librarian/ingestion/run_ingest.py",
+  "created_at": "2026-09-07T08:31:41.368128+00:00",
+  "cryptographic_failures": 0,
+  "deletion_authorized": false,
+  "engineering_studio": "/Volumes/NEXUS/01_SYSTEMS/ENGINEERING_STUDIO",
+  "files": [
+    {
+      "path": "RETIREMENT_INDEX_RECEIPTS.jsonl",
+      "sha256": "6af452797d4ccd7976013b8d810f35ea998a52cf0e00461533bcdb151bec17eb",
+      "size": 1105250
+    },
+    {
+      "path": "system_history/HISTORY_RECONSTRUCTION_FINAL_VERDICT.txt",
+      "sha256": "e29a8fd5ff4c32e54adbf01d775c0671d2f78f5588e833686a792a488c3d0c61",
+      "size": 1063
+    },
+    {
+      "path": "system_history/SYSTEM_TIMELINE.jsonl",
+      "sha256": "a2c8626068440c5e1d092aff952decc1b687ca88bbf4dd56b08c0be1823673c1",
+      "size": 2156871
+    },
+    {
+      "path": "system_history/SYSTEM_TIMELINE.md",
+      "sha256": "b0efca1b8f1b4b05c39e0daedb9f002a4a39aa7517961a33ac50195b978b27f7",
+      "size": 66452
+    }
+  ],
+  "librarian": "${NEXUS_ROOT}/systems/librarian",
+  "retirement_receipts": 989,
+  "schema": "ENGINEERING_STUDIO_LIBRARIAN_RETIREMENT_INDEX_V1",
+  "system_timeline_preserved": true
+}

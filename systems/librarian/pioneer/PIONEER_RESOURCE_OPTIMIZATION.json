@@ -1,0 +1,73 @@
+{
+  "after": {
+    "academic": {
+      "bytes": 258048,
+      "freelist_count": 0,
+      "integrity": "ok",
+      "page_count": 63,
+      "sha256": "112ff545f5427fc4ffb76abd11d534621e44637fe63b503a83703604a205ae49"
+    },
+    "retrieval": {
+      "bytes": 684032,
+      "freelist_count": 0,
+      "integrity": "ok",
+      "page_count": 167,
+      "sha256": "cad4bf0c51f7ef7f4ea3addad5fd7684b517668a6759173eda5a0cc779988f8c"
+    }
+  },
+  "before": {
+    "academic": {
+      "bytes": 258048,
+      "freelist_count": 0,
+      "integrity": "ok",
+      "page_count": 63,
+      "sha256": "112ff545f5427fc4ffb76abd11d534621e44637fe63b503a83703604a205ae49"
+    },
+    "retrieval": {
+      "bytes": 684032,
+      "freelist_count": 0,
+      "integrity": "ok",
+      "page_count": 167,
+      "sha256": "cad4bf0c51f7ef7f4ea3addad5fd7684b517668a6759173eda5a0cc779988f8c"
+    }
+  },
+  "benchmark": [
+    {
+      "equivalent": true,
+      "indexed_ns": 740083,
+      "legacy_ns": 505875,
+      "query": "agent memory architecture",
+      "result_count": 5
+    },
+    {
+      "equivalent": true,
+      "indexed_ns": 573209,
+      "legacy_ns": 491792,
+      "query": "multi agent governance",
+      "result_count": 3
+    },
+    {
+      "equivalent": true,
+      "indexed_ns": 500083,
+      "legacy_ns": 460250,
+      "query": "retrieval augmented generation",
+      "result_count": 0
+    },
+    {
+      "equivalent": true,
+      "indexed_ns": 523250,
+      "legacy_ns": 437334,
+      "query": "software engineering agents",
+      "result_count": 0
+    }
+  ],
+  "checks": {
+    "academic_fts_count_matches": true,
+    "content_address_integrity": true,
+    "database_integrity": true,
+    "retrieval_equivalence": true
+  },
+  "generated_at_utc": "2026-09-04T16:07:36.986158+00:00",
+  "interpretation": "Timing is diagnostic only; semantic equivalence and integrity are certification gates. Small-corpus timings do not establish general performance gains.",
+  "status": "PASS"
+}

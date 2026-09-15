@@ -1,0 +1,16 @@
+# Engineering Studio v4 - 24-hour audit loop cron configuration
+#
+# Runs the audit cycle once daily at 00:00 UTC. Install with:
+#   crontab -e
+# then paste the line below (adjusting NEXUS_ROOT / python path as needed),
+# or merge into an existing crontab.
+#
+# Set TZ=UTC on the crontab line itself so "0 0" means 00:00 UTC regardless
+# of the host's local timezone.
+
+TZ=UTC
+NEXUS_ROOT=${NEXUS_ROOT}
+AUDIT_LOOP_LEDGER_PATH=${NEXUS_ROOT}/systems/engineering_studio/studio_v4/data/observatory.db
+AUDIT_LOOP_REPORTS_DIR=${NEXUS_ROOT}/systems/engineering_studio/studio_v4/data/audit_reports
+
+0 0 * * * cd $NEXUS_ROOT && /usr/bin/env python3 -m systems.engineering_studio.studio_v4.audit_loop.scheduler >> $NEXUS_ROOT/systems/engineering_studio/studio_v4/data/audit_loop.log 2>&1

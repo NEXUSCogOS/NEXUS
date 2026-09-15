@@ -1,0 +1,21 @@
+systems:
+
+  - name:
+    organisation:
+    category:
+
+    architecture:
+      planning:
+      memory:
+      execution:
+      evaluation:
+      safety:
+
+    evidence:
+      papers:
+      benchmarks:
+
+    comparison:
+      strengths:
+      weaknesses:
+      relevance_to_nexus:

@@ -1,0 +1,26 @@
+{
+  "runtime_path": "${NEXUS_ROOT}/systems/librarian/runtime/experiment_registry.py",
+  "classes": [
+    "ExperimentExecutionDenied",
+    "ReadinessDecision",
+    "RegistryValidationError"
+  ],
+  "functions": [
+    "_file_sha256",
+    "_load_json",
+    "_require_nonempty_strings",
+    "_verified_gate",
+    "assess_experiment_readiness",
+    "load_and_validate_registry",
+    "require_experiment_authorisation",
+    "validate_reference_views"
+  ],
+  "possible_transition_interfaces": [],
+  "possible_authorization_interfaces": [
+    "_verified_gate",
+    "assess_experiment_readiness",
+    "load_and_validate_registry",
+    "validate_reference_views"
+  ],
+  "v2_direct_registry_edit": false
+}

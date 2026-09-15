@@ -1,0 +1,55 @@
+# DAT.AI backend
+#
+# Python is pinned to 3.11 deliberately. The pinned ML stack (torch 2.1.2 /
+# torchvision 0.16.2) has no wheels for 3.13 and was proven incompatible; see
+# docs/CONFIGURATION.md. Do not float this tag.
+FROM python:3.11-slim-bookworm
+
+# GDAL/PROJ/GEOS are required by rasterio, pyproj and shapely. Binary wheels
+# bundle their own copies, but libexpat and the certificate store are still
+# needed for JP2 decode and TLS to the Copernicus endpoints.
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+        ca-certificates \
+        curl \
+        libexpat1 \
+    && rm -rf /var/lib/apt/lists/*
+
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PIP_NO_CACHE_DIR=1 \
+    PYTHONPATH=/app
+
+WORKDIR /app
+
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY app/ ./app/
+COPY cli.py ./
+COPY migrations/ ./migrations/
+COPY models/ ./models/
+
+# Run as a non-root user. The cache and log directories are the only writable
+# paths the process needs.
+RUN useradd --system --create-home --uid 10001 datai \
+    && mkdir -p /data/satellite_cache /data/logs \
+    && chown -R datai:datai /app /data
+USER datai
+
+ENV SATELLITE_CACHE_DIR=/data/satellite_cache \
+    LOG_DIR=/data/logs
+
+EXPOSE 8000
+
+# Liveness only — readiness is a separate, deeper probe that Compose/K8s
+# should use for traffic gating.
+HEALTHCHECK --interval=30s --timeout=5s --start-period=20s --retries=3 \
+    CMD curl -fsS http://localhost:8000/liveness || exit 1
+
+# No --reload. Development reload watches the filesystem, doubles memory and
+# restarts mid-request; it must never run in a deployed image. Use the
+# `backend-dev` compose service for local iteration.
+CMD ["uvicorn", "app.main:app", \
+     "--host", "0.0.0.0", "--port", "8000", \
+     "--workers", "2", "--proxy-headers", "--no-server-header"]

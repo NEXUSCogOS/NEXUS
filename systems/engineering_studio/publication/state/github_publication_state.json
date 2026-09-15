@@ -1,0 +1,26 @@
+{
+  "github_owner": "nexuscogos-commits",
+
+  "profile": {
+    "repository": "nexuscogos-commits",
+    "state": "LOCAL_ONLY"
+  },
+
+  "agentic-engineering-benchmark": {
+    "state": "LOCAL_ONLY"
+  },
+
+  "engineering-studio": {
+    "state": "LOCAL_ONLY"
+  },
+
+  "ai-evidence-provenance": {
+    "state": "LOCAL_ONLY"
+  },
+
+  "cumulative-agent-memory": {
+    "state": "LOCAL_ONLY"
+  },
+
+  "external_publication": "NOT_AUTHORISED"
+}

@@ -1,0 +1,14 @@
+{
+  "gate_id": "NEXUS-EXP-002-03",
+  "gate": "restore rehearsal passed",
+  "status": "PASS",
+  "reviewer": "GPT-5.6-Sol-assisted-adjudication-001",
+  "verified_at": "2026-09-14T00:56:10.118269+00:00",
+  "contradictions_resolved": true,
+  "evidence_refs": [
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_STAGE2_VERIFICATION_20260914T005409Z/restore/RESTORE_RESULT.txt",
+      "sha256": "b536456b7fc20b2abdbfb2d31582032c9e5f736f95bb3ccf956f2f8ca9181421"
+    }
+  ]
+}

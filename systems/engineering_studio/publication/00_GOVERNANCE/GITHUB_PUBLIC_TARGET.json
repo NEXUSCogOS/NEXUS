@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+
+  "public_brand": "NexusCogOS",
+
+  "github": {
+    "owner": "nexuscogos-commits",
+    "profile_repository": "nexuscogos-commits"
+  },
+
+  "repositories": [
+    {
+      "name": "agentic-engineering-benchmark",
+      "priority": 1,
+      "publication_state": "LOCAL_ONLY"
+    },
+    {
+      "name": "engineering-studio",
+      "priority": 2,
+      "publication_state": "LOCAL_ONLY"
+    },
+    {
+      "name": "ai-evidence-provenance",
+      "priority": 3,
+      "publication_state": "LOCAL_ONLY"
+    },
+    {
+      "name": "cumulative-agent-memory",
+      "priority": 4,
+      "publication_state": "LOCAL_ONLY"
+    }
+  ],
+
+  "security": {
+    "canonical_mutation_from_github": false,
+    "canonical_mutation_from_publication": false,
+    "automatic_push": false,
+    "automatic_repo_creation": false,
+    "credentials_in_nexus": false,
+    "human_release_approval_required": true
+  }
+}

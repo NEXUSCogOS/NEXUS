@@ -1,0 +1,12 @@
+Place genuine returned human attestations here.
+
+Expected:
+
+global-10.json
+NEXUS-EXP-003-04.json
+NEXUS-EXP-004-04.json
+
+Do not create or populate these files automatically.
+
+After genuine review returns, validate/import them through
+the governed post-review workflow before attempting execution.

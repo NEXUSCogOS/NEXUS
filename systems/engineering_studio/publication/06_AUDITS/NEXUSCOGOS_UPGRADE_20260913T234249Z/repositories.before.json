@@ -1,0 +1,24 @@
+{
+  "repositories": [
+    {
+      "name": "agentic-engineering-benchmark",
+      "priority": 1,
+      "purpose": "Reproducible evaluation harness for agentic software-engineering systems."
+    },
+    {
+      "name": "engineering-studio",
+      "priority": 2,
+      "purpose": "Sanitised research implementation of governed autonomous engineering."
+    },
+    {
+      "name": "ai-evidence-provenance",
+      "priority": 3,
+      "purpose": "Traceable claim, evidence and provenance framework."
+    },
+    {
+      "name": "cumulative-agent-memory",
+      "priority": 4,
+      "purpose": "Experimental evaluation of cumulative agent-memory architectures."
+    }
+  ]
+}

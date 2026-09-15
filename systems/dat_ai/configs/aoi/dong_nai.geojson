@@ -1,0 +1,38 @@
+{
+  "type": "FeatureCollection",
+  "name": "dong_nai",
+  "metadata": {
+    "aoi_name": "dong_nai",
+    "description": "Area of interest envelope for Dong Nai province, Vietnam.",
+    "geometry_class": "approximate_envelope",
+    "provenance": "Rectangular envelope derived from the published extent of Dong Nai province (approximately 10.50N-11.60N, 106.35E-107.60E). This is NOT an authoritative administrative boundary. It is a search envelope used for Sentinel-2 catalogue discovery only.",
+    "authoritative": false,
+    "crs": "EPSG:4326",
+    "todo": "Replace with the official Dong Nai administrative polygon (e.g. GADM level-1 or a Vietnamese government cadastral source) before any statement about province-wide coverage is published. See docs/KNOWN_LIMITATIONS.md.",
+    "created": "2026-08-14"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "aoi_name": "dong_nai",
+        "country": "VN",
+        "province": "Dong Nai",
+        "geometry_class": "approximate_envelope",
+        "authoritative": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [106.35, 10.5],
+            [107.6, 10.5],
+            [107.6, 11.6],
+            [106.35, 11.6],
+            [106.35, 10.5]
+          ]
+        ]
+      }
+    }
+  ]
+}

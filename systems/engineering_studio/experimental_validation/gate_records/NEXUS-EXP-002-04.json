@@ -1,0 +1,14 @@
+{
+  "gate_id": "NEXUS-EXP-002-04",
+  "gate": "test store demonstrably isolated",
+  "status": "PASS",
+  "reviewer": "GPT-5.6-Sol-assisted-adjudication-002",
+  "verified_at": "2026-09-14T00:59:25.584835+00:00",
+  "contradictions_resolved": true,
+  "evidence_refs": [
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_MACHINE_CLOSURE_002_20260914T005925Z/isolation/isolation-proof.json",
+      "sha256": "f0f4ca1633619779911a9d61fcff50b7bb39fb4d7aac1f4a4e191c707f205cdd"
+    }
+  ]
+}

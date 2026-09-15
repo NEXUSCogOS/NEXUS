@@ -1,0 +1,14 @@
+{
+  "gate_id": "NEXUS-EXP-005-04",
+  "gate": "disk headroom safe",
+  "status": "PASS",
+  "reviewer": "GPT-5.6-Sol-assisted-targeted-verification-005",
+  "verified_at": "2026-09-14T02:51:45.752364+00:00",
+  "contradictions_resolved": true,
+  "evidence_refs": [
+    {
+      "path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_FINAL_MACHINE_REMEDIATION_V2_20260914T025145Z/evidence/EXP005_04.json",
+      "sha256": "9d4e28d0b4e98b621e9d453a406d7fbaff7f7e51541f6f7219f48114a1ddecfa"
+    }
+  ]
+}

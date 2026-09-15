@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NEXUS Public Release Manifest",
+  "type": "object",
+  "required": [
+    "repository",
+    "created_at",
+    "approval_state",
+    "gates"
+  ],
+  "properties": {
+    "repository": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "claim_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "approval_state": {
+      "enum": [
+        "NOT_REVIEWED",
+        "APPROVED",
+        "REJECTED"
+      ]
+    },
+    "gates": {
+      "type": "object"
+    }
+  }
+}

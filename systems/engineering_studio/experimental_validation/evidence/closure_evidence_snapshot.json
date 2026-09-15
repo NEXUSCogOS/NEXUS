@@ -1,0 +1,2080 @@
+[
+  {
+    "gate_id": "global-01",
+    "scope": "GLOBAL",
+    "gate": "canonical code, configuration, dataset and database authority recorded",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 20,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 6,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 5,
+        "ratio": 0.833
+      },
+      {
+        "path": "${NEXUS_ROOT}/EXTERNAL_STORAGE_MANIFEST.md",
+        "hits": 5,
+        "ratio": 0.833
+      },
+      {
+        "path": "${NEXUS_ROOT}/QUICK_START.md",
+        "hits": 5,
+        "ratio": 0.833
+      },
+      {
+        "path": "${NEXUS_ROOT}/README.md",
+        "hits": 5,
+        "ratio": 0.833
+      }
+    ],
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 6,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 5,
+        "ratio": 0.833
+      },
+      {
+        "path": "${NEXUS_ROOT}/EXTERNAL_STORAGE_MANIFEST.md",
+        "hits": 5,
+        "ratio": 0.833
+      },
+      {
+        "path": "${NEXUS_ROOT}/QUICK_START.md",
+        "hits": 5,
+        "ratio": 0.833
+      },
+      {
+        "path": "${NEXUS_ROOT}/README.md",
+        "hits": 5,
+        "ratio": 0.833
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "global-02",
+    "scope": "GLOBAL",
+    "gate": "required services healthy for the preregistered observation window",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 20,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/SLA.md",
+        "hits": 3,
+        "ratio": 0.6
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/nexus_federation/NEXUS_F9_EXECUTIVE_KERNEL_ARCHITECTURE.md",
+        "hits": 3,
+        "ratio": 0.6
+      },
+      {
+        "path": "${NEXUS_ROOT}/.observatory/reports/audit_report_20260826T163000Z_97f6b2a5.json",
+        "hits": 2,
+        "ratio": 0.4
+      },
+      {
+        "path": "${NEXUS_ROOT}/.observatory/reports/audit_report_20260827T163001Z_d999137a.json",
+        "hits": 2,
+        "ratio": 0.4
+      },
+      {
+        "path": "${NEXUS_ROOT}/.observatory/reports/audit_report_20260828T163000Z_a0377402.json",
+        "hits": 2,
+        "ratio": 0.4
+      }
+    ],
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/SLA.md",
+        "hits": 3,
+        "ratio": 0.6
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/nexus_federation/NEXUS_F9_EXECUTIVE_KERNEL_ARCHITECTURE.md",
+        "hits": 3,
+        "ratio": 0.6
+      },
+      {
+        "path": "${NEXUS_ROOT}/.observatory/reports/audit_report_20260826T163000Z_97f6b2a5.json",
+        "hits": 2,
+        "ratio": 0.4
+      },
+      {
+        "path": "${NEXUS_ROOT}/.observatory/reports/audit_report_20260827T163001Z_d999137a.json",
+        "hits": 2,
+        "ratio": 0.4
+      },
+      {
+        "path": "${NEXUS_ROOT}/.observatory/reports/audit_report_20260828T163000Z_a0377402.json",
+        "hits": 2,
+        "ratio": 0.4
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "global-03",
+    "scope": "GLOBAL",
+    "gate": "clean-environment build or environment lock reproduced",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 20,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/.superpowers/sdd/phase-0-youtube-concepts/concepts.json",
+        "hits": 3,
+        "ratio": 0.6
+      },
+      {
+        "path": "${NEXUS_ROOT}/research/engineering_studio/architecture/phase1_scientific_assessment.md",
+        "hits": 3,
+        "ratio": 0.6
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 3,
+        "ratio": 0.6
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/nexus_federation/docs/f6_deliverables/FEDERATION_F6_IMPLEMENTATION_REPORT.md",
+        "hits": 3,
+        "ratio": 0.6
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/youtube_production/YOUTUBE_CAPABILITY_MATRIX.json",
+        "hits": 3,
+        "ratio": 0.6
+      }
+    ],
+    "closure_class": "TECHNICAL_TEST_REQUIRED_OR_EXISTING_TEST_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/.superpowers/sdd/phase-0-youtube-concepts/concepts.json",
+        "hits": 3,
+        "ratio": 0.6
+      },
+      {
+        "path": "${NEXUS_ROOT}/research/engineering_studio/architecture/phase1_scientific_assessment.md",
+        "hits": 3,
+        "ratio": 0.6
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 3,
+        "ratio": 0.6
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/nexus_federation/docs/f6_deliverables/FEDERATION_F6_IMPLEMENTATION_REPORT.md",
+        "hits": 3,
+        "ratio": 0.6
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/youtube_production/YOUTUBE_CAPABILITY_MATRIX.json",
+        "hits": 3,
+        "ratio": 0.6
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "global-04",
+    "scope": "GLOBAL",
+    "gate": "research data physically or logically isolated from production writers",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 20,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 5,
+        "ratio": 0.714
+      },
+      {
+        "path": "${NEXUS_ROOT}/.superpowers/optimization_phases_briefs.md",
+        "hits": 4,
+        "ratio": 0.571
+      },
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 4,
+        "ratio": 0.571
+      },
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_UNIFIED_IMPLEMENTATION_DIRECTIVE.md",
+        "hits": 4,
+        "ratio": 0.571
+      },
+      {
+        "path": "${NEXUS_ROOT}/README.md",
+        "hits": 4,
+        "ratio": 0.571
+      }
+    ],
+    "closure_class": "TECHNICAL_TEST_REQUIRED_OR_EXISTING_TEST_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 5,
+        "ratio": 0.714
+      },
+      {
+        "path": "${NEXUS_ROOT}/.superpowers/optimization_phases_briefs.md",
+        "hits": 4,
+        "ratio": 0.571
+      },
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 4,
+        "ratio": 0.571
+      },
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_UNIFIED_IMPLEMENTATION_DIRECTIVE.md",
+        "hits": 4,
+        "ratio": 0.571
+      },
+      {
+        "path": "${NEXUS_ROOT}/README.md",
+        "hits": 4,
+        "ratio": 0.571
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "global-05",
+    "scope": "GLOBAL",
+    "gate": "backup integrity verified and at least one restore rehearsal passed",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 20,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 5,
+        "ratio": 0.833
+      },
+      {
+        "path": "${NEXUS_ROOT}/RUNBOOK.md",
+        "hits": 5,
+        "ratio": 0.833
+      },
+      {
+        "path": "${NEXUS_ROOT}/SLA.md",
+        "hits": 5,
+        "ratio": 0.833
+      },
+      {
+        "path": "${NEXUS_ROOT}/MANUAL_HYBRID_WORKFLOW.md",
+        "hits": 4,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/PRODUCTION_READINESS.md",
+        "hits": 4,
+        "ratio": 0.667
+      }
+    ],
+    "closure_class": "TECHNICAL_TEST_REQUIRED_OR_EXISTING_TEST_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 5,
+        "ratio": 0.833
+      },
+      {
+        "path": "${NEXUS_ROOT}/RUNBOOK.md",
+        "hits": 5,
+        "ratio": 0.833
+      },
+      {
+        "path": "${NEXUS_ROOT}/SLA.md",
+        "hits": 5,
+        "ratio": 0.833
+      },
+      {
+        "path": "${NEXUS_ROOT}/MANUAL_HYBRID_WORKFLOW.md",
+        "hits": 4,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/PRODUCTION_READINESS.md",
+        "hits": 4,
+        "ratio": 0.667
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "global-06",
+    "scope": "GLOBAL",
+    "gate": "monitoring detects a deliberately injected non-destructive failure",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 5,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/RUNBOOK.md",
+        "hits": 4,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 3,
+        "ratio": 0.5
+      },
+      {
+        "path": "${NEXUS_ROOT}/SLA.md",
+        "hits": 3,
+        "ratio": 0.5
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/news_intelligence/FEDERATION_F7_IMPLEMENTATION_REPORT.md",
+        "hits": 3,
+        "ratio": 0.5
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/youtube_production/FEDERATION_F8_IMPLEMENTATION_REPORT.md",
+        "hits": 3,
+        "ratio": 0.5
+      }
+    ],
+    "closure_class": "TECHNICAL_TEST_REQUIRED_OR_EXISTING_TEST_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/RUNBOOK.md",
+        "hits": 4,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 3,
+        "ratio": 0.5
+      },
+      {
+        "path": "${NEXUS_ROOT}/SLA.md",
+        "hits": 3,
+        "ratio": 0.5
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/news_intelligence/FEDERATION_F7_IMPLEMENTATION_REPORT.md",
+        "hits": 3,
+        "ratio": 0.5
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/youtube_production/FEDERATION_F8_IMPLEMENTATION_REPORT.md",
+        "hits": 3,
+        "ratio": 0.5
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "global-07",
+    "scope": "GLOBAL",
+    "gate": "dataset snapshots are immutable, hashed, licensed and provenance-complete",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 2,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 3,
+        "ratio": 0.5
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/experiments/RESEARCH_WORKFLOW.md",
+        "hits": 3,
+        "ratio": 0.5
+      }
+    ],
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 3,
+        "ratio": 0.5
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/experiments/RESEARCH_WORKFLOW.md",
+        "hits": 3,
+        "ratio": 0.5
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "global-08",
+    "scope": "GLOBAL",
+    "gate": "secrets and live financial operations are excluded from experiment scope",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 20,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 6,
+        "ratio": 0.857
+      },
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 5,
+        "ratio": 0.714
+      },
+      {
+        "path": "${NEXUS_ROOT}/.superpowers/sdd/phase-0-youtube-concepts/concepts.json",
+        "hits": 4,
+        "ratio": 0.571
+      },
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_PHD_DOCUMENTATION_REPOSITORY_COMMISSIONING.md",
+        "hits": 4,
+        "ratio": 0.571
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/engineering_studio/research_evidence/ARCHITECTURE_RECONCILIATION_REPORT.md",
+        "hits": 4,
+        "ratio": 0.571
+      }
+    ],
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 6,
+        "ratio": 0.857
+      },
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 5,
+        "ratio": 0.714
+      },
+      {
+        "path": "${NEXUS_ROOT}/.superpowers/sdd/phase-0-youtube-concepts/concepts.json",
+        "hits": 4,
+        "ratio": 0.571
+      },
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_PHD_DOCUMENTATION_REPOSITORY_COMMISSIONING.md",
+        "hits": 4,
+        "ratio": 0.571
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/engineering_studio/research_evidence/ARCHITECTURE_RECONCILIATION_REPORT.md",
+        "hits": 4,
+        "ratio": 0.571
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "global-09",
+    "scope": "GLOBAL",
+    "gate": "protocol, analysis code, thresholds and stopping rules are frozen",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 20,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 6,
+        "ratio": 0.857
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/experiments/RESEARCH_WORKFLOW.md",
+        "hits": 5,
+        "ratio": 0.714
+      },
+      {
+        "path": "${NEXUS_ROOT}/PHASE2_FRONTIER_IMPLEMENTATION.md",
+        "hits": 4,
+        "ratio": 0.571
+      },
+      {
+        "path": "${NEXUS_ROOT}/RESEARCH_BRIEF_NEXUS_SYSTEM.md",
+        "hits": 4,
+        "ratio": 0.571
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/academic/real_source_manifest.json",
+        "hits": 4,
+        "ratio": 0.571
+      }
+    ],
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 6,
+        "ratio": 0.857
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/experiments/RESEARCH_WORKFLOW.md",
+        "hits": 5,
+        "ratio": 0.714
+      },
+      {
+        "path": "${NEXUS_ROOT}/PHASE2_FRONTIER_IMPLEMENTATION.md",
+        "hits": 4,
+        "ratio": 0.571
+      },
+      {
+        "path": "${NEXUS_ROOT}/RESEARCH_BRIEF_NEXUS_SYSTEM.md",
+        "hits": 4,
+        "ratio": 0.571
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/academic/real_source_manifest.json",
+        "hits": 4,
+        "ratio": 0.571
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "global-10",
+    "scope": "GLOBAL",
+    "gate": "independent reviewer signs the readiness record",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 20,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_APPROVAL_AND_RATIONALE.md",
+        "hits": 4,
+        "ratio": 0.8
+      },
+      {
+        "path": "${NEXUS_ROOT}/README.md",
+        "hits": 4,
+        "ratio": 0.8
+      },
+      {
+        "path": "${NEXUS_ROOT}/SYSTEM_STRUCTURE.md",
+        "hits": 4,
+        "ratio": 0.8
+      },
+      {
+        "path": "${NEXUS_ROOT}/research/engineering_studio/architecture/phase1_scientific_assessment.md",
+        "hits": 4,
+        "ratio": 0.8
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 4,
+        "ratio": 0.8
+      }
+    ],
+    "closure_class": "HUMAN_ATTESTATION_REQUIRED",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_APPROVAL_AND_RATIONALE.md",
+        "hits": 4,
+        "ratio": 0.8
+      },
+      {
+        "path": "${NEXUS_ROOT}/README.md",
+        "hits": 4,
+        "ratio": 0.8
+      },
+      {
+        "path": "${NEXUS_ROOT}/SYSTEM_STRUCTURE.md",
+        "hits": 4,
+        "ratio": 0.8
+      },
+      {
+        "path": "${NEXUS_ROOT}/research/engineering_studio/architecture/phase1_scientific_assessment.md",
+        "hits": 4,
+        "ratio": 0.8
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 4,
+        "ratio": 0.8
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "NEXUS-EXP-001-01",
+    "scope": "NEXUS-EXP-001",
+    "gate": "federation E2E path commissioned",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 20,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/F4C_COMMISSIONING_FINAL_EVIDENCE.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/F4C_COMMISSIONING_STATUS.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/LIBRARIAN_F4C_E2E_COMMISSIONING_REPORT.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/LIBRARIAN_F4_CURRENT_STATUS.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/LIBRARIAN_F4_IMPLEMENTATION_REPORT.md",
+        "hits": 3,
+        "ratio": 1.0
+      }
+    ],
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/F4C_COMMISSIONING_FINAL_EVIDENCE.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/F4C_COMMISSIONING_STATUS.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/LIBRARIAN_F4C_E2E_COMMISSIONING_REPORT.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/LIBRARIAN_F4_CURRENT_STATUS.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/LIBRARIAN_F4_IMPLEMENTATION_REPORT.md",
+        "hits": 3,
+        "ratio": 1.0
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "NEXUS-EXP-001-02",
+    "scope": "NEXUS-EXP-001",
+    "gate": "research domain READY",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 20,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/.superpowers/sdd/phase-0-youtube-concepts/task-0.1-report.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/AUTONOMOUS_CONTINUATION_PROTOCOL.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_APPROVAL_AND_RATIONALE.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_COMPLETE.md",
+        "hits": 3,
+        "ratio": 1.0
+      }
+    ],
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/.superpowers/sdd/phase-0-youtube-concepts/task-0.1-report.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/AUTONOMOUS_CONTINUATION_PROTOCOL.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_APPROVAL_AND_RATIONALE.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_COMPLETE.md",
+        "hits": 3,
+        "ratio": 1.0
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "NEXUS-EXP-001-03",
+    "scope": "NEXUS-EXP-001",
+    "gate": "no fallback placeholder mode",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 19,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/systems/dat_ai/docs/PRESERVED_EVIDENCE_CONCLUSIONS.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/CITATION_VALIDATION_REPORT.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/docs/LIBRARIAN_EVIDENCE_STANDARD.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/MEDIA_INTELLIGENCE_IMPLEMENTATION_GUIDE.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/docs/superpowers/plans/2026-08-16-frontier-youtube-media-intelligence.md",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/systems/dat_ai/docs/PRESERVED_EVIDENCE_CONCLUSIONS.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/CITATION_VALIDATION_REPORT.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/docs/LIBRARIAN_EVIDENCE_STANDARD.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/MEDIA_INTELLIGENCE_IMPLEMENTATION_GUIDE.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/docs/superpowers/plans/2026-08-16-frontier-youtube-media-intelligence.md",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "NEXUS-EXP-001-04",
+    "scope": "NEXUS-EXP-001",
+    "gate": "corpus and event log restore tested",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 20,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/.superpowers/optimization_phases_briefs.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/RESEARCH_CORPUS_COGNITIVE_MEMORY_ROUTING.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/engineering_studio/programs/research_validation_framework/mission/MASTER_DIRECTIVE.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/engineering_studio/research_evidence/ARCHITECTURE_RECONCILIATION_REPORT.md",
+        "hits": 3,
+        "ratio": 0.75
+      }
+    ],
+    "closure_class": "TECHNICAL_TEST_REQUIRED_OR_EXISTING_TEST_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/.superpowers/optimization_phases_briefs.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/RESEARCH_CORPUS_COGNITIVE_MEMORY_ROUTING.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/engineering_studio/programs/research_validation_framework/mission/MASTER_DIRECTIVE.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/engineering_studio/research_evidence/ARCHITECTURE_RECONCILIATION_REPORT.md",
+        "hits": 3,
+        "ratio": 0.75
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "NEXUS-EXP-002-01",
+    "scope": "NEXUS-EXP-002",
+    "gate": "provenance schema frozen",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 20,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/engineering_studio_retirement_index/INDEX_20260907T083119Z/system_history/SYSTEM_TIMELINE.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/docs/LIBRARIAN_INSTITUTIONAL_CONTRACT.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/experiments/RESEARCH_WORKFLOW.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/news_intelligence/NEWS_INSTITUTIONAL_CONTRACT.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_APPROVAL_AND_RATIONALE.md",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/engineering_studio_retirement_index/INDEX_20260907T083119Z/system_history/SYSTEM_TIMELINE.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/docs/LIBRARIAN_INSTITUTIONAL_CONTRACT.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/experiments/RESEARCH_WORKFLOW.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/news_intelligence/NEWS_INSTITUTIONAL_CONTRACT.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_APPROVAL_AND_RATIONALE.md",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "NEXUS-EXP-002-02",
+    "scope": "NEXUS-EXP-002",
+    "gate": "quarantine path writable and auditable",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 19,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/RUNBOOK.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 2,
+        "ratio": 0.5
+      },
+      {
+        "path": "${NEXUS_ROOT}/COMPLETE_SYSTEM_MAP.md",
+        "hits": 2,
+        "ratio": 0.5
+      },
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_APPROVAL_AND_RATIONALE.md",
+        "hits": 2,
+        "ratio": 0.5
+      },
+      {
+        "path": "${NEXUS_ROOT}/SLA.md",
+        "hits": 2,
+        "ratio": 0.5
+      }
+    ],
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/RUNBOOK.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 2,
+        "ratio": 0.5
+      },
+      {
+        "path": "${NEXUS_ROOT}/COMPLETE_SYSTEM_MAP.md",
+        "hits": 2,
+        "ratio": 0.5
+      },
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_APPROVAL_AND_RATIONALE.md",
+        "hits": 2,
+        "ratio": 0.5
+      },
+      {
+        "path": "${NEXUS_ROOT}/SLA.md",
+        "hits": 2,
+        "ratio": 0.5
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "NEXUS-EXP-002-03",
+    "scope": "NEXUS-EXP-002",
+    "gate": "restore rehearsal passed",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 5,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/RUNBOOK.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/SLA.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/nexus_federation/FEDERATION_F9_IMPLEMENTATION_REPORT.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/nexus_federation/NEXUS_F9_EXECUTIVE_KERNEL_ARCHITECTURE.md",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "closure_class": "TECHNICAL_TEST_REQUIRED_OR_EXISTING_TEST_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/RUNBOOK.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/SLA.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/nexus_federation/FEDERATION_F9_IMPLEMENTATION_REPORT.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/nexus_federation/NEXUS_F9_EXECUTIVE_KERNEL_ARCHITECTURE.md",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "NEXUS-EXP-002-04",
+    "scope": "NEXUS-EXP-002",
+    "gate": "test store demonstrably isolated",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 20,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_COMMISSIONING_DIRECTIVE.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_UNIFIED_IMPLEMENTATION_DIRECTIVE.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/README.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/SLA.md",
+        "hits": 3,
+        "ratio": 0.75
+      }
+    ],
+    "closure_class": "TECHNICAL_TEST_REQUIRED_OR_EXISTING_TEST_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_COMMISSIONING_DIRECTIVE.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_UNIFIED_IMPLEMENTATION_DIRECTIVE.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/README.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/SLA.md",
+        "hits": 3,
+        "ratio": 0.75
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "NEXUS-EXP-003-01",
+    "scope": "NEXUS-EXP-003",
+    "gate": "benchmark labels complete",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 20,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/MEDIA_INTELLIGENCE_IMPLEMENTATION_GUIDE.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/.directives-ingestion/completed/master-mission-directive.yaml",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/.directives-ingestion/completed/master-mission-phase-16.yaml",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/.superpowers/optimization_phases_briefs.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/.superpowers/sdd/phase-0-youtube-concepts/concepts.json",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/MEDIA_INTELLIGENCE_IMPLEMENTATION_GUIDE.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/.directives-ingestion/completed/master-mission-directive.yaml",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/.directives-ingestion/completed/master-mission-phase-16.yaml",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/.superpowers/optimization_phases_briefs.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/.superpowers/sdd/phase-0-youtube-concepts/concepts.json",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "NEXUS-EXP-003-02",
+    "scope": "NEXUS-EXP-003",
+    "gate": "corpus snapshot immutable",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 17,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/RESEARCH_CORPUS_TIERED_SYSTEM.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/TIERED_SYSTEM_IMPLEMENTATION.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/MASTER_MISSION_COMPLETION_REPORT.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/NEXUS_OPTIMIZATION_PLAN.md",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/RESEARCH_CORPUS_TIERED_SYSTEM.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/TIERED_SYSTEM_IMPLEMENTATION.md",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 3,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/MASTER_MISSION_COMPLETION_REPORT.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/NEXUS_OPTIMIZATION_PLAN.md",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "NEXUS-EXP-003-03",
+    "scope": "NEXUS-EXP-003",
+    "gate": "retrieval configuration frozen",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 19,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/README.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/RESEARCH_CORPUS_COGNITIVE_MEMORY_ROUTING.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/SYSTEM_STRUCTURE.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/docs/superpowers/specs/2026-08-16-engineering-studio-v4-phase2-spec.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/engineering_studio/programs/research_validation_framework/mission/MASTER_DIRECTIVE.md",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/README.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/RESEARCH_CORPUS_COGNITIVE_MEMORY_ROUTING.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/SYSTEM_STRUCTURE.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/docs/superpowers/specs/2026-08-16-engineering-studio-v4-phase2-spec.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/engineering_studio/programs/research_validation_framework/mission/MASTER_DIRECTIVE.md",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "NEXUS-EXP-003-04",
+    "scope": "NEXUS-EXP-003",
+    "gate": "independent adjudicator assigned",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 5,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_UNIFIED_IMPLEMENTATION_DIRECTIVE.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/dat_ai/docs/DATAI_LIMITATIONS.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/CORPUS_ARCHITECTURE.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/youtube_production/YOUTUBE_F8_FORENSIC_REPORT.md",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "closure_class": "HUMAN_ATTESTATION_REQUIRED",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_UNIFIED_IMPLEMENTATION_DIRECTIVE.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/dat_ai/docs/DATAI_LIMITATIONS.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/CORPUS_ARCHITECTURE.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/youtube_production/YOUTUBE_F8_FORENSIC_REPORT.md",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "NEXUS-EXP-004-01",
+    "scope": "NEXUS-EXP-004",
+    "gate": "Research Assistant interface explicitly commissioned",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 20,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_PHD_DOCUMENTATION_REPOSITORY_COMMISSIONING.md",
+        "hits": 3,
+        "ratio": 0.6
+      },
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_APPROVAL_AND_RATIONALE.md",
+        "hits": 3,
+        "ratio": 0.6
+      },
+      {
+        "path": "${NEXUS_ROOT}/NEXT_PHASES_HANDOFF.md",
+        "hits": 3,
+        "ratio": 0.6
+      },
+      {
+        "path": "${NEXUS_ROOT}/RESEARCH_BRIEF_NEXUS_SYSTEM.md",
+        "hits": 3,
+        "ratio": 0.6
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/engineering_studio/research_evidence/ARCHITECTURE_RECONCILIATION_REPORT.md",
+        "hits": 3,
+        "ratio": 0.6
+      }
+    ],
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_PHD_DOCUMENTATION_REPOSITORY_COMMISSIONING.md",
+        "hits": 3,
+        "ratio": 0.6
+      },
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_APPROVAL_AND_RATIONALE.md",
+        "hits": 3,
+        "ratio": 0.6
+      },
+      {
+        "path": "${NEXUS_ROOT}/NEXT_PHASES_HANDOFF.md",
+        "hits": 3,
+        "ratio": 0.6
+      },
+      {
+        "path": "${NEXUS_ROOT}/RESEARCH_BRIEF_NEXUS_SYSTEM.md",
+        "hits": 3,
+        "ratio": 0.6
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/engineering_studio/research_evidence/ARCHITECTURE_RECONCILIATION_REPORT.md",
+        "hits": 3,
+        "ratio": 0.6
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "NEXUS-EXP-004-02",
+    "scope": "NEXUS-EXP-004",
+    "gate": "classification ontology frozen",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 18,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_APPROVAL_AND_RATIONALE.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_UNIFIED_IMPLEMENTATION_DIRECTIVE.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/dat_ai/docs/DATAI_LIMITATIONS.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/LIBRARIAN_F4_CURRENT_STATUS.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/engineering_studio_retirement_index/INDEX_20260907T083119Z/system_history/SYSTEM_TIMELINE.md",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_APPROVAL_AND_RATIONALE.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_UNIFIED_IMPLEMENTATION_DIRECTIVE.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/dat_ai/docs/DATAI_LIMITATIONS.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/LIBRARIAN_F4_CURRENT_STATUS.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/engineering_studio_retirement_index/INDEX_20260907T083119Z/system_history/SYSTEM_TIMELINE.md",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "NEXUS-EXP-004-03",
+    "scope": "NEXUS-EXP-004",
+    "gate": "citation passage storage operational",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 20,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 4,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/RESEARCH_CORPUS_TIERED_SYSTEM.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/LIBRARIAN_F4_IMPLEMENTATION_REPORT.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/docs/LIBRARIAN_INSTITUTIONAL_CONTRACT.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/pioneer/PIONEER_AUDIT.json",
+        "hits": 3,
+        "ratio": 0.75
+      }
+    ],
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 4,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/RESEARCH_CORPUS_TIERED_SYSTEM.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/LIBRARIAN_F4_IMPLEMENTATION_REPORT.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/docs/LIBRARIAN_INSTITUTIONAL_CONTRACT.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/pioneer/PIONEER_AUDIT.json",
+        "hits": 3,
+        "ratio": 0.75
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "NEXUS-EXP-004-04",
+    "scope": "NEXUS-EXP-004",
+    "gate": "expert adjudicators assigned",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 1,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/.superpowers/sdd/phase-0-youtube-concepts/task-0.1-report.md",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "closure_class": "HUMAN_ATTESTATION_REQUIRED",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/.superpowers/sdd/phase-0-youtube-concepts/task-0.1-report.md",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "NEXUS-EXP-005-01",
+    "scope": "NEXUS-EXP-005",
+    "gate": "tested restore",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 11,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/F4C_COMMISSIONING_STATUS.md",
+        "hits": 2,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/LIBRARIAN_F4_CURRENT_STATUS.md",
+        "hits": 2,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/nexus_federation/FEDERATION_F9_IMPLEMENTATION_REPORT.md",
+        "hits": 2,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/nexus_federation/NEXUS_F9_EXECUTIVE_KERNEL_ARCHITECTURE.md",
+        "hits": 2,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/nexus_federation/docs/f6_deliverables/F6_SCIENTIFIC_EVALUATION.md",
+        "hits": 2,
+        "ratio": 1.0
+      }
+    ],
+    "closure_class": "TECHNICAL_TEST_REQUIRED_OR_EXISTING_TEST_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/F4C_COMMISSIONING_STATUS.md",
+        "hits": 2,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/LIBRARIAN_F4_CURRENT_STATUS.md",
+        "hits": 2,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/nexus_federation/FEDERATION_F9_IMPLEMENTATION_REPORT.md",
+        "hits": 2,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/nexus_federation/NEXUS_F9_EXECUTIVE_KERNEL_ARCHITECTURE.md",
+        "hits": 2,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/nexus_federation/docs/f6_deliverables/F6_SCIENTIFIC_EVALUATION.md",
+        "hits": 2,
+        "ratio": 1.0
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "NEXUS-EXP-005-02",
+    "scope": "NEXUS-EXP-005",
+    "gate": "research/production physical or logical separation",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 20,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_APPROVAL_AND_RATIONALE.md",
+        "hits": 4,
+        "ratio": 0.8
+      },
+      {
+        "path": "${NEXUS_ROOT}/RESEARCH_CORPUS_COGNITIVE_MEMORY_ROUTING.md",
+        "hits": 4,
+        "ratio": 0.8
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 4,
+        "ratio": 0.8
+      },
+      {
+        "path": "${NEXUS_ROOT}/.superpowers/sdd/phase-0-youtube-concepts/task-0.1-report.md",
+        "hits": 3,
+        "ratio": 0.6
+      },
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 3,
+        "ratio": 0.6
+      }
+    ],
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_APPROVAL_AND_RATIONALE.md",
+        "hits": 4,
+        "ratio": 0.8
+      },
+      {
+        "path": "${NEXUS_ROOT}/RESEARCH_CORPUS_COGNITIVE_MEMORY_ROUTING.md",
+        "hits": 4,
+        "ratio": 0.8
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 4,
+        "ratio": 0.8
+      },
+      {
+        "path": "${NEXUS_ROOT}/.superpowers/sdd/phase-0-youtube-concepts/task-0.1-report.md",
+        "hits": 3,
+        "ratio": 0.6
+      },
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 3,
+        "ratio": 0.6
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "NEXUS-EXP-005-03",
+    "scope": "NEXUS-EXP-005",
+    "gate": "writer identities known",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 6,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/RESEARCH_BRIEF_NEXUS_SYSTEM.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/docs/superpowers/plans/2026-08-16-engineering-studio-v4-phase1.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/research/engineering_studio/architecture/phase1_scientific_assessment.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/sentinel/SENTINEL_PRICE_DATE_FORENSIC_REPORT.md",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/RESEARCH_BRIEF_NEXUS_SYSTEM.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/docs/superpowers/plans/2026-08-16-engineering-studio-v4-phase1.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/research/engineering_studio/architecture/phase1_scientific_assessment.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/sentinel/SENTINEL_PRICE_DATE_FORENSIC_REPORT.md",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "NEXUS-EXP-005-04",
+    "scope": "NEXUS-EXP-005",
+    "gate": "disk headroom safe",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 7,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/SLA.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/STORAGE_OPTIMIZATION_STRATEGY.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/dat_ai/docs/DATAI_LIMITATIONS.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/LIBRARIAN_F4C_E2E_COMMISSIONING_REPORT.md",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "closure_class": "TECHNICAL_TEST_REQUIRED_OR_EXISTING_TEST_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/SLA.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/STORAGE_OPTIMIZATION_STRATEGY.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/dat_ai/docs/DATAI_LIMITATIONS.md",
+        "hits": 2,
+        "ratio": 0.667
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/LIBRARIAN_F4C_E2E_COMMISSIONING_REPORT.md",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "NEXUS-EXP-005-05",
+    "scope": "NEXUS-EXP-005",
+    "gate": "schema and unit conflicts resolved",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 20,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 4,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/engineering_studio_retirement_index/INDEX_20260907T083119Z/system_history/SYSTEM_TIMELINE.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/sentinel/SENTINEL_F5_1_IMPLEMENTATION_REPORT.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/sentinel/SENTINEL_F5_FORENSIC_AUDIT.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/sentinel/SENTINEL_F5_PHASE_2A_REPORT.md",
+        "hits": 3,
+        "ratio": 0.75
+      }
+    ],
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 4,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/engineering_studio_retirement_index/INDEX_20260907T083119Z/system_history/SYSTEM_TIMELINE.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/sentinel/SENTINEL_F5_1_IMPLEMENTATION_REPORT.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/sentinel/SENTINEL_F5_FORENSIC_AUDIT.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/sentinel/SENTINEL_F5_PHASE_2A_REPORT.md",
+        "hits": 3,
+        "ratio": 0.75
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "NEXUS-EXP-006-01",
+    "scope": "NEXUS-EXP-006",
+    "gate": "original experiment completed validly",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 20,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/experiments/RESEARCH_WORKFLOW.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/.directives-ingestion/completed/master-mission-directive.yaml",
+        "hits": 2,
+        "ratio": 0.5
+      },
+      {
+        "path": "${NEXUS_ROOT}/.directives-ingestion/completed/master-mission-phase-01.yaml",
+        "hits": 2,
+        "ratio": 0.5
+      }
+    ],
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/data/content/_corpus_chunks.json",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/systems/librarian/experiments/RESEARCH_WORKFLOW.md",
+        "hits": 3,
+        "ratio": 0.75
+      },
+      {
+        "path": "${NEXUS_ROOT}/.directives-ingestion/completed/master-mission-directive.yaml",
+        "hits": 2,
+        "ratio": 0.5
+      },
+      {
+        "path": "${NEXUS_ROOT}/.directives-ingestion/completed/master-mission-phase-01.yaml",
+        "hits": 2,
+        "ratio": 0.5
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "NEXUS-EXP-006-02",
+    "scope": "NEXUS-EXP-006",
+    "gate": "evidence bundle sealed",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 1,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_APPROVAL_AND_RATIONALE.md",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "closure_class": "EXISTING_EVIDENCE_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/ENGINEERING_STUDIO_V6_APPROVAL_AND_RATIONALE.md",
+        "hits": 2,
+        "ratio": 0.667
+      }
+    ],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "NEXUS-EXP-006-03",
+    "scope": "NEXUS-EXP-006",
+    "gate": "replicator independent",
+    "state": "NEW_TEST_OR_EVIDENCE_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 0,
+    "top_candidate_evidence": [],
+    "closure_class": "HUMAN_ATTESTATION_REQUIRED",
+    "filtered_candidates": [],
+    "rejected_candidates": []
+  },
+  {
+    "gate_id": "NEXUS-EXP-006-04",
+    "scope": "NEXUS-EXP-006",
+    "gate": "clean environment available",
+    "state": "EVIDENCE_REVIEW_REQUIRED",
+    "formal_record_count": 0,
+    "candidate_evidence_count": 14,
+    "top_candidate_evidence": [
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 2,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/DEPLOYMENT_READY_CHECKLIST.md",
+        "hits": 2,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/PRODUCTION_READINESS.md",
+        "hits": 2,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/RUNBOOK.md",
+        "hits": 2,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/SYSTEM_STRUCTURE.md",
+        "hits": 2,
+        "ratio": 1.0
+      }
+    ],
+    "closure_class": "TECHNICAL_TEST_REQUIRED_OR_EXISTING_TEST_REVIEW",
+    "filtered_candidates": [
+      {
+        "path": "${NEXUS_ROOT}/ARCHITECTURE.md",
+        "hits": 2,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/DEPLOYMENT_READY_CHECKLIST.md",
+        "hits": 2,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/PRODUCTION_READINESS.md",
+        "hits": 2,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/RUNBOOK.md",
+        "hits": 2,
+        "ratio": 1.0
+      },
+      {
+        "path": "${NEXUS_ROOT}/SYSTEM_STRUCTURE.md",
+        "hits": 2,
+        "ratio": 1.0
+      }
+    ],
+    "rejected_candidates": []
+  }
+]
