@@ -1,0 +1,30 @@
+{
+  "experiment_id": "NEXUS-EXP-002",
+  "gate_id": "global-10",
+  "reviewer": {
+    "name": null,
+    "affiliation": null,
+    "role": "INDEPENDENT_READINESS_REVIEWER"
+  },
+  "independence_disclosure": {
+    "original_implementation_involvement": null,
+    "protocol_design_involvement": null,
+    "endpoint_selection_involvement": null,
+    "evidence_production_involvement": null,
+    "prior_gate_adjudication_involvement": null,
+    "material_conflicts": []
+  },
+  "decision": null,
+  "permitted_decisions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_MORE_EVIDENCE",
+    "CONFLICT"
+  ],
+  "rationale": null,
+  "evidence_reviewed": [],
+  "unresolved_concerns": [],
+  "reviewed_commit": null,
+  "decision_timestamp_utc": null,
+  "signature_or_attestation_reference": null
+}

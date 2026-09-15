@@ -1,0 +1,240 @@
+[
+  {
+    "contradictions_resolved": true,
+    "evidence": [
+      {
+        "portable_path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_MACHINE_CLOSURE_002_20260914T005925Z/authority/global-01.json",
+        "sha256": "d6e552e633fd64b386b13e34a06e1c1762e2319da7de56d274e250ed6b3a614f",
+        "verified_present": true
+      }
+    ],
+    "gate": "canonical code, configuration, dataset and database authority recorded",
+    "gate_id": "global-01",
+    "gate_record": "global-01.json",
+    "reviewer": "GPT-5.6-Sol-assisted-adjudication-002",
+    "status": "PASS",
+    "verified_at": "2026-09-14T00:59:25.584835+00:00"
+  },
+  {
+    "contradictions_resolved": true,
+    "evidence": [
+      {
+        "portable_path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_GLOBAL02_OBSERVATION_20260914T010139Z/PREREGISTERED_OBSERVATION.json",
+        "sha256": "011ad4ebf04ce9c588e25bf282fe8bb013e1db4d8bc0850fc64a163c0e59505a",
+        "verified_present": true
+      },
+      {
+        "portable_path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_GLOBAL02_OBSERVATION_20260914T010139Z/OBSERVATIONS.json",
+        "sha256": "ec32e29f5221c842452967a454e7a35c0272d4cca7b99fbf953bdeb4ff623f52",
+        "verified_present": true
+      },
+      {
+        "portable_path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_GLOBAL02_OBSERVATION_20260914T010139Z/GLOBAL02_RESULT.json",
+        "sha256": "ced7b7c00cdb02d05c441bcc4822661c697de39d7de11315319352c1a3d75d96",
+        "verified_present": true
+      }
+    ],
+    "gate": "required services healthy for the preregistered observation window",
+    "gate_id": "global-02",
+    "gate_record": "global-02.json",
+    "reviewer": "GPT-5.6-Sol-assisted-adjudication-003",
+    "status": "PASS",
+    "verified_at": "2026-09-14T01:16:10.107550+00:00"
+  },
+  {
+    "contradictions_resolved": true,
+    "evidence": [
+      {
+        "portable_path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_MACHINE_CLOSURE_002_20260914T005925Z/environment/global-03.json",
+        "sha256": "407a72855f48fc0bea1e4b2d82aa1885dba5bfb26455f5ef105f1b3cc3b4328b",
+        "verified_present": true
+      }
+    ],
+    "gate": "clean-environment build or environment lock reproduced",
+    "gate_id": "global-03",
+    "gate_record": "global-03.json",
+    "reviewer": "GPT-5.6-Sol-assisted-adjudication-002",
+    "status": "PASS",
+    "verified_at": "2026-09-14T00:59:25.584835+00:00"
+  },
+  {
+    "contradictions_resolved": true,
+    "evidence": [
+      {
+        "portable_path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_MACHINE_CLOSURE_002_20260914T005925Z/isolation/isolation-proof.json",
+        "sha256": "f0f4ca1633619779911a9d61fcff50b7bb39fb4d7aac1f4a4e191c707f205cdd",
+        "verified_present": true
+      }
+    ],
+    "gate": "research data physically or logically isolated from production writers",
+    "gate_id": "global-04",
+    "gate_record": "global-04.json",
+    "reviewer": "GPT-5.6-Sol-assisted-adjudication-002",
+    "status": "PASS",
+    "verified_at": "2026-09-14T00:59:25.584835+00:00"
+  },
+  {
+    "contradictions_resolved": true,
+    "evidence": [
+      {
+        "portable_path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_STAGE2_VERIFICATION_20260914T005409Z/restore/RESTORE_RESULT.txt",
+        "sha256": "b536456b7fc20b2abdbfb2d31582032c9e5f736f95bb3ccf956f2f8ca9181421",
+        "verified_present": true
+      }
+    ],
+    "gate": "backup integrity verified and at least one restore rehearsal passed",
+    "gate_id": "global-05",
+    "gate_record": "global-05.json",
+    "reviewer": "GPT-5.6-Sol-assisted-adjudication-002",
+    "status": "PASS",
+    "verified_at": "2026-09-14T00:59:25.584835+00:00"
+  },
+  {
+    "contradictions_resolved": true,
+    "evidence": [
+      {
+        "portable_path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_MACHINE_CLOSURE_002_20260914T005925Z/monitoring/global-06.json",
+        "sha256": "bab7fc8ed92cf03c996d97d7d0a78ce8e5cba2a5a874a98d2eb0722ee4027ae3",
+        "verified_present": true
+      }
+    ],
+    "gate": "monitoring detects a deliberately injected non-destructive failure",
+    "gate_id": "global-06",
+    "gate_record": "global-06.json",
+    "reviewer": "GPT-5.6-Sol-assisted-adjudication-002",
+    "status": "PASS",
+    "verified_at": "2026-09-14T00:59:25.584835+00:00"
+  },
+  {
+    "contradictions_resolved": true,
+    "evidence": [
+      {
+        "portable_path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_MACHINE_CLOSURE_002_20260914T005925Z/dataset/global-07.json",
+        "sha256": "71674dc1c003f111b21f3a605f156c0db7c73b15f76de37e0cd38bdbb8b82869",
+        "verified_present": true
+      },
+      {
+        "portable_path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_MACHINE_CLOSURE_002_20260914T005925Z/dataset/fixtures.frozen.json",
+        "sha256": "b8180e00cffc40e347baca3b772f90b7308a810c8b4239a6faf8e345b570abf1",
+        "verified_present": true
+      },
+      {
+        "portable_path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_MACHINE_CLOSURE_002_20260914T005925Z/dataset/fixture_hashes.frozen.json",
+        "sha256": "2b8f98d9b7eec7bf621141e2bb99f7179b16129f60665b09915a91d754c1b008",
+        "verified_present": true
+      }
+    ],
+    "gate": "dataset snapshots are immutable, hashed, licensed and provenance-complete",
+    "gate_id": "global-07",
+    "gate_record": "global-07.json",
+    "reviewer": "GPT-5.6-Sol-assisted-adjudication-002",
+    "status": "PASS",
+    "verified_at": "2026-09-14T00:59:25.584835+00:00"
+  },
+  {
+    "contradictions_resolved": true,
+    "evidence": [
+      {
+        "portable_path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_MACHINE_CLOSURE_002_20260914T005925Z/evidence/global-08.json",
+        "sha256": "6cc575179ef19d75673046965411532f6a462f4d94f21aa536ca595879cdfd59",
+        "verified_present": true
+      }
+    ],
+    "gate": "secrets and live financial operations are excluded from experiment scope",
+    "gate_id": "global-08",
+    "gate_record": "global-08.json",
+    "reviewer": "GPT-5.6-Sol-assisted-adjudication-002",
+    "status": "PASS",
+    "verified_at": "2026-09-14T00:59:25.584835+00:00"
+  },
+  {
+    "contradictions_resolved": true,
+    "evidence": [
+      {
+        "portable_path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_REMEDIATION_001_20260914T005238Z/protocol/EXP002_PROTOCOL_FREEZE.json",
+        "sha256": "4b987da52c918222b0d2ccae943169ec4391e088d579a1c694edac5e35f0c69d",
+        "verified_present": true
+      }
+    ],
+    "gate": "protocol, analysis code, thresholds and stopping rules are frozen",
+    "gate_id": "global-09",
+    "gate_record": "global-09.json",
+    "reviewer": "GPT-5.6-Sol-assisted-adjudication-001",
+    "status": "PASS",
+    "verified_at": "2026-09-14T00:56:10.118269+00:00"
+  },
+  {
+    "contradictions_resolved": true,
+    "evidence": [
+      {
+        "portable_path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_REMEDIATION_001_20260914T005238Z/provenance/ACADEMIC_PROVENANCE_SCHEMA.frozen.json",
+        "sha256": "e4cef9e231c7d148e5becffd3233de98a410804cc3f625625c2f55446f052071",
+        "verified_present": true
+      },
+      {
+        "portable_path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_REMEDIATION_001_20260914T005238Z/provenance/FREEZE_RECORD.txt",
+        "sha256": "bf1c712c28977a33689e08f25c23b6a1211c2655f432b090479326074af884dc",
+        "verified_present": true
+      }
+    ],
+    "gate": "provenance schema frozen",
+    "gate_id": "NEXUS-EXP-002-01",
+    "gate_record": "NEXUS-EXP-002-01.json",
+    "reviewer": "GPT-5.6-Sol-assisted-adjudication-001",
+    "status": "PASS",
+    "verified_at": "2026-09-14T00:56:10.118269+00:00"
+  },
+  {
+    "contradictions_resolved": true,
+    "evidence": [
+      {
+        "portable_path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_REMEDIATION_001_20260914T005238Z/quarantine/REHEARSAL.json",
+        "sha256": "e806980a08a38d2674ee19b68ab5b31372e80510f00f7415db35973d13bf3ce5",
+        "verified_present": true
+      },
+      {
+        "portable_path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_STAGE2_VERIFICATION_20260914T005409Z/audit/quarantine_events.jsonl",
+        "sha256": "0b7b505d0f6a57dec0f979338ae4334e352fb94c78a81ac3451a1b0f8f5c8a55",
+        "verified_present": true
+      }
+    ],
+    "gate": "quarantine path writable and auditable",
+    "gate_id": "NEXUS-EXP-002-02",
+    "gate_record": "NEXUS-EXP-002-02.json",
+    "reviewer": "GPT-5.6-Sol-assisted-adjudication-001",
+    "status": "PASS",
+    "verified_at": "2026-09-14T00:56:10.118269+00:00"
+  },
+  {
+    "contradictions_resolved": true,
+    "evidence": [
+      {
+        "portable_path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_STAGE2_VERIFICATION_20260914T005409Z/restore/RESTORE_RESULT.txt",
+        "sha256": "b536456b7fc20b2abdbfb2d31582032c9e5f736f95bb3ccf956f2f8ca9181421",
+        "verified_present": true
+      }
+    ],
+    "gate": "restore rehearsal passed",
+    "gate_id": "NEXUS-EXP-002-03",
+    "gate_record": "NEXUS-EXP-002-03.json",
+    "reviewer": "GPT-5.6-Sol-assisted-adjudication-001",
+    "status": "PASS",
+    "verified_at": "2026-09-14T00:56:10.118269+00:00"
+  },
+  {
+    "contradictions_resolved": true,
+    "evidence": [
+      {
+        "portable_path": "${NEXUS_ROOT}/systems/engineering_studio/reports/NEXUS_EV_EXP002_MACHINE_CLOSURE_002_20260914T005925Z/isolation/isolation-proof.json",
+        "sha256": "f0f4ca1633619779911a9d61fcff50b7bb39fb4d7aac1f4a4e191c707f205cdd",
+        "verified_present": true
+      }
+    ],
+    "gate": "test store demonstrably isolated",
+    "gate_id": "NEXUS-EXP-002-04",
+    "gate_record": "NEXUS-EXP-002-04.json",
+    "reviewer": "GPT-5.6-Sol-assisted-adjudication-002",
+    "status": "PASS",
+    "verified_at": "2026-09-14T00:59:25.584835+00:00"
+  }
+]

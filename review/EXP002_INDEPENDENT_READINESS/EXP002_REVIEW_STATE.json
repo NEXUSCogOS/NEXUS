@@ -1,0 +1,52 @@
+{
+  "canonical_registry_state": {
+    "final_verdict": "PENDING",
+    "result_status": "BLOCKED"
+  },
+  "execution_performed": false,
+  "experiment_id": "NEXUS-EXP-002",
+  "generated_at": "2026-09-15T20:52:25.753835+00:00",
+  "machine_gate_position": {
+    "required_machine_gates": 13,
+    "verified": 13
+  },
+  "readiness": {
+    "all_required_gates_verified": false,
+    "authorization": "BLOCKED",
+    "execution_authorized": false,
+    "experiment_id": "NEXUS-EXP-002",
+    "registry_status": "BLOCKED",
+    "registry_transition_performed": false,
+    "required_gate_count": 14,
+    "unresolved": [
+      {
+        "gate_id": "global-10",
+        "reason": "FORMAL_GATE_RECORD_MISSING"
+      }
+    ],
+    "unresolved_gate_count": 1,
+    "verified_gate_count": 13,
+    "verified_gate_ids": [
+      "global-01",
+      "global-02",
+      "global-03",
+      "global-04",
+      "global-05",
+      "global-06",
+      "global-07",
+      "global-08",
+      "global-09",
+      "NEXUS-EXP-002-01",
+      "NEXUS-EXP-002-02",
+      "NEXUS-EXP-002-03",
+      "NEXUS-EXP-002-04"
+    ]
+  },
+  "registry_transition_performed": false,
+  "remaining_gate": {
+    "gate_id": "global-10",
+    "machine_satisfiable": false,
+    "requirement": "independent reviewer signs the readiness record"
+  },
+  "scientific_result_claimed": false
+}
