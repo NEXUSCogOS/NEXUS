@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use or evaluate NEXUS, please cite this software release."
+title: "NEXUS"
+type: software
+authors:
+  - family-names: "McAuliffe"
+    given-names: "Matt"
+repository-code: "https://github.com/NEXUSCogOS/NEXUS"
+url: "https://github.com/NEXUSCogOS/NEXUS"
+license: "NOASSERTION"
+version: "initial-public-research-release"
+date-released: 2026-09-15
+abstract: >-
+  NEXUS is an experimental evidence-governed AI engineering architecture
+  containing engineering, provenance, experimental-validation, federation,
+  domain-system and external-verification research surfaces. The canonical
+  experiments remain blocked/pending at this release point; scientific
+  validation and independent replication are not claimed.
