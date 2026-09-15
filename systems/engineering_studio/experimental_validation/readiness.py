@@ -6,7 +6,11 @@ from pathlib import Path
 from .gate_validator import validate_gate_record
 
 
-def evaluate_experiment(requirement, gate_records_dir):
+def evaluate_experiment(
+    requirement,
+    gate_records_dir,
+    nexus_root=None,
+):
 
     verified=[]
     unresolved=[]
@@ -32,7 +36,11 @@ def evaluate_experiment(requirement, gate_records_dir):
 
             continue
 
-        result=validate_gate_record(path,canonical)
+        result=validate_gate_record(
+            path,
+            canonical,
+            nexus_root=nexus_root,
+        )
 
         if result["valid"]:
             verified.append(gate_id)
@@ -76,13 +84,21 @@ def evaluate_experiment(requirement, gate_records_dir):
     }
 
 
-def evaluate_all(requirements_file,gate_records_dir):
+def evaluate_all(
+    requirements_file,
+    gate_records_dir,
+    nexus_root=None,
+):
 
     requirements=json.loads(
         Path(requirements_file).read_text()
     )
 
     return [
-        evaluate_experiment(x,gate_records_dir)
+        evaluate_experiment(
+            x,
+            gate_records_dir,
+            nexus_root=nexus_root,
+        )
         for x in requirements
     ]

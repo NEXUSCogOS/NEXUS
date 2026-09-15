@@ -21,7 +21,36 @@ def sha256(path: Path) -> str:
             h.update(block)
     return h.hexdigest()
 
-def validate_gate_record(record_path: Path, canonical_gate: dict) -> dict:
+def _resolve_evidence_path(raw: str, nexus_root: Path | None) -> Path:
+    """Resolve portable evidence references against explicit NEXUS authority."""
+    marker = "${NEXUS_ROOT}/"
+
+    if raw.startswith(marker):
+        if nexus_root is None:
+            raise ValueError("NEXUS_ROOT_REQUIRED")
+
+        root = Path(nexus_root).expanduser().resolve()
+        relative = raw[len(marker):]
+
+        candidate = (root / relative).resolve()
+
+        try:
+            candidate.relative_to(root)
+        except ValueError as exc:
+            raise ValueError(
+                "EVIDENCE_PATH_ESCAPES_NEXUS_ROOT"
+            ) from exc
+
+        return candidate
+
+    return Path(raw)
+
+
+def validate_gate_record(
+    record_path: Path,
+    canonical_gate: dict,
+    nexus_root: Path | None = None,
+) -> dict:
     reasons = []
 
     try:
@@ -77,10 +106,19 @@ def validate_gate_record(record_path: Path, canonical_gate: dict) -> dict:
             reasons.append("EVIDENCE_PATH_MISSING")
             continue
 
-        path = Path(raw)
+        try:
+            path = _resolve_evidence_path(
+                raw,
+                nexus_root,
+            )
+        except ValueError as exc:
+            reasons.append(f"{exc}:{raw}")
+            continue
 
         if not path.is_absolute():
-            reasons.append(f"EVIDENCE_PATH_NOT_ABSOLUTE:{raw}")
+            reasons.append(
+                f"EVIDENCE_PATH_NOT_ABSOLUTE:{raw}"
+            )
             continue
 
         if not path.is_file():
