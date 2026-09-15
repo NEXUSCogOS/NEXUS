@@ -266,3 +266,28 @@ At minimum, the bundle should identify:
 Producing such a bundle establishes an inspectable reproduction record. It does not by itself establish independent replication.
 
 ---
+
+### Clean Environment Requirement
+
+Independent replication requires an environment sufficiently clean to prevent hidden state from the originating execution environment from silently influencing the result.
+
+For `NEXUS-EXP-006`, the canonical readiness requirements explicitly include:
+
+`NEXUS-EXP-006-04` — **clean environment available**
+
+A clean environment should, where applicable, minimize or explicitly account for:
+
+- undeclared local files;
+- cached experiment outputs;
+- mutable development state;
+- hidden environment variables;
+- undeclared credentials;
+- unrecorded dependency modifications;
+- prior generated artifacts;
+- local database state;
+- implementation residue from the original experiment;
+- undocumented manual configuration.
+
+Clean does not necessarily mean an empty machine. It means that material state capable of influencing the result is either reconstructed from the declared reproduction specification or explicitly identified and justified.
+
+Where the required clean environment cannot be established, the reproduction attempt should record that limitation and must not be represented as satisfying the canonical EXP-006 clean-environment gate.
